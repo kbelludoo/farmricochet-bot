@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 19976,
-      "expPerHour": 1621.868583419722,
+      "durationSec": 21309,
+      "expPerHour": 1621.8098167490982,
       "extra": {
         "essence": 0,
         "forgeFragments": 0,
@@ -13,14 +13,12 @@
         "wheat": 10744,
         "wood": 473
       },
-      "gold": 1408,
+      "gold": 1472,
       "hp": 444,
       "id": "acc-1",
-      "kills": 75,
+      "kills": 80,
       "level": 2,
       "logs": [
-        "[13:26:33] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
-        "[13:48:42] ✅ Fase 2 Concluída! +64 Gold",
         "[13:48:44] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[14:10:53] ✅ Fase 2 Concluída! +64 Gold",
         "[14:10:55] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
@@ -33,19 +31,21 @@
         "[15:39:42] ✅ Fase 2 Concluída! +64 Gold",
         "[15:39:44] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[16:01:54] ✅ Fase 2 Concluída! +64 Gold",
-        "[16:01:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)"
+        "[16:01:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
+        "[16:24:06] ✅ Fase 2 Concluída! +64 Gold",
+        "[16:24:08] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)"
       ],
       "mana": 100,
       "maxHp": 444,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792425717009,
+      "updatedAt": 1792427048910,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7165985107421875,
+  "ramAllocMB": 1.9727859497070312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "5h53m21s"
+  "uptime": "5h55m20s"
 }
