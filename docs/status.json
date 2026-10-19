@@ -2,40 +2,42 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 0,
-      "expPerHour": 0,
+      "durationSec": 1330,
+      "expPerHour": 1623.9229347011133,
       "extra": {
         "essence": 0,
         "forgeFragments": 0,
         "gems": 14,
         "onlinePlayers": 465,
         "stone": 0,
-        "wheat": 10744,
+        "wheat": 13758,
         "wood": 473
       },
-      "gold": 2304,
+      "gold": 2432,
       "hp": 448,
       "id": "acc-1",
-      "kills": 0,
+      "kills": 5,
       "level": 2,
       "logs": [
         "[23:35:46] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 2304",
         "[23:35:46] Automação total iniciada. Loop de farm e campanha em execução.",
         "[23:35:46] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[23:37:46] ⚠️ Conflito de sessão detectado (409). Tentando recuperar controle do lease...",
-        "[23:37:46] ✅ Controle da sessão retomado com sucesso!"
+        "[23:37:46] ✅ Controle da sessão retomado com sucesso!",
+        "[23:57:56] ✅ Fase 2 Concluída! +64 Gold",
+        "[23:57:58] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)"
       ],
       "mana": 100,
       "maxHp": 448,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792452946625,
+      "updatedAt": 1792454278038,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.6609878540039062,
+  "ramAllocMB": 1.3411788940429688,
   "ramSysMB": 13.349861145019531,
-  "uptime": "20m29s"
+  "uptime": "22m28s"
 }
