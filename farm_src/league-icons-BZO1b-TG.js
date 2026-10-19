@@ -1,0 +1,1 @@
+const n={bronze:"bronze",silver:"prata",gold:"ouro",platinum:"platina",diamond:"diamante",master:"mestre"};function e(o){return n[o]?`/icos-ranks/${n[o]}.png`:"/ui/common/combat-sword.png"}function a(o){return o>=2e3?"master":o>=1750?"diamond":o>=1500?"platinum":o>=1300?"gold":o>=1100?"silver":"bronze"}export{e as l,a as p};

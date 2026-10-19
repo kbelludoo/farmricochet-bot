@@ -1,0 +1,1 @@
+function s(r){const a=Math.max(0,Number(r.experience)||0),e=Math.max(0,Number(r.experienceRequired)||0),n=e?Math.min(a,e):0;return`<span class="hero-xp"><span>XP ${e?`${a} / ${e}`:"—"}</span><progress aria-label="XP" max="${e||1}" value="${n}"></progress></span>`}export{s as h};

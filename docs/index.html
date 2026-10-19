@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌾 Farm Ricochet Bot — Live Fleet Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07090e;
+      --card-bg: rgba(13, 23, 20, 0.85);
+      --card-border: rgba(16, 185, 129, 0.2);
+      --card-border-hover: rgba(16, 185, 129, 0.5);
+      --green: #10b981;
+      --green-glow: rgba(16, 185, 129, 0.25);
+      --gold: #f59e0b;
+      --gold-glow: rgba(245, 158, 11, 0.25);
+      --wheat: #fcd34d;
+      --wood: #b45309;
+      --stone: #94a3b8;
+      --cyan: #06b6d4;
+      --red: #ef4444;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 50% 85%, rgba(6, 182, 212, 0.04) 0%, transparent 50%),
+        linear-gradient(to bottom, #07090e, #0a1410);
+      color: var(--text);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      padding: 24px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 22px 28px;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.6);
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-badge {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(245, 158, 11, 0.25));
+      border: 1px solid var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 0 20px var(--green-glow);
+    }
+
+    .header-title h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .header-title p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      font-family: var(--font-mono);
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+    }
+
+    .pill-green {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.3);
+      color: var(--green);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 22px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card:hover {
+      border-color: var(--card-border-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(16, 185, 129, 0.15);
+    }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding-bottom: 14px;
+    }
+
+    .card-char-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .card-char-meta {
+      font-size: 0.8rem;
+      color: var(--green);
+      font-family: var(--font-mono);
+      margin-top: 2px;
+    }
+
+    .badge-status {
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--green);
+      border: 1px solid var(--green);
+    }
+
+    /* STATS ROWS */
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .bar-slim {
+      height: 6px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.4s ease;
+    }
+
+    .fill-hp {
+      background: linear-gradient(90deg, #ef4444, #f87171);
+    }
+
+    .fill-mana {
+      background: linear-gradient(90deg, #0284c7, #38bdf8);
+    }
+
+    /* RESOURCE CHIPS */
+    .chips-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-family: var(--font-mono);
+    }
+
+    .chip-gold { color: var(--gold); }
+    .chip-wheat { color: var(--wheat); }
+    .chip-wood { color: var(--wood); }
+    .chip-stone { color: var(--stone); }
+    .chip-gems { color: #a855f7; }
+
+    /* LOGS BOX */
+    .logs-box {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 10px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      max-height: 90px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .logs-box p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-dim);
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+    }
+
+    .footer a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-badge">🌾</div>
+        <div class="header-title">
+          <h1>Farm Ricochet Bot</h1>
+          <p>Go Native Engine • Circuit Breaker Anti-Ban • Auto-Recruit & Speed 1.25x</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="pill pill-green">
+          <span class="status-dot"></span>
+          <span id="globalStatus">ONLINE</span>
+        </span>
+        <span class="pill" id="vpsMetric">RAM: 1.16 MB</span>
+        <span class="pill" id="lastUpdated">Atualizando...</span>
+      </div>
+    </header>
+
+    <div class="grid" id="accountsGrid">
+      <!-- Conta Carregando -->
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <div class="card-char-name">Conta #1 (Fazendeiro)</div>
+            <div class="card-char-meta">Cavaleiro • Lv. 2</div>
+          </div>
+          <span class="badge-status">JOGANDO FASE 2</span>
+        </div>
+        <div>
+          <div class="stat-row">
+            <span>❤️ Vida (100%)</span>
+            <span style="color: #ef4444;">444 / 444</span>
+          </div>
+          <div class="bar-slim"><div class="progress-fill fill-hp" style="width: 100%"></div></div>
+          <div class="stat-row">
+            <span>💧 Mana (100%)</span>
+            <span style="color: #38bdf8;">100 / 100</span>
+          </div>
+          <div class="bar-slim"><div class="progress-fill fill-mana" style="width: 100%"></div></div>
+        </div>
+        <div class="chips-grid">
+          <div class="chip chip-gold">💰 <span>384 Gold</span></div>
+          <div class="chip chip-wheat">🌾 <span>10.7k Trigo</span></div>
+          <div class="chip chip-wood">🪵 <span>473 Madeira</span></div>
+          <div class="chip chip-stone">🪨 <span>0 Pedra</span></div>
+        </div>
+        <div class="logs-box">
+          <p>▶ Fase 2 iniciada (Ato 1 — Invasão · Fazenda 2/5)</p>
+          <p>⚡ Bot Go operando em modo stealth na VPS</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Farm Ricochet Native Bot • <a href="https://kbelludoo.github.io/bot-template-go/?v=force1">Voltar ao Bot Hub Central ↗</a> • Telemetria 100% Anônima
+    </footer>
+  </div>
+
+  <script>
+    async function loadStatus() {
+      try {
+        const res = await fetch('status.json?t=' + Date.now());
+        if (!res.ok) throw new Error('status fetch failed');
+        const data = await res.json();
+        render(data);
+      } catch (err) {
+        console.warn('Fallback status', err);
+      }
+    }
+
+    function render(data) {
+      document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString('pt-BR');
+      const accounts = data.accounts || (data.status && data.status.accounts) || [];
+      if (!accounts.length) return;
+
+      const grid = document.getElementById('accountsGrid');
+      grid.innerHTML = accounts.map((acc, idx) => {
+        const hp = acc.hp || 444;
+        const maxHp = acc.maxHp || 444;
+        const hpPct = Math.round((hp / maxHp) * 100);
+        const mana = acc.mana || 100;
+        const maxMana = acc.maxMana || 100;
+        const manaPct = Math.round((mana / maxMana) * 100);
+        const extra = acc.extra || {};
+        const gold = (acc.gold || 0).toLocaleString('pt-BR');
+        const wheat = (extra.wheat || 0).toLocaleString('pt-BR');
+        const wood = (extra.wood || 0).toLocaleString('pt-BR');
+        const stone = (extra.stone || 0).toLocaleString('pt-BR');
+        const gems = (extra.gems || 0).toLocaleString('pt-BR');
+        const logs = acc.recentLogs || acc.logs || [];
+
+        return `
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <div class="card-char-name">Conta #${idx + 1} (${acc.vocation || 'Herói'})</div>
+                <div class="card-char-meta">${acc.currentArea || 'Fase Ativa'} • Nv. ${acc.level || 1}</div>
+              </div>
+              <span class="badge-status">${(acc.status || 'JOGANDO').toUpperCase()}</span>
+            </div>
+            <div>
+              <div class="stat-row">
+                <span>❤️ Vida (${hpPct}%)</span>
+                <span style="color: #ef4444;">${hp} / ${maxHp}</span>
+              </div>
+              <div class="bar-slim"><div class="progress-fill fill-hp" style="width: ${hpPct}%"></div></div>
+              <div class="stat-row">
+                <span>💧 Mana (${manaPct}%)</span>
+                <span style="color: #38bdf8;">${mana} / ${maxMana}</span>
+              </div>
+              <div class="bar-slim"><div class="progress-fill fill-mana" style="width: ${manaPct}%"></div></div>
+            </div>
+            <div class="chips-grid">
+              <div class="chip chip-gold">💰 <span>${gold} Gold</span></div>
+              <div class="chip chip-wheat">🌾 <span>${wheat} Trigo</span></div>
+              <div class="chip chip-wood">🪵 <span>${wood} Madeira</span></div>
+              <div class="chip chip-gems">💎 <span>${gems} Gemas</span></div>
+            </div>
+            <div class="logs-box">
+              ${logs.slice(-3).map(l => `<p>${l}</p>`).join('') || '<p>Aguardando ciclo de produção...</p>'}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    loadStatus();
+    setInterval(loadStatus, 15000);
+  </script>
+</body>
+</html>

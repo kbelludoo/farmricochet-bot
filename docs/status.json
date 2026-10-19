@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-19T10:30:00Z",
+  "name": "Farm Ricochet Bot",
+  "game": "Farm Ricochet",
+  "engine": "Go Native Engine (Circuit Breaker)",
+  "port": 3013,
+  "vps": {
+    "ramAllocMB": 1.16,
+    "goroutines": 9,
+    "uptime": "Ativo 24/7"
+  },
+  "accounts": [
+    {
+      "id": "farm-1",
+      "name": "Fazendeiro #1",
+      "vocation": "knight",
+      "level": 2,
+      "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
+      "status": "Jogando Fase 2",
+      "hp": 444,
+      "maxHp": 444,
+      "mana": 100,
+      "maxMana": 100,
+      "gold": 384,
+      "kills": 0,
+      "extra": {
+        "wheat": 10740,
+        "wood": 473,
+        "stone": 0,
+        "gems": 0,
+        "speedMultiplier": 1.25,
+        "teamSlots": "1/3",
+        "onlinePlayers": 552
+      },
+      "recentLogs": [
+        "▶ Fase 2 iniciada (Meta: 350 Trigo | Taxa: 4.20/s | Est: 66s)",
+        "🌱 Talento verificado: wheat_harvest",
+        "⚡ Bot Go operando em modo stealth na VPS (1.16 MB RAM)"
+      ]
+    }
+  ]
+}

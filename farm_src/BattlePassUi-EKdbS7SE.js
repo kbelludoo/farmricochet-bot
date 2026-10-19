@@ -1,0 +1,14 @@
+import{g as c}from"./GameEvents-BQQbvFH2.js";import{f as d}from"./index-tLx1ZRcz.js";import{e as u}from"./html-Ds7N7FgU.js";import"./client-DeGCHmUx.js";import"./GameSessionLease-hDJLfaFU.js";import"./ClientRefresh-iM6ex6h0.js";import{a as b,c as a,o as h}from"./BattlePassMenuUi-CXgsnHEZ.js";import"./item-i18n-BSURDFjV.js";import{c as n}from"./commerce-i18n-C6xG7Tn9.js";class P{constructor(e){this.badge=e}panel;busy=!1;renderRequested=!1;initialize(){const e=document.querySelector('[data-missions-tab="milestones"]'),s=document.createElement("button");s.dataset.missionsTab="battlepass",s.type="button",s.setAttribute("data-i18n-ignore","");const t=()=>{s.textContent=n("battlePassClub")};t(),window.addEventListener("farm-ricochet:locale-changed",t),e.before(s),this.panel=document.createElement("section"),this.panel.dataset.missionsPanel="battlepass",this.panel.hidden=!0,this.panel.setAttribute("data-i18n-ignore",""),(document.querySelector('[data-missions-panel="daily"]')||document.querySelector('[data-missions-panel="weekly"]')).after(this.panel),c.watch("weekly",()=>this.refresh(!this.panel.hidden),3e4)}async refresh(e=!1){if(this.renderRequested||=e,!this.busy){this.busy=!0;try{const s=await b();this.badge(m(s)>0||p(s)>0),this.renderRequested&&!this.panel.hidden&&this.render(s)}catch(s){c.retry("weekly"),e&&(this.panel.innerHTML=`<p class="battlepass-error">${u(s instanceof Error?s.message:n("loadFailed"))}</p>`)}finally{this.busy=!1,this.renderRequested=!1}}}render(e){const{season:s,progress:t}=e,r=Math.max(0,Math.ceil((new Date(s.endsAt).getTime()-Date.now())/864e5));document.querySelector("#missions-period").textContent=`${a("season",{number:s.seasonNumber})} · ${r} ${a(r===1?"dayRemaining":"daysRemaining")}`;const i=m(e),o=p(e);this.panel.innerHTML=`<div class="battlepass-summary">
+   <div class="battlepass-hero-level-pill">${t.level}<small>${a("level")}</small></div>
+   <div class="battlepass-summary-info">
+    <strong>${n("battlePassMenuTitle")}</strong>
+    <progress max="${t.nextLevelXp}" value="${t.currentXp}"></progress>
+    <small>${d(t.currentXp)} / ${d(t.nextLevelXp)} XP · ${a("levelProgress",{level:t.level,max:s.maxLevel})}</small>
+   </div>
+   <ul class="battlepass-summary-counts">
+    <li class="${i?"ready":""}"><b>${i}</b>${a("readyMissions")}</li>
+    <li class="${o?"ready":""}"><b>${o}</b>${a("readyRewards")}</li>
+   </ul>
+   <p>${a("centralNote")}</p>
+   <button type="button" class="battlepass-open-full" data-bp-open-full>${n("battlePassOpenFull")}</button>
+  </div>`,this.panel.querySelector("[data-bp-open-full]")?.addEventListener("click",()=>{document.querySelector("#close-missions")?.click(),h()})}}const m=l=>[...l.daily,...l.weekly,...l.seasonMissions].filter(e=>e.completed&&!e.claimed).length,p=l=>new Set(l.track.filter(e=>e.available).map(e=>e.level)).size;export{P as B,m as a,p as r};

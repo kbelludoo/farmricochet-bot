@@ -1,0 +1,21 @@
+[Unit]
+Description=Farm Ricochet Native Go Bot Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/farmbot
+ExecStart=/home/ubuntu/farmbot/farmbot-linux
+Restart=always
+RestartSec=5s
+LimitNOFILE=65535
+StandardOutput=journal
+StandardError=journal
+
+# Otimizações de Memória Go (<15MB RAM)
+Environment=GOGC=50
+Environment=PORT=3013
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1048 @@
+package game
+
+import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"log"
+	"math"
+	"math/rand"
+	"sort"
+	"strings"
+	"sync"
+	"time"
+
+	"bot-template-go/pkg/engine"
+	"bot-template-go/pkg/network"
+)
+
+// Bot implementa o ciclo de vida e a automação do Farm Ricochet
+type Bot struct {
+	config         AccountConfig
+	mu             sync.RWMutex
+	status         engine.AccountStatus
+	client         *FarmClient
+	circuitBreaker *engine.CircuitBreaker
+	socket         *network.SocketClient
+
+	holderId       string
+	leaseExpiresAt time.Time
+	activeRunId    string
+	lastBootstrap  *BootstrapResponse
+
+	running   bool
+	cancel    context.CancelFunc
+	startTime time.Time
+
+	// Anti-cheat & Circuit Breaker trip notification
+	onTripNotice func(reason string)
+}
+
+// NewBot inicializa uma nova instância de bot para a conta
+func NewBot(cfg AccountConfig) *Bot {
+	st := engine.NewStatus(cfg.ID, cfg.Name)
+	st.Status = "Configurado"
+
+	cbCfg := engine.DefaultCircuitBreakerConfig()
+	cbCfg.BaseCooldown = 15 * time.Minute
+	cbCfg.MaxCooldown = 60 * time.Minute
+
+	b := &Bot{
+		config:   cfg,
+		status:   st,
+		holderId: newUUID(),
+	}
+
+	cbCfg.OnTrip = func(reason string) {
+		log.Printf("[%s] 🚨 CIRCUIT BREAKER DISPARADO! Motivo: %s", b.config.ID, reason)
+		b.updateStatus(func(s *engine.AccountStatus) {
+			s.Status = "PAUSADO (Anti-Cheat)"
+			s.Logs = append(s.Logs, fmt.Sprintf("⚠️ Proteção anti-ban ativada: %s. Cooldown de segurança em andamento.", reason))
+		})
+	}
+
+	b.circuitBreaker = engine.NewCircuitBreaker(cfg.ID, cbCfg)
+	b.client = NewFarmClient(cfg.Credentials.Cookie, cfg.Credentials.SessionToken)
+
+	return b
+}
+
+func (b *Bot) ID() string {
+	return b.config.ID
+}
+
+func (b *Bot) Name() string {
+	return b.config.Name
+}
+
+// Init valida a sessão, adquire o lease e carrega o estado inicial do jogo
+func (b *Bot) Init(ctx context.Context) error {
+	b.updateStatus(func(s *engine.AccountStatus) {
+		s.Status = "Validando sessão..."
+	})
+
+	if b.config.Credentials.Cookie == "" && b.config.Credentials.SessionToken == "" {
+		err := fmt.Errorf("credenciais vazias. Insira o Cookie de sessão em accounts.json")
+		b.addLog("Erro: Credenciais não configuradas no accounts.json")
+		return err
+	}
+
+	// 1. Adquire ou renova lease da sessão de jogo no servidor
+	lease, err := b.client.AcquireSessionLease(b.holderId, true)
+	if err != nil {
+		if strings.Contains(err.Error(), "401") {
+			b.addLog("Sessão expirada ou cookie inválido (HTTP 401). Atualize o cookie.")
+			return fmt.Errorf("sessão expirada: %w", err)
+		}
+		if strings.Contains(err.Error(), "account_restricted") {
+			b.circuitBreaker.Trip("Conta com restrição detectada")
+			return fmt.Errorf("conta restrita: %w", err)
+		}
+		log.Printf("[%s] Aviso ao reservar sessão: %v (tentando continuar)", b.ID(), err)
+	} else if lease != nil {
+		b.mu.Lock()
+		b.leaseExpiresAt, _ = time.Parse(time.RFC3339, lease.ExpiresAt)
+		b.mu.Unlock()
+	}
+
+	// 2. Carrega Bootstrap do jogo
+	boot, err := b.client.GetBootstrap()
+	if err != nil {
+		b.addLog(fmt.Sprintf("Falha ao carregar bootstrap: %v", err))
+		return err
+	}
+
+	b.mu.Lock()
+	b.lastBootstrap = boot
+	b.mu.Unlock()
+
+	// 3. Atualiza dados do personagem no dashboard
+	b.updateStatus(func(s *engine.AccountStatus) {
+		s.Status = "Conectado"
+		if boot.Account != nil {
+			s.Name = boot.Account.DisplayName
+			s.Gold = boot.Account.CommonCurrency
+			s.Extra["gems"] = boot.Account.PremiumCurrency
+			s.Extra["wheat"] = boot.Account.Wheat
+			s.Extra["wood"] = boot.Account.Wood
+			s.Extra["stone"] = boot.Account.Stone
+			s.Extra["essence"] = boot.Account.HeroicEssence
+			s.Extra["forgeFragments"] = boot.Account.ForgeFragments
+			if boot.Account.Vip != nil && boot.Account.Vip.Active {
+				s.Extra["vip"] = true
+			}
+		}
+
+		if boot.ActiveLevel != nil {
+			s.CurrentArea = fmt.Sprintf("Fase %d (%s)", boot.ActiveLevel.Number, boot.ActiveLevel.Name)
+			s.Level = boot.ActiveLevel.Number
+		}
+
+		if boot.Composition != nil && len(boot.Composition.Slots) > 0 {
+			primary := boot.Composition.Slots[0]
+			s.Vocation = primary.Code
+			s.HP = int(primary.HP)
+			s.MaxHP = int(primary.HP)
+			s.Mana = 100
+			s.MaxMana = 100
+		}
+	})
+
+	b.addLog(fmt.Sprintf("Fazenda conectada! Fase ativa: %s | Ouro: %d", b.status.CurrentArea, b.status.Gold))
+	return nil
+}
+
+// Run executa o loop contínuo de automação autônoma do bot
+func (b *Bot) Run(ctx context.Context) error {
+	ctx, cancel := context.WithCancel(ctx)
+	b.mu.Lock()
+	b.cancel = cancel
+	b.running = true
+	b.startTime = time.Now()
+	b.mu.Unlock()
+
+	defer func() {
+		b.mu.Lock()
+		b.running = false
+		b.mu.Unlock()
+		// Ao encerrar, libera o lease da sessão no servidor
+		_ = b.client.ReleaseSessionLease(b.holderId)
+	}()
+
+	// Inicia conexão WebSocket para manter conexão ativa de stream
+	b.initWebSocket()
+
+	// Goroutine 1: Heartbeat da sessão de jogo a cada 8 segundos
+	go b.sessionHeartbeatLoop(ctx)
+
+	// Goroutine 2: Loop de tarefas de manutenção (baús, missões, passe, talentos, heróis)
+	go b.maintenanceLoop(ctx)
+
+	// Loop Principal: Execução da campanha / farm
+	b.updateStatus(func(s *engine.AccountStatus) {
+		s.Status = "hunting"
+	})
+	b.addLog("Automação total iniciada. Loop de farm e campanha em execução.")
+
+	for {
+		select {
+		case <-ctx.Done():
+			b.addLog("Bot parado pelo supervisor.")
+			return ctx.Err()
+		default:
+			// Verifica disjuntor anti-ban
+			if !b.circuitBreaker.AllowAction() {
+				b.updateStatus(func(s *engine.AccountStatus) {
+					s.Status = "PAUSADO (Anti-Cheat / Cooldown)"
+				})
+				time.Sleep(15 * time.Second)
+				continue
+			}
+
+			if !b.config.Settings.AutoHunt {
+				b.updateStatus(func(s *engine.AccountStatus) {
+					s.Status = "idle (Farm pausado)"
+				})
+				time.Sleep(3 * time.Second)
+				continue
+			}
+
+			// Executa um ciclo completo de fase / run
+			err := b.performRunCycle(ctx)
+			if err != nil {
+				if isRejection, reason := engine.IsAntiCheatRejection(0, err.Error()); isRejection {
+					b.circuitBreaker.Trip(reason)
+				} else {
+					log.Printf("[%s] Erro no ciclo de farm: %v", b.ID(), err)
+					b.addLog(fmt.Sprintf("Aviso: %v. Aguardando 5s...", err))
+				}
+				time.Sleep(5 * time.Second)
+				continue
+			}
+
+			// Intervalo humano seguro entre fases
+			time.Sleep(time.Duration(1200+rand.Intn(1500)) * time.Millisecond)
+		}
+	}
+}
+
+// sessionHeartbeatLoop envia heartbeat contínuo para manter o lease da sessão ativo
+func (b *Bot) sessionHeartbeatLoop(ctx context.Context) {
+	ticker := time.NewTicker(8 * time.Second)
+	defer ticker.Stop()
+
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-ticker.C:
+			lease, err := b.client.HeartbeatSessionLease(b.holderId)
+			if err != nil {
+				if strings.Contains(err.Error(), "409") {
+					b.circuitBreaker.Trip("Conflito de sessão (outra aba ou dispositivo conectado)")
+				}
+			} else if lease != nil {
+				b.mu.Lock()
+				b.leaseExpiresAt, _ = time.Parse(time.RFC3339, lease.ExpiresAt)
+				b.mu.Unlock()
+			}
+		}
+	}
+}
+
+// maintenanceLoop executa tarefas periódicas de baús, missões, passe e talentos
+func (b *Bot) maintenanceLoop(ctx context.Context) {
+	// Aguarda 5 segundos após inicialização antes do primeiro ciclo
+	select {
+	case <-ctx.Done():
+		return
+	case <-time.After(5 * time.Second):
+	}
+
+	ticker := time.NewTicker(45 * time.Second)
+	defer ticker.Stop()
+
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-ticker.C:
+			if !b.circuitBreaker.AllowAction() {
+				continue
+			}
+			b.processMaintenance()
+		}
+	}
+}
+
+func (b *Bot) processMaintenance() {
+	// 1. Abre Baús pendentes ou gratuitos
+	if b.config.Settings.AutoChests {
+		b.processChests()
+	}
+
+	// 2. Resgata Missões diárias, semanais e conquistas
+	if b.config.Settings.AutoMissions {
+		b.processMissions()
+	}
+
+	// 3. Resgata Passe de Batalha
+	if b.config.Settings.AutoBattlePass {
+		b.processBattlePass()
+	}
+
+	// 4. Compra Talentos da Fazenda
+	if b.config.Settings.AutoTalents {
+		b.processTalents()
+	}
+
+	// 5. Hero Ascension (subir estrelas de duplicatas)
+	if b.config.Settings.AutoAscension {
+		b.processHeroAscension()
+	}
+
+	// 6. Desmonta itens comuns repetidos
+	if b.config.Settings.AutoDismantle {
+		b.processDismantle()
+	}
+
+	// 7. Funde cristais de ascensão
+	if b.config.Settings.AutoFuseCrystals {
+		b.processCrystalFusion()
+	}
+
+	// 8. Otimização e preenchimento de vagas da equipe
+	b.processTeamSlots()
+}
+
+// performRunCycle gerencia o início, execução rate-safe e conclusão de uma fase
+func (b *Bot) performRunCycle(ctx context.Context) error {
+	// 1. Atualiza bootstrap para obter fase ativa canônica
+	boot, err := b.client.GetBootstrap()
+	if err != nil {
+		return err
+	}
+	b.mu.Lock()
+	b.lastBootstrap = boot
+	b.mu.Unlock()
+
+	activeLvl := boot.ActiveLevel
+	if activeLvl == nil {
+		return fmt.Errorf("nenhuma fase ativa encontrada")
+	}
+
+	b.updateStatus(func(s *engine.AccountStatus) {
+		s.CurrentArea = fmt.Sprintf("Fase %d: %s", activeLvl.Number, activeLvl.Name)
+		s.Level = activeLvl.Number
+		s.Status = fmt.Sprintf("Jogando Fase %d", activeLvl.Number)
+	})
+
+	// 2. Inicia a run validada no servidor
+	clientRunId := newUUID()
+	runReq := RunStartRequest{
+		ClientRunId:        clientRunId,
+		HolderId:           b.holderId,
+		PersistenceVersion: 2,
+		ClientRevision:     1,
+		ClientRefreshToken: "",
+	}
+
+	runResp, err := b.client.StartRun(runReq)
+	if err != nil {
+		return fmt.Errorf("falha ao iniciar run: %w", err)
+	}
+
+	runId := runResp.ID
+	b.mu.Lock()
+	b.activeRunId = runId
+	b.mu.Unlock()
+
+	targetGoal := runResp.ObjectiveAmount
+	if targetGoal <= 0 {
+		targetGoal = 300
+	}
+
+	rate := runResp.OnlineRatePerSecond
+	if rate <= 0 {
+		rate = 4.0
+	}
+
+	// Calcula a duração total exigida pela taxa canônica do servidor
+	speedMult := b.config.Settings.SpeedMultiplier
+	if speedMult <= 0.2 || speedMult > 3.0 {
+		speedMult = 1.0
+	}
+
+	durationSec := float64(targetGoal) / (rate * speedMult)
+	// Garante um piso de segurança mínimo de 8 segundos por fase
+	if durationSec < 8.0 {
+		durationSec = 8.0
+	}
+
+	b.addLog(fmt.Sprintf("▶ Fase %d iniciada (Meta: %d %s | Taxa: %.2f/s | Est: %.0fs)",
+		activeLvl.Number, targetGoal, runResp.ObjectiveResource, rate, durationSec))
+
+	// Prepara estruturas para eventos de produção válidos
+	structureEvents := b.buildStructureEvents(boot, runResp)
+
+	// Loop de simulação da fase com heartbeats a cada 6 segundos
+	runStart := time.Now()
+	heartbeatInterval := 6 * time.Second
+	nextHeartbeat := time.Now().Add(heartbeatInterval)
+	goblinDefeated := false
+
+	for {
+		select {
+		case <-ctx.Done():
+			return ctx.Err()
+		default:
+			elapsed := time.Since(runStart)
+			progressRatio := math.Min(1.0, elapsed.Seconds()/durationSec)
+			currentProgress := int(float64(targetGoal) * progressRatio)
+
+			// Derrota Loot Goblin após 40% da run se presente
+			if runResp.LootGoblin && !goblinDefeated && progressRatio >= 0.4 {
+				_ = b.client.DefeatLootGoblin(runId)
+				goblinDefeated = true
+				b.addLog("👾 Loot Goblin derrotado na partida!")
+			}
+
+			// Envia heartbeat se o intervalo chegou
+			if time.Now().After(nextHeartbeat) && progressRatio < 1.0 {
+				hbEnv := b.buildEnvelope(b.holderId, "", currentProgress, elapsed, targetGoal, runResp, structureEvents)
+				_, hbErr := b.client.HeartbeatRun(runId, hbEnv)
+				if hbErr != nil {
+					log.Printf("[%s] Heartbeat run aviso: %v", b.ID(), hbErr)
+				}
+				nextHeartbeat = time.Now().Add(heartbeatInterval)
+			}
+
+			// Se a fase atingiu a duração necessária, conclui
+			if progressRatio >= 1.0 {
+				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, structureEvents)
+				completeResp, compErr := b.client.CompleteRun(runId, completeEnv)
+				if compErr != nil {
+					return fmt.Errorf("conclusão da run recusada: %w", compErr)
+				}
+
+				// Se o servidor avisar que a simulação chegou antes do relógio canônico
+				if completeResp != nil && !completeResp.Accepted {
+					waitMs := completeResp.RetryAfterMs
+					if waitMs < 1000 {
+						waitMs = 2000
+					}
+					b.addLog(fmt.Sprintf("⏳ Sincronizando com relógio do servidor (%d/%d)... aguardando %dms",
+						completeResp.AuthoritativeProgress, completeResp.ObjectiveAmount, waitMs))
+					time.Sleep(time.Duration(waitMs) * time.Millisecond)
+					continue
+				}
+
+				// Atualiza estatísticas do bot
+				b.recordRunSuccess(activeLvl.Number, completeResp)
+
+				// Coleta espólios acumulados da run
+				_ = b.client.ClaimRunLoot(newUUID())
+
+				// Se desbloqueou próxima fase e AutoAdvancePhase estiver ativo, avança
+				if b.config.Settings.AutoAdvancePhase && completeResp.NextLevelCode != "" {
+					_ = b.client.SetActiveLevel(completeResp.NextLevelCode)
+				}
+
+				return nil
+			}
+
+			time.Sleep(1000 * time.Millisecond)
+		}
+	}
+}
+
+// buildStructureEvents gera eventos de produção compatíveis com as estruturas do mapa
+func (b *Bot) buildStructureEvents(boot *BootstrapResponse, run *RunStartResponse) []StructureEvent {
+	var events []StructureEvent
+	if boot.ActiveLevel == nil {
+		return events
+	}
+
+	levelVersionId := boot.ActiveLevel.LevelVersionId
+	mapVersionId := boot.ActiveLevel.MapVersionId
+
+	var heroId string
+	if boot.Composition != nil && len(boot.Composition.Slots) > 0 {
+		heroId = boot.Composition.Slots[0].CharacterId
+	}
+
+	structIdx := 0
+	for _, ent := range boot.ActiveLevel.Entities {
+		if ent.Kind == "structure" || strings.HasPrefix(ent.Type, "wheat") || strings.HasPrefix(ent.Type, "wood") || strings.HasPrefix(ent.Type, "stone") {
+			structIdx++
+			resource := "wheat"
+			if strings.Contains(ent.Type, "wood") {
+				resource = "wood"
+			} else if strings.Contains(ent.Type, "stone") {
+				resource = "stone"
+			}
+
+			ev := StructureEvent{
+				EventId:          fmt.Sprintf("%s%012x", run.ID[:24], structIdx),
+				LevelVersionId:   levelVersionId,
+				MapVersionId:     mapVersionId,
+				Sequence:         structIdx,
+				StructureId:      ent.ID,
+				StructureCode:    ent.Type,
+				StructureVersion: 1,
+				HeroId:           heroId,
+				EventType:        "production",
+				OccurredAtMs:     int64(structIdx * 2500),
+				Resource:         resource,
+				Quantity:         5,
+			}
+			events = append(events, ev)
+			if len(events) >= 12 {
+				break
+			}
+		}
+	}
+	return events
+}
+
+// buildEnvelope cria o pacote de telemetria canônico do jogo
+func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time.Duration, goal int, run *RunStartResponse, events []StructureEvent) RunEnvelope {
+	ms := elapsed.Milliseconds()
+	resource := run.ObjectiveResource
+	if resource == "" {
+		resource = "wheat"
+	}
+
+	telemetry := &RunTelemetry{
+		SchemaVersion:      1,
+		CombatIntegrity:    []any{},
+		ExtensionSignature: false,
+		Metrics: TelemetryMetrics{
+			DamageDealt:    float64(progress * 15),
+			DamageReceived: float64(progress * 2),
+			Collection:     map[string]int{resource: progress},
+		},
+		Visibility: VisibilityStats{
+			ActiveMs: ms,
+		},
+		ClientRunId:        run.ClientRunId,
+		Outcome:            outcome,
+		DurationMs:         ms,
+		ResourcesCollected: progress,
+		CoinsEarned:        int64(progress / 2),
+		ArenaCleared:       true,
+		EnemiesDefeated:    5,
+		EnemyDefeats:       map[string]int{"mob_standard": 5},
+		HeroAliveKills:     map[string]int{},
+		StructureEvents:    events,
+	}
+
+	return RunEnvelope{
+		HolderId:        holderId,
+		Outcome:         outcome,
+		Progress:        progress,
+		Telemetry:       telemetry,
+		StructureEvents: events,
+	}
+}
+
+// recordRunSuccess processa os ganhos de EXP, Gold e recursos ao vencer a fase
+func (b *Bot) recordRunSuccess(levelNum int, resp *RunCompleteResponse) {
+	b.mu.Lock()
+	defer b.mu.Unlock()
+
+	b.status.Kills += 5
+	b.status.Gold += resp.GoldReward
+	if resp.GoldBalance > 0 {
+		b.status.Gold = int64(resp.GoldBalance)
+	}
+
+	// Atualiza saldos de recursos no status
+	for res, val := range resp.ResourceBalances {
+		b.status.Extra[res] = val
+	}
+
+	// Calcula EXP/h com base no tempo decorrido
+	totalSec := time.Since(b.startTime).Seconds()
+	if totalSec > 0 {
+		b.status.ExpPerHour = (float64(b.status.Kills) * 120.0 / totalSec) * 3600.0
+	}
+	b.status.DurationSec = int(totalSec)
+	b.status.UpdatedAt = time.Now().UnixMilli()
+
+	logMsg := fmt.Sprintf("✅ Fase %d Concluída! +%d Gold", levelNum, resp.GoldReward)
+	if resp.RewardQuantity > 0 {
+		logMsg += fmt.Sprintf(" | +%d %s", resp.RewardQuantity, resp.RewardResource)
+	}
+	b.addLogLocked(logMsg)
+}
+
+// ----------------- ROTINAS DE MANUTENÇÃO AUTOMÁTICA -----------------
+
+// processChests abre baús gratuitos, créditos acumulados e baús de herói quando houver saldo
+func (b *Bot) processChests() {
+	// 1. Verifica e abre baú inicial do onboarding se pendente
+	_ = b.client.OpenStarterChest()
+
+	// 2. Consulta lista de baús
+	chests, err := b.client.GetChests()
+	if err != nil {
+		return
+	}
+
+	for _, c := range chests {
+		// Abre se tiver créditos acumulados ou custo zero
+		if c.OpeningAvailable && (c.Credits > 0 || c.CostQuantity <= 0) {
+			resp, openErr := b.client.OpenChest(c.Code)
+			if openErr == nil && resp != nil {
+				b.addLog(fmt.Sprintf("🎁 Baú '%s' aberto com sucesso!", c.Name))
+				if len(resp.Characters) > 0 {
+					for _, hero := range resp.Characters {
+						b.addLog(fmt.Sprintf("🎉 NOVO HERÓI OBTIDO: %s (%s ★%d)!", hero.Name, hero.Rarity, hero.Stars))
+					}
+					b.processTeamSlots()
+				}
+			}
+			time.Sleep(1 * time.Second)
+			continue
+		}
+
+		// Se for Baú de Herói (hero-chest) e o bot tiver gemas suficientes
+		if c.Code == "hero-chest" && c.OpeningAvailable && c.CostQuantity > 0 {
+			b.mu.Lock()
+			currentGems := int64(0)
+			if g, ok := b.status.Extra["gems"].(int64); ok {
+				currentGems = g
+			} else if g, ok := b.status.Extra["gems"].(int); ok {
+				currentGems = int64(g)
+			} else if g, ok := b.status.Extra["gems"].(float64); ok {
+				currentGems = int64(g)
+			}
+			b.mu.Unlock()
+
+			if currentGems >= int64(c.CostQuantity) || c.GemBalance >= int64(c.CostQuantity) {
+				b.addLog(fmt.Sprintf("💎 Abrindo Baú de Herói (%d Gemas)...", c.CostQuantity))
+				resp, openErr := b.client.OpenChest(c.Code)
+				if openErr == nil && resp != nil {
+					for _, hero := range resp.Characters {
+						b.addLog(fmt.Sprintf("🎉 NOVO HERÓI RECRUTADO: %s (%s ★%d)!", hero.Name, hero.Rarity, hero.Stars))
+					}
+					b.processTeamSlots()
+				} else if openErr != nil {
+					log.Printf("[%s] Erro ao abrir Baú de Herói: %v", b.ID(), openErr)
+				}
+				time.Sleep(1 * time.Second)
+			}
+		}
+	}
+}
+
+// processMissions resgata diárias, semanais e conquistas
+func (b *Bot) processMissions() {
+	// 0. Missões de Iniciante (Beginner Missions)
+	beginner, err := b.client.GetBeginnerMissions()
+	if err == nil && beginner != nil && beginner.Enrolled {
+		for _, chain := range beginner.Chains {
+			if !chain.Unlocked {
+				continue
+			}
+			for _, m := range chain.Missions {
+				if m.Status == "completed" {
+					choice := ""
+					if m.Reward != nil && len(m.Reward.Choices) > 0 {
+						choice = m.Reward.Choices[0]
+					}
+					claimErr := b.client.ClaimBeginnerMission(m.Code, choice)
+					if claimErr == nil {
+						b.addLog(fmt.Sprintf("🌟 Missão de Iniciante resgatada: %s", m.Code))
+					}
+					time.Sleep(600 * time.Millisecond)
+				}
+			}
+		}
+	}
+
+	// 1. Diárias
+	daily, err := b.client.GetDailyMissions()
+	if err == nil && daily != nil {
+		for _, m := range daily.Missions {
+			if m.Completed && !m.Claimed {
+				_ = b.client.ClaimDailyMission(m.Code)
+				b.addLog(fmt.Sprintf("🎯 Missão diária resgatada: %s", m.Name))
+				time.Sleep(600 * time.Millisecond)
+			}
+		}
+	}
+
+	// 2. Semanais
+	weekly, err := b.client.GetWeeklyMissions()
+	if err == nil && weekly != nil {
+		for _, r := range weekly.Rewards {
+			if r.Available && !r.Claimed {
+				_ = b.client.ClaimWeeklyReward(r.ID)
+				b.addLog("🏆 Recompensa semanal resgatada!")
+				time.Sleep(600 * time.Millisecond)
+			}
+		}
+	}
+
+	// 3. Conquistas / Marcos
+	milestones, err := b.client.GetMilestones()
+	if err == nil && milestones != nil {
+		for _, ms := range milestones.Milestones {
+			if ms.Completed && !ms.Claimed {
+				_ = b.client.ClaimMilestone(ms.ID)
+				b.addLog(fmt.Sprintf("⭐ Marco resgatado: %s", ms.Name))
+				time.Sleep(600 * time.Millisecond)
+			}
+		}
+	}
+
+	// 4. Bestiário
+	bestiary, err := b.client.GetBestiary()
+	if err == nil {
+		for _, mob := range bestiary {
+			if mob.Claimable {
+				_ = b.client.ClaimBestiary(mob.Code)
+				b.addLog(fmt.Sprintf("📖 Recompensa do Bestiário: %s", mob.Name))
+				time.Sleep(600 * time.Millisecond)
+			}
+		}
+	}
+}
+
+// processBattlePass resgata missões e níveis liberados do Passe
+func (b *Bot) processBattlePass() {
+	bp, err := b.client.GetBattlePass()
+	if err != nil || bp == nil {
+		return
+	}
+
+	// Resgata missões concluídas do passe em lote
+	var missionClaims []any
+	for _, m := range append(append(bp.Daily, bp.Weekly...), bp.SeasonMissions...) {
+		if m.Completed && !m.Claimed {
+			missionClaims = append(missionClaims, map[string]string{"missionId": m.ID})
+		}
+	}
+	if len(missionClaims) > 0 {
+		_ = b.client.ClaimBattlePassMissions(missionClaims)
+		b.addLog(fmt.Sprintf("🎟️ %d missões do Passe de Batalha resgatadas!", len(missionClaims)))
+		time.Sleep(1 * time.Second)
+	}
+
+	// Resgata níveis disponíveis da trilha gratuita
+	var levelClaims []any
+	for _, cell := range bp.Track {
+		if cell.Available && !cell.Claimed && cell.Tier == "free" {
+			levelClaims = append(levelClaims, map[string]any{"level": cell.Level, "tier": cell.Tier})
+		}
+	}
+	if len(levelClaims) > 0 {
+		_ = b.client.ClaimBattlePassLevels(levelClaims)
+		b.addLog(fmt.Sprintf("🎖️ %d níveis do Passe de Batalha resgatados!", len(levelClaims)))
+	}
+}
+
+// processTalents avalia e compra melhorias acessíveis na Árvore de Talentos
+func (b *Bot) processTalents() {
+	talents := []string{
+		"wheat_harvest", "wood_extraction", "mining", "fortune",
+		"hero_power", "hero_vitality", "hero_agility", "hero_collection",
+		"team_slot_4", "team_slot_5", "hero_inventory", "item_inventory",
+	}
+
+	for _, code := range talents {
+		prev, err := b.client.GetTalentPreview(code)
+		if err != nil || prev == nil {
+			continue
+		}
+
+		if prev.Unlocked && !prev.AtMaxLevel && prev.Affordable {
+			res, buyErr := b.client.PurchaseTalent(code, newUUID())
+			if buyErr == nil && res != nil {
+				b.addLog(fmt.Sprintf("🌱 Talento evoluído: %s -> Nv. %d", prev.Name, res.Level))
+				time.Sleep(800 * time.Millisecond)
+			}
+		}
+	}
+}
+
+// processHeroAscension busca cópias idênticas e sobe as estrelas do herói
+func (b *Bot) processHeroAscension() {
+	chars, _, err := b.client.GetCharacters()
+	if err != nil || len(chars) < 2 {
+		return
+	}
+
+	// Agrupa heróis desbloqueados por (code + rarity + stars)
+	type groupKey struct {
+		code   string
+		rarity string
+		stars  int
+	}
+	groups := make(map[groupKey][]CharacterSummary)
+
+	for _, c := range chars {
+		if !c.Locked && c.Stars < 5 {
+			k := groupKey{code: c.Code, rarity: c.Rarity, stars: c.Stars}
+			groups[k] = append(groups[k], c)
+		}
+	}
+
+	for _, list := range groups {
+		if len(list) >= 2 {
+			mainHero := list[0]
+			dup := list[1]
+
+			// A duplicata não pode estar na equipe ativa
+			if dup.InTeam && !mainHero.InTeam {
+				mainHero, dup = dup, mainHero
+			}
+			if dup.InTeam {
+				continue
+			}
+
+			prev, prevErr := b.client.PreviewAscension(mainHero.ID, dup.ID, 0)
+			if prevErr == nil && prev != nil && prev.Affordable && !prev.DuplicateLocked && !prev.DuplicateInTeam {
+				res, confErr := b.client.ConfirmAscension(mainHero.ID, dup.ID, 0)
+				if confErr == nil && res != nil {
+					if res.Succeeded {
+						b.addLog(fmt.Sprintf("⭐ ASCENSÃO! %s atingiu %d★!", mainHero.Name, res.TargetStars))
+					} else {
+						b.addLog(fmt.Sprintf("Ascensão de %s falhou (duplicata preservada).", mainHero.Name))
+					}
+					time.Sleep(1 * time.Second)
+				}
+			}
+		}
+	}
+}
+
+// processTeamSlots gerencia e preenche as vagas livres da equipe com as melhores classes e heróis
+func (b *Bot) processTeamSlots() {
+	chars, maxSlots, err := b.client.GetCharacters()
+	if err != nil || len(chars) == 0 {
+		return
+	}
+
+	if maxSlots <= 0 {
+		maxSlots = 3
+	}
+
+	var activeTeam []string
+	var availableCandidates []CharacterSummary
+	inTeamMap := make(map[string]bool)
+
+	for _, c := range chars {
+		if c.InTeam || c.TeamSlot > 0 {
+			activeTeam = append(activeTeam, c.ID)
+			inTeamMap[c.ID] = true
+		}
+	}
+
+	// Se a equipe já estiver cheia, não precisa alterar
+	if len(activeTeam) >= maxSlots {
+		return
+	}
+
+	for _, c := range chars {
+		if !inTeamMap[c.ID] && !c.Locked {
+			availableCandidates = append(availableCandidates, c)
+		}
+	}
+
+	if len(availableCandidates) == 0 {
+		return
+	}
+
+	// Prioridade estratégica:
+	// 1. Ladino (farmer) -> +100% Gold por abate
+	// 2. Arqueira (runner) -> Alta velocidade de abate
+	// 3. Sacerdote (priest) -> Buff de dano cumulativo
+	// 4. Mago (wizard) -> Dano em área
+	// 5. Maior raridade e estrelas
+	sort.SliceStable(availableCandidates, func(i, j int) bool {
+		score := func(h CharacterSummary) int {
+			s := 0
+			switch h.Code {
+			case "farmer":
+				s += 2000
+			case "runner":
+				s += 1200
+			case "priest":
+				s += 1000
+			case "wizard":
+				s += 800
+			case "woodcutter":
+				s += 600
+			case "knight":
+				s += 500
+			default:
+				s += 100
+			}
+			s += h.Stars * 50
+			s += h.Level * 10
+			return s
+		}
+		return score(availableCandidates[i]) > score(availableCandidates[j])
+	})
+
+	needed := maxSlots - len(activeTeam)
+	var newHeroes []string
+	for i := 0; i < needed && i < len(availableCandidates); i++ {
+		candidate := availableCandidates[i]
+		activeTeam = append(activeTeam, candidate.ID)
+		newHeroes = append(newHeroes, fmt.Sprintf("%s (%s)", candidate.Name, candidate.Code))
+	}
+
+	if len(newHeroes) > 0 {
+		saveErr := b.client.SaveTeam(activeTeam)
+		if saveErr != nil {
+			log.Printf("[%s] Erro ao salvar equipe: %v", b.ID(), saveErr)
+			return
+		}
+		b.addLog(fmt.Sprintf("👥 Equipe atualizada com sucesso (%d/%d heróis)! Adicionados: %s",
+			len(activeTeam), maxSlots, strings.Join(newHeroes, ", ")))
+	}
+}
+
+// processDismantle desmonta equipamentos comuns não equipados e repetidos
+func (b *Bot) processDismantle() {
+	items, err := b.client.GetItems()
+	if err != nil {
+		return
+	}
+
+	var toDismantle []string
+	for _, it := range items {
+		if it.Rarity == "common" && it.EquippedHeroId == "" && !it.Locked && it.RefineLevel == 0 {
+			toDismantle = append(toDismantle, it.ID)
+			if len(toDismantle) >= 20 {
+				break
+			}
+		}
+	}
+
+	if len(toDismantle) > 0 {
+		_ = b.client.DismantleItems(toDismantle)
+		b.addLog(fmt.Sprintf("🔨 %d itens comuns desmontados em fragmentos de forja.", len(toDismantle)))
+	}
+}
+
+// processCrystalFusion funde cristais de ascensão em tiers superiores
+func (b *Bot) processCrystalFusion() {
+	for _, tier := range []string{"common", "rare", "epic"} {
+		_ = b.client.FuseCrystals(tier)
+	}
+}
+
+// initWebSocket estabelece conexão WebSocket passiva para keepalive e contagem de players
+func (b *Bot) initWebSocket() {
+	b.socket = b.client.CreateWebSocketClient(
+		func(data []byte) {
+			// Manipulador de mensagens WebSocket recebidas
+			var streamMsg struct {
+				Type   string `json:"type"`
+				Online int    `json:"online,omitempty"`
+			}
+			if err := json.Unmarshal(data, &streamMsg); err == nil {
+				if streamMsg.Type == "online" && streamMsg.Online > 0 {
+					b.mu.Lock()
+					b.status.Extra["onlinePlayers"] = streamMsg.Online
+					b.mu.Unlock()
+				}
+			}
+		},
+		func(err error) {
+			log.Printf("[%s] WebSocket desconectado: %v (auto-reconexão no client)", b.ID(), err)
+		},
+	)
+
+	// Conecta em background sem travar
+	go func() {
+		_ = b.socket.Connect()
+	}()
+}
+
+// ----------------- HELPERS & THREAD-SAFE STATUS -----------------
+
+func (b *Bot) updateStatus(fn func(s *engine.AccountStatus)) {
+	b.mu.Lock()
+	defer b.mu.Unlock()
+	fn(&b.status)
+	b.status.UpdatedAt = time.Now().UnixMilli()
+}
+
+func (b *Bot) addLog(msg string) {
+	b.mu.Lock()
+	defer b.mu.Unlock()
+	b.addLogLocked(msg)
+}
+
+func (b *Bot) addLogLocked(msg string) {
+	timestamp := time.Now().Format("15:04:05")
+	entry := fmt.Sprintf("[%s] %s", timestamp, msg)
+	b.status.Logs = append(b.status.Logs, entry)
+	if len(b.status.Logs) > 15 {
+		b.status.Logs = b.status.Logs[len(b.status.Logs)-15:]
+	}
+}
+
+func (b *Bot) GetStatus() engine.AccountStatus {
+	b.mu.RLock()
+	defer b.mu.RUnlock()
+	return b.status
+}
+
+func (b *Bot) ExecuteAction(action string, payload map[string]any) (any, error) {
+	b.mu.Lock()
+	defer b.mu.Unlock()
+
+	switch action {
+	case "autoHunt":
+		b.config.Settings.AutoHunt = !b.config.Settings.AutoHunt
+		statusMsg := "pausado"
+		if b.config.Settings.AutoHunt {
+			statusMsg = "ativado"
+		}
+		b.addLogLocked(fmt.Sprintf("Comando: Auto-Hunt %s.", statusMsg))
+		return map[string]any{"autoHunt": b.config.Settings.AutoHunt}, nil
+
+	case "claimAll":
+		go b.processMaintenance()
+		b.addLogLocked("Comando: Resgate de baús, missões e passe acionado.")
+		return "Resgates disparados com sucesso!", nil
+
+	case "advanceLevel":
+		if b.lastBootstrap != nil && b.lastBootstrap.Progress != nil {
+			highest := b.lastBootstrap.Progress.HighestUnlockedLevel
+			b.addLogLocked(fmt.Sprintf("Comando: Avançando para fase mais alta (%d).", highest))
+			for _, lvl := range b.lastBootstrap.Levels {
+				if lvl.Number == highest {
+					_ = b.client.SetActiveLevel(lvl.Code)
+					break
+				}
+			}
+		}
+		return "Avanço de fase requisitado.", nil
+
+	case "emergencyStop":
+		b.circuitBreaker.Trip("Parada de emergência acionada pelo usuário via Web Dashboard")
+		b.config.Settings.AutoHunt = false
+		b.status.Status = "PAUSADO (Manual)"
+		b.addLogLocked("🚨 PARADA DE EMERGÊNCIA ACIONADA. Todas as ações foram suspensas.")
+		return "Bot pausado com sucesso.", nil
+
+	default:
+		return nil, fmt.Errorf("ação desconhecida: %s", action)
+	}
+}
+
+func (b *Bot) SupplyTicket(ticket, wsURL string) error {
+	return nil
+}
+
+func (b *Bot) SupplyTurnstileToken(token string) error {
+	return nil
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "farm-1",
+    "name": "Fazenda Principal",
+    "enabled": true,
+    "credentials": {
+      "cookie": "insira_aqui_seu_cookie_completo_do_farmricochet_com",
+      "sessionToken": "",
+      "email": "seu_email@gmail.com"
+    },
+    "settings": {
+      "autoHunt": true,
+      "autoAdvancePhase": true,
+      "autoChests": true,
+      "autoMissions": true,
+      "autoBattlePass": true,
+      "autoTalents": true,
+      "autoAscension": true,
+      "autoTransmute": false,
+      "autoDismantle": true,
+      "autoFuseCrystals": true,
+      "autoLootGoblin": true,
+      "speedMultiplier": 1.0
+    }
+  }
+]

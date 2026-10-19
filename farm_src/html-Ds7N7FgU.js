@@ -1,0 +1,1 @@
+const e={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"};function o(n){return String(n??"").replace(/[&<>"']/g,t=>e[t])}function s(n,t){const r=String(n??"").trim();if(!r.startsWith("/")||r.startsWith("//"))return t;try{const i=new URL(r,window.location.origin);return i.origin===window.location.origin?o(`${i.pathname}${i.search}`):t}catch{return t}}export{o as e,s};
