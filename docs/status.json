@@ -33,19 +33,25 @@
         "[20:50:32] ✅ Fase 2 Concluída! +64 Gold",
         "[20:50:35] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[21:12:45] ✅ Fase 2 Concluída! +64 Gold",
-        "[21:12:47] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)"
+        "[21:12:47] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento."
       ],
       "mana": 100,
       "maxHp": 444,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 2",
-      "updatedAt": 1792444367460,
+      "status": "PAUSADO (Anti-Cheat)",
+      "updatedAt": 1792445409566,
       "vocation": "knight"
     }
   ],
-  "goroutines": 10,
-  "ramAllocMB": 1.7034759521484375,
+  "goroutines": 9,
+  "ramAllocMB": 1.5826873779296875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "10h59m18s"
+  "uptime": "11h1m19s"
 }
