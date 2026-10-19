@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 29304,
-      "expPerHour": 1621.6047211900932,
+      "durationSec": 30636,
+      "expPerHour": 1621.5977179672477,
       "extra": {
         "essence": 0,
         "forgeFragments": 0,
@@ -13,15 +13,12 @@
         "wheat": 10744,
         "wood": 473
       },
-      "gold": 1856,
+      "gold": 1920,
       "hp": 444,
       "id": "acc-1",
-      "kills": 110,
+      "kills": 115,
       "level": 2,
       "logs": [
-        "[16:01:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
-        "[16:24:06] ✅ Fase 2 Concluída! +64 Gold",
-        "[16:24:08] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[16:46:18] ✅ Fase 2 Concluída! +64 Gold",
         "[16:46:21] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[17:08:31] ✅ Fase 2 Concluída! +64 Gold",
@@ -34,19 +31,21 @@
         "[18:15:11] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[18:37:21] ✅ Fase 2 Concluída! +64 Gold",
         "[18:37:24] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
-        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento."
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "[18:59:33] ✅ Fase 2 Concluída! +64 Gold",
+        "[18:59:35] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)"
       ],
       "mana": 100,
       "maxHp": 444,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "PAUSADO (Anti-Cheat)",
-      "updatedAt": 1792435121400,
+      "status": "Jogando Fase 2",
+      "updatedAt": 1792436375491,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.5141448974609375,
+  "ramAllocMB": 1.4596099853515625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "8h29m18s"
+  "uptime": "8h31m19s"
 }
