@@ -35,7 +35,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3120651245117188,
+  "ramAllocMB": 1.709228515625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "2m30s"
+  "uptime": "4m33s"
 }
