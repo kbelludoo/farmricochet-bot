@@ -299,19 +299,33 @@
         "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
         "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
         "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
+        "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento.",
         "⚠️ Proteção anti-ban ativada: Conflito de sessão (outra aba ou dispositivo conectado). Cooldown de segurança em andamento."
       ],
       "mana": 100,
       "maxHp": 444,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "PAUSADO (Anti-Cheat / Cooldown)",
-      "updatedAt": 1792447817529,
+      "status": "PAUSADO (Anti-Cheat)",
+      "updatedAt": 1792447929424,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.2353134155273438,
+  "ramAllocMB": 1.730743408203125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "11h41m21s"
+  "uptime": "11h43m20s"
 }
