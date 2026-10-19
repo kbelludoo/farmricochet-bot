@@ -8,7 +8,7 @@
         "essence": 0,
         "forgeFragments": 0,
         "gems": 0,
-        "onlinePlayers": 620,
+        "onlinePlayers": 627,
         "stone": 0,
         "wheat": 10744,
         "wood": 473
@@ -43,7 +43,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5526885986328125,
+  "ramAllocMB": 1.9022598266601562,
   "ramSysMB": 13.349861145019531,
-  "uptime": "2h5m19s"
+  "uptime": "2h7m18s"
 }
