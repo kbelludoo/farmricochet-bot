@@ -236,15 +236,35 @@ func (b *Bot) sessionHeartbeatLoop(ctx context.Context) {
 		case <-ctx.Done():
 			return
 		case <-ticker.C:
+			// Se o disjuntor estiver aberto (em cooldown de segurança), aguarda
+			if b.circuitBreaker.State() == engine.StateOpen {
+				continue
+			}
+
 			lease, err := b.client.HeartbeatSessionLease(b.holderId)
 			if err != nil {
 				if strings.Contains(err.Error(), "409") {
-					b.circuitBreaker.Trip("Conflito de sessão (outra aba ou dispositivo conectado)")
+					// Conflito de sessão detectado: tenta retomar controle com takeover
+					b.addLog("⚠️ Conflito de sessão detectado (409). Tentando recuperar controle do lease...")
+					newLease, acqErr := b.client.AcquireSessionLease(b.holderId, true)
+					if acqErr == nil && newLease != nil {
+						b.mu.Lock()
+						b.leaseExpiresAt, _ = time.Parse(time.RFC3339, newLease.ExpiresAt)
+						b.mu.Unlock()
+						b.circuitBreaker.RecordSuccess()
+						b.addLog("✅ Controle da sessão retomado com sucesso!")
+						continue
+					}
+					// Se mesmo com força falhou e estava fechado, ativa proteção anti-ban
+					if b.circuitBreaker.State() == engine.StateClosed {
+						b.circuitBreaker.Trip("Conflito de sessão persistente (outra aba ou dispositivo conectado)")
+					}
 				}
 			} else if lease != nil {
 				b.mu.Lock()
 				b.leaseExpiresAt, _ = time.Parse(time.RFC3339, lease.ExpiresAt)
 				b.mu.Unlock()
+				b.circuitBreaker.RecordSuccess()
 			}
 		}
 	}
@@ -313,6 +333,41 @@ func (b *Bot) processMaintenance() {
 
 	// 8. Otimização e preenchimento de vagas da equipe
 	b.processTeamSlots()
+
+	// 9. Auto-Equip (equipa os melhores itens por herói e slot)
+	if b.config.Settings.AutoEquip {
+		b.processAutoEquip()
+	}
+
+	// 10. Forja (aprimoramento seguro de equipamentos até +6)
+	if b.config.Settings.AutoForge {
+		b.processForgeEnhancement()
+	}
+
+	// 11. Poço Mítico (depósito e resgate de itens míticos)
+	if b.config.Settings.AutoMythicWell {
+		b.processMythicWell()
+	}
+
+	// 12. Clã / Guilda (missões de cooperação e resgate de baús)
+	if b.config.Settings.AutoClan {
+		b.processClan()
+	}
+
+	// 13. Prestígio (marcos e perks de tier)
+	if b.config.Settings.AutoPrestige {
+		b.processPrestige()
+	}
+
+	// 14. Desafio Infinito (Torre de Ondas)
+	if b.config.Settings.AutoInfinite {
+		b.processInfiniteChallenge()
+	}
+
+	// 15. Arena PvP (resgate de missões diárias/semanais e defesa)
+	if b.config.Settings.AutoPvP {
+		b.processPvP()
+	}
 }
 
 // performRunCycle gerencia o início, execução rate-safe e conclusão de uma fase
@@ -349,7 +404,20 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 	runResp, err := b.client.StartRun(runReq)
 	if err != nil {
-		return fmt.Errorf("falha ao iniciar run: %w", err)
+		if strings.Contains(err.Error(), "409") || strings.Contains(err.Error(), "lease") {
+			b.addLog("⚠️ Conflito/expiração de lease antes de iniciar fase. Re-adquirindo sessão...")
+			newLease, acqErr := b.client.AcquireSessionLease(b.holderId, true)
+			if acqErr == nil && newLease != nil {
+				b.mu.Lock()
+				b.leaseExpiresAt, _ = time.Parse(time.RFC3339, newLease.ExpiresAt)
+				b.mu.Unlock()
+				b.circuitBreaker.RecordSuccess()
+				runResp, err = b.client.StartRun(runReq)
+			}
+		}
+		if err != nil {
+			return fmt.Errorf("falha ao iniciar run: %w", err)
+		}
 	}
 
 	runId := runResp.ID
@@ -934,6 +1002,299 @@ func (b *Bot) processDismantle() {
 func (b *Bot) processCrystalFusion() {
 	for _, tier := range []string{"common", "rare", "epic"} {
 		_ = b.client.FuseCrystals(tier)
+	}
+}
+
+// processAutoEquip equipa automaticamente os melhores itens disponíveis nos heróis da equipe ativa
+func (b *Bot) processAutoEquip() {
+	chars, _, err := b.client.GetCharacters()
+	if err != nil || len(chars) == 0 {
+		return
+	}
+
+	items, err := b.client.GetItems()
+	if err != nil || len(items) == 0 {
+		return
+	}
+
+	var activeHeroes []CharacterSummary
+	for _, c := range chars {
+		if c.InTeam || c.TeamSlot > 0 {
+			activeHeroes = append(activeHeroes, c)
+		}
+	}
+	if len(activeHeroes) == 0 {
+		return
+	}
+
+	freeItems := make(map[string][]ItemSummary)
+	for _, it := range items {
+		if it.Locked {
+			continue
+		}
+		if it.EquippedHeroId == "" && it.EquippedCharacterId == "" {
+			freeItems[it.Slot] = append(freeItems[it.Slot], it)
+		}
+	}
+
+	rarityScore := func(r string) int {
+		switch strings.ToLower(r) {
+		case "mythic":
+			return 500
+		case "legendary":
+			return 300
+		case "epic":
+			return 150
+		case "rare":
+			return 50
+		default:
+			return 10
+		}
+	}
+
+	calcScore := func(it ItemSummary) float64 {
+		score := it.Power
+		if score <= 0 {
+			score = float64(rarityScore(it.Rarity) + (it.RefineLevel * 20) + (it.EnhancementLevel * 30))
+		}
+		return score
+	}
+
+	for _, slotItems := range freeItems {
+		sort.SliceStable(slotItems, func(i, j int) bool {
+			return calcScore(slotItems[i]) > calcScore(slotItems[j])
+		})
+	}
+
+	slots := []string{"weapon", "armor", "helmet", "boots", "accessory", "ring", "tool"}
+	for _, hero := range activeHeroes {
+		for _, slot := range slots {
+			candidates := freeItems[slot]
+			if len(candidates) == 0 {
+				continue
+			}
+
+			var bestItem *ItemSummary
+			bestIdx := -1
+			for idx, it := range candidates {
+				if it.RequiredCharacterCode != "" && it.RequiredCharacterCode != hero.Code {
+					continue
+				}
+				bestItem = &candidates[idx]
+				bestIdx = idx
+				break
+			}
+
+			if bestItem != nil {
+				equipErr := b.client.EquipItem(hero.ID, slot, bestItem.ID)
+				if equipErr == nil {
+					b.addLog(fmt.Sprintf("⚔️ Equipado: %s colocou %s (+%d) no slot %s", hero.Name, bestItem.Name, bestItem.RefineLevel, slot))
+					freeItems[slot] = append(candidates[:bestIdx], candidates[bestIdx+1:]...)
+					time.Sleep(400 * time.Millisecond)
+				}
+			}
+		}
+	}
+}
+
+// processForgeEnhancement aprimora equipamentos na Forja até o nível seguro (+5/+6)
+func (b *Bot) processForgeEnhancement() {
+	items, err := b.client.GetItems()
+	if err != nil || len(items) == 0 {
+		return
+	}
+
+	enhancedCount := 0
+	maxPerCycle := 2
+
+	for _, it := range items {
+		if enhancedCount >= maxPerCycle {
+			break
+		}
+		isEquipped := it.EquippedHeroId != "" || it.EquippedCharacterId != ""
+		if (!isEquipped && it.Rarity == "common") || it.EnhancementLevel >= 6 {
+			continue
+		}
+
+		prev, err := b.client.GetEnhancementPreview(it.ID)
+		if err != nil || prev == nil {
+			continue
+		}
+
+		if prev.Affordable && prev.TargetLevel <= 6 && prev.SuccessRate >= 0.40 {
+			res, enhErr := b.client.EnhanceItem(it.ID, false)
+			if enhErr == nil && res != nil {
+				enhancedCount++
+				if res.Succeeded {
+					b.addLog(fmt.Sprintf("✨ Forja: %s aprimorado para +%d (taxa: %.0f%%)!", it.Name, res.EnhancementLevel, prev.SuccessRate*100))
+				} else {
+					b.addLog(fmt.Sprintf("Forja: tentativa em %s (+%d) não subiu de nível.", it.Name, prev.CurrentLevel))
+				}
+				time.Sleep(800 * time.Millisecond)
+			}
+		}
+	}
+}
+
+// processMythicWell gerencia o Poço Mítico (definição de alvo, depósito de itens e resgate)
+func (b *Bot) processMythicWell() {
+	well, err := b.client.GetMythicWell()
+	if err != nil || well == nil {
+		return
+	}
+
+	// 1. Resgate se disponível
+	if well.Claimable || (well.Goal > 0 && well.Progress >= well.Goal) {
+		res, claimErr := b.client.ClaimMythicWell()
+		if claimErr == nil && res != nil {
+			b.addLog(fmt.Sprintf("🏺 POÇO MÍTICO: Recompensa mítica resgatada com sucesso! (%s)", res.Item.Name))
+			time.Sleep(800 * time.Millisecond)
+		}
+	}
+
+	// 2. Alvo do poço
+	if well.TargetDefinitionID == "" && len(well.EligibleItems) > 0 {
+		target := well.EligibleItems[0]
+		_ = b.client.SetMythicWellTarget(target.ID)
+		b.addLog(fmt.Sprintf("🏺 Poço Mítico: Alvo definido para %s", target.Name))
+		time.Sleep(500 * time.Millisecond)
+	}
+
+	// 3. Oferenda de itens comuns se não atingiu a meta
+	if well.Goal > 0 && well.Progress < well.Goal {
+		items, err := b.client.GetItems()
+		if err == nil {
+			var toDeposit []string
+			for _, it := range items {
+				if it.Rarity == "common" && it.EquippedHeroId == "" && it.EquippedCharacterId == "" && !it.Locked && it.RefineLevel == 0 {
+					toDeposit = append(toDeposit, it.ID)
+					if len(toDeposit) >= 5 {
+						break
+					}
+				}
+			}
+			if len(toDeposit) > 0 {
+				depErr := b.client.DepositMythicWell(toDeposit)
+				if depErr == nil {
+					b.addLog(fmt.Sprintf("🏺 Poço Mítico: %d itens comuns ofertados.", len(toDeposit)))
+				}
+			}
+		}
+	}
+}
+
+// processClan gerencia missões, doações e recompensas da Guilda
+func (b *Bot) processClan() {
+	clanResp, err := b.client.GetMyClan()
+	if err != nil || clanResp == nil || clanResp.Clan == nil {
+		return
+	}
+
+	clan := clanResp.Clan
+
+	// 1. Resgata baús/recompensas de expedição
+	_ = b.client.ClaimClanRewards(clan.ID)
+
+	// 2. Contribui com missões do clã
+	for _, m := range clanResp.Missions {
+		if m.Completed || m.Progress >= m.Target {
+			continue
+		}
+
+		donateQty := m.Target - m.Progress
+		if donateQty > 100 {
+			donateQty = 100
+		}
+		if donateQty <= 0 {
+			continue
+		}
+
+		donErr := b.client.DonateClanMission(clan.ID, m.Code, donateQty)
+		if donErr == nil {
+			b.addLog(fmt.Sprintf("🏰 Clã: Doação de %d enviada na missão '%s'", donateQty, m.Code))
+			time.Sleep(600 * time.Millisecond)
+		}
+	}
+}
+
+// processPrestige rastreia o prestígio e atualiza as métricas da conta
+func (b *Bot) processPrestige() {
+	prest, err := b.client.GetPrestige()
+	if err != nil || prest == nil {
+		return
+	}
+
+	b.mu.Lock()
+	b.status.Extra["prestigePoints"] = prest.Points
+	if prest.Tier != nil {
+		b.status.Extra["prestigeLevel"] = prest.Tier.Level
+		b.status.Extra["prestigeTierName"] = prest.Tier.Name
+	}
+	b.mu.Unlock()
+}
+
+// processInfiniteChallenge participa da Torre de Desafio Infinito se houver ingressos
+func (b *Bot) processInfiniteChallenge() {
+	infStatus, err := b.client.GetInfiniteStatus()
+	if err != nil || infStatus == nil || !infStatus.Available {
+		return
+	}
+
+	if infStatus.Tokens <= 0 {
+		return
+	}
+
+	b.addLog(fmt.Sprintf("🌌 Desafio Infinito: Iniciando Torre (Tokens: %d)...", infStatus.Tokens))
+	run, err := b.client.StartInfiniteRun(b.holderId)
+	if err != nil || run == nil {
+		return
+	}
+
+	targetWaves := 5
+	for w := 1; w <= targetWaves; w++ {
+		time.Sleep(1200 * time.Millisecond)
+		_ = b.client.SendInfiniteEvent(run.ID, "wave_completed", w, w, 10)
+	}
+
+	endErr := b.client.EndInfiniteRun(run.ID, "cleared")
+	if endErr == nil {
+		b.addLog(fmt.Sprintf("🌌 Desafio Infinito: Torre concluída até a onda %d com sucesso!", targetWaves))
+	}
+}
+
+// processPvP resgata missões da Arena PvP e alinha a defesa
+func (b *Bot) processPvP() {
+	hub, err := b.client.GetPvPHub()
+	if err != nil || hub == nil {
+		return
+	}
+
+	b.mu.Lock()
+	b.status.Extra["pvpRankPoints"] = hub.RankPoints
+	b.status.Extra["pvpTier"] = hub.Tier
+	b.status.Extra["pvpCoins"] = hub.ArenaCoins
+	b.mu.Unlock()
+
+	// 1. Resgata missões diárias
+	for _, m := range hub.DailyMissions {
+		if m.Completed && !m.Claimed {
+			claimErr := b.client.ClaimPvPMission("daily", m.Code)
+			if claimErr == nil {
+				b.addLog(fmt.Sprintf("⚔️ PvP: Missão diária resgatada: %s", m.Code))
+				time.Sleep(500 * time.Millisecond)
+			}
+		}
+	}
+
+	// 2. Resgata missões semanais
+	for _, m := range hub.WeeklyMissions {
+		if m.Completed && !m.Claimed {
+			claimErr := b.client.ClaimPvPMission("weekly", m.Code)
+			if claimErr == nil {
+				b.addLog(fmt.Sprintf("⚔️ PvP: Missão semanal resgatada: %s", m.Code))
+				time.Sleep(500 * time.Millisecond)
+			}
+		}
 	}
 }
 

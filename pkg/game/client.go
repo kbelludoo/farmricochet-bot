@@ -443,6 +443,204 @@ func (c *FarmClient) FuseCrystals(tier string) error {
 	return c.httpCli.PostJSON("/api/v1/items/crystals/fuse", req, nil)
 }
 
+func (c *FarmClient) EquipItem(characterId, slot, itemId string) error {
+	endpoint := fmt.Sprintf("/api/v1/characters/%s/equipment/%s", url.PathEscape(characterId), url.PathEscape(slot))
+	req := map[string]string{"itemId": itemId}
+	return c.httpCli.PutJSON(endpoint, req, nil)
+}
+
+func (c *FarmClient) UnequipItem(characterId, slot string) error {
+	endpoint := fmt.Sprintf("/api/v1/characters/%s/equipment/%s", url.PathEscape(characterId), url.PathEscape(slot))
+	return c.httpCli.DeleteJSON(endpoint, nil, nil)
+}
+
+func (c *FarmClient) GetEnhancementPreview(itemId string) (*EnhancementPreviewResponse, error) {
+	endpoint := fmt.Sprintf("/api/v1/items/%s/enhancement-preview", url.PathEscape(itemId))
+	var resp EnhancementPreviewResponse
+	err := c.httpCli.GetJSON(endpoint, &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) EnhanceItem(itemId string, useForgeMiracle bool) (*EnhanceItemResponse, error) {
+	endpoint := fmt.Sprintf("/api/v1/items/%s/enhance", url.PathEscape(itemId))
+	req := map[string]any{
+		"clientRequestId": newUUID(),
+		"useForgeMiracle": useForgeMiracle,
+	}
+	var resp EnhanceItemResponse
+	err := c.httpCli.PostJSON(endpoint, req, &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) ReaffixItem(itemId string) (*ReaffixItemResponse, error) {
+	endpoint := fmt.Sprintf("/api/v1/items/%s/reaffix", url.PathEscape(itemId))
+	req := map[string]any{"clientRequestId": newUUID()}
+	var resp ReaffixItemResponse
+	err := c.httpCli.PostJSON(endpoint, req, &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) GetMythicWell() (*MythicWellResponse, error) {
+	var resp MythicWellResponse
+	err := c.httpCli.GetJSON("/api/v1/items/mythic-well", &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) SetMythicWellTarget(itemDefinitionId string) error {
+	req := map[string]any{
+		"clientRequestId":  newUUID(),
+		"itemDefinitionId": itemDefinitionId,
+	}
+	return c.httpCli.PutJSON("/api/v1/items/mythic-well/target", req, nil)
+}
+
+func (c *FarmClient) DepositMythicWell(itemIds []string) error {
+	req := map[string]any{
+		"clientRequestId": newUUID(),
+		"itemIds":         itemIds,
+	}
+	return c.httpCli.PostJSON("/api/v1/items/mythic-well/deposit", req, nil)
+}
+
+func (c *FarmClient) ClaimMythicWell() (*MythicWellClaimResponse, error) {
+	req := map[string]any{"clientRequestId": newUUID()}
+	var resp MythicWellClaimResponse
+	err := c.httpCli.PostJSON("/api/v1/items/mythic-well/claim", req, &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+// ----------------- CLÃ (GUILD) -----------------
+
+func (c *FarmClient) GetMyClan() (*ClanDetailResponse, error) {
+	var resp ClanDetailResponse
+	err := c.httpCli.GetJSON("/api/v1/clans/me", &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) DonateClanMission(clanId, missionCode string, quantity int) error {
+	endpoint := fmt.Sprintf("/api/v1/clans/%s/missions/%s/donate", url.PathEscape(clanId), url.PathEscape(missionCode))
+	req := map[string]any{
+		"clientRequestId": newUUID(),
+		"quantity":        quantity,
+	}
+	return c.httpCli.PostJSON(endpoint, req, nil)
+}
+
+func (c *FarmClient) AllocateClanArsenal(clanId, itemId string) error {
+	endpoint := fmt.Sprintf("/api/v1/clans/%s/arsenal/allocate", url.PathEscape(clanId))
+	req := map[string]any{
+		"clientRequestId": newUUID(),
+		"itemId":          itemId,
+	}
+	return c.httpCli.PostJSON(endpoint, req, nil)
+}
+
+func (c *FarmClient) ClaimClanRewards(clanId string) error {
+	endpoint := fmt.Sprintf("/api/v1/clans/%s/rewards/claim", url.PathEscape(clanId))
+	req := map[string]any{"clientRequestId": newUUID()}
+	return c.httpCli.PostJSON(endpoint, req, nil)
+}
+
+// ----------------- PRESTÍGIO -----------------
+
+func (c *FarmClient) GetPrestige() (*PrestigeResponse, error) {
+	var resp PrestigeResponse
+	err := c.httpCli.GetJSON("/api/v1/prestige/me", &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+// ----------------- DESAFIO INFINITO (TORRE) -----------------
+
+func (c *FarmClient) GetInfiniteStatus() (*InfiniteStatusResponse, error) {
+	var resp InfiniteStatusResponse
+	err := c.httpCli.GetJSON("/api/v1/infinite", &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) StartInfiniteRun(holderId string) (*InfiniteRunResponse, error) {
+	req := map[string]string{
+		"clientRunId": newUUID(),
+		"holderId":    holderId,
+	}
+	var resp InfiniteRunResponse
+	err := c.httpCli.PostJSON("/api/v1/infinite/runs", req, &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) SendInfiniteEvent(runId, eventType string, wave, sequence, qty int) error {
+	endpoint := fmt.Sprintf("/api/v1/infinite/runs/%s/events", url.PathEscape(runId))
+	req := map[string]any{
+		"eventId":          newUUID(),
+		"type":             eventType,
+		"wave":             wave,
+		"sequence":         sequence,
+		"quantity":         qty,
+		"activeDurationMS": 0,
+		"payload": map[string]string{
+			"source": "phaser-combat",
+		},
+	}
+	return c.httpCli.PostJSON(endpoint, req, nil)
+}
+
+func (c *FarmClient) EndInfiniteRun(runId, reason string) error {
+	endpoint := fmt.Sprintf("/api/v1/infinite/runs/%s/end", url.PathEscape(runId))
+	req := map[string]string{"reason": reason}
+	return c.httpCli.PostJSON(endpoint, req, nil)
+}
+
+// ----------------- ARENA PVP -----------------
+
+func (c *FarmClient) GetPvPHub() (*PvPHubResponse, error) {
+	var resp PvPHubResponse
+	err := c.httpCli.GetJSON("/api/v1/pvp/hub", &resp)
+	if err != nil {
+		return nil, err
+	}
+	return &resp, nil
+}
+
+func (c *FarmClient) ClaimPvPMission(cadence, code string) error {
+	req := map[string]string{
+		"cadence":   cadence,
+		"code":      code,
+		"requestId": newUUID(),
+	}
+	return c.httpCli.PostJSON("/api/v1/pvp/missions/claim", req, nil)
+}
+
+func (c *FarmClient) SavePvPFormation(characterIds []string) error {
+	req := map[string]any{"characterIds": characterIds}
+	return c.httpCli.PostJSON("/api/v1/pvp/formation", req, nil)
+}
+
 // ----------------- WEBSOCKET STREAM -----------------
 
 func (c *FarmClient) CreateWebSocketClient(onMessage network.MessageHandler, onDisconnect network.DisconnectHandler) *network.SocketClient {

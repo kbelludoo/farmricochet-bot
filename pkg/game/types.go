@@ -30,6 +30,13 @@ type FarmBotSettings struct {
 	AutoDismantle    bool   `json:"autoDismantle"`    // Desmonta equipamentos comuns repetidos para forja
 	AutoFuseCrystals bool   `json:"autoFuseCrystals"` // Funde cristais de ascensão inferiores
 	AutoLootGoblin   bool   `json:"autoLootGoblin"`   // Derrota goblins de espólio quando surgem na partida
+	AutoEquip        bool   `json:"autoEquip"`        // Equipa automaticamente os melhores itens nos heróis ativos
+	AutoForge        bool   `json:"autoForge"`        // Aprimora itens equipados na Forja (+1 a +6)
+	AutoMythicWell   bool   `json:"autoMythicWell"`   // Alimenta e resgata itens do Poço Mítico
+	AutoClan         bool   `json:"autoClan"`         // Doações de missões e resgate de baús de Clã
+	AutoPrestige     bool   `json:"autoPrestige"`     // Rastreamento e coleta de marcos de Prestígio
+	AutoInfinite     bool   `json:"autoInfinite"`     // Execução da Torre de Desafio Infinito
+	AutoPvP          bool   `json:"autoPvP"`          // Resgate de missões diárias/semanais da Arena PvP
 	SpeedMultiplier  float64 `json:"speedMultiplier"` // Fator de ajuste de tempo da fase (padrão: 1.0)
 }
 
@@ -47,6 +54,13 @@ func DefaultSettings() FarmBotSettings {
 		AutoDismantle:    true,
 		AutoFuseCrystals: true,
 		AutoLootGoblin:   true,
+		AutoEquip:        true,
+		AutoForge:        true,
+		AutoMythicWell:   true,
+		AutoClan:         true,
+		AutoPrestige:     true,
+		AutoInfinite:     true,
+		AutoPvP:          true,
 		SpeedMultiplier:  1.0,
 	}
 }
@@ -606,15 +620,146 @@ type ItemsResponse struct {
 }
 
 type ItemSummary struct {
-	ID             string            `json:"id"`
-	Code           string            `json:"code"`
-	Name           string            `json:"name"`
-	Rarity         string            `json:"rarity"`
-	Slot           string            `json:"slot"`
-	EquippedHeroId string            `json:"equippedHeroId,omitempty"`
-	RefineLevel    int               `json:"refineLevel"`
-	Stats          map[string]float64`json:"stats"`
-	Locked         bool              `json:"locked"`
+	ID                    string             `json:"id"`
+	Code                  string             `json:"code"`
+	Name                  string             `json:"name"`
+	Rarity                string             `json:"rarity"`
+	Slot                  string             `json:"slot"`
+	EquippedHeroId        string             `json:"equippedHeroId,omitempty"`
+	EquippedCharacterId   string             `json:"equippedCharacterId,omitempty"`
+	RequiredCharacterCode string             `json:"requiredCharacterCode,omitempty"`
+	RefineLevel           int                `json:"refineLevel"`
+	EnhancementLevel      int                `json:"enhancementLevel,omitempty"`
+	Power                 float64            `json:"power,omitempty"`
+	Stats                 map[string]float64 `json:"stats"`
+	Locked                bool               `json:"locked"`
+}
+
+// ----------------- FORJA, POÇO MÍTICO, CLÃ, PRESTÍGIO, INFINITO & PVP -----------------
+
+type EnhancementPreviewResponse struct {
+	ItemID           string         `json:"itemId"`
+	CurrentLevel     int            `json:"currentLevel"`
+	TargetLevel      int            `json:"targetLevel"`
+	SuccessRate      float64        `json:"successRate"`
+	CostFragments    int            `json:"costFragments"`
+	CostGold         int64          `json:"costGold"`
+	Affordable       bool           `json:"affordable"`
+	CurrentStats     map[string]any `json:"currentStats"`
+	TargetStats      map[string]any `json:"targetStats"`
+}
+
+type EnhanceItemResponse struct {
+	Succeeded        bool `json:"succeeded"`
+	EnhancementLevel int  `json:"enhancementLevel"`
+}
+
+type ReaffixItemResponse struct {
+	Succeeded bool           `json:"succeeded"`
+	Stats     map[string]any `json:"stats"`
+}
+
+type MythicWellResponse struct {
+	Progress           int           `json:"progress"`
+	Goal               int           `json:"goal"`
+	Claimable          bool          `json:"claimable"`
+	TargetDefinitionID string        `json:"targetDefinitionId"`
+	EligibleItems      []ItemSummary `json:"eligibleItems"`
+}
+
+type MythicWellClaimResponse struct {
+	Succeeded bool        `json:"succeeded"`
+	Item      ItemSummary `json:"item"`
+}
+
+type ClanDetailResponse struct {
+	Clan     *ClanInfo         `json:"clan"`
+	Missions []ClanMission     `json:"missions"`
+	Members  []ClanMember      `json:"members"`
+	Arsenal  []ClanArsenalItem `json:"items"`
+}
+
+type ClanInfo struct {
+	ID       string `json:"id"`
+	Name     string `json:"name"`
+	Tag      string `json:"tag"`
+	Power    int64  `json:"power"`
+	Capacity int    `json:"capacity"`
+	Role     string `json:"role"`
+}
+
+type ClanMission struct {
+	Code      string `json:"code"`
+	Progress  int    `json:"progress"`
+	Target    int    `json:"target"`
+	Completed bool   `json:"completed"`
+	Reward    int    `json:"reward"`
+}
+
+type ClanMember struct {
+	AccountID string `json:"accountId"`
+	Name      string `json:"name"`
+	Role      string `json:"role"`
+}
+
+type ClanArsenalItem struct {
+	AccountID string      `json:"accountId"`
+	Item      ItemSummary `json:"item"`
+}
+
+type PrestigeResponse struct {
+	Points    int               `json:"points"`
+	MaxPoints int               `json:"maxPoints"`
+	Tier      *PrestigeTier     `json:"tier"`
+	NextTier  *PrestigeTier     `json:"nextTier"`
+	Missions  []PrestigeMission `json:"missions"`
+}
+
+type PrestigeTier struct {
+	Code      string `json:"code"`
+	Name      string `json:"name"`
+	Level     int    `json:"level"`
+	MinPoints int    `json:"minPoints"`
+}
+
+type PrestigeMission struct {
+	Code      string `json:"code"`
+	Type      string `json:"type"`
+	Progress  int    `json:"progress"`
+	Target    int    `json:"target"`
+	Points    int    `json:"points"`
+	Completed bool   `json:"completed"`
+}
+
+type InfiniteStatusResponse struct {
+	Available   bool   `json:"available"`
+	HighestWave int    `json:"highestWave"`
+	CurrentWave int    `json:"currentWave"`
+	Tokens      int    `json:"tokens"`
+	NextResetAt string `json:"nextResetAt"`
+}
+
+type InfiniteRunResponse struct {
+	ID                string `json:"id"`
+	CurrentWave       int    `json:"currentWave"`
+	NextEventSequence int    `json:"nextEventSequence"`
+}
+
+type PvPHubResponse struct {
+	RankPoints     int          `json:"rankPoints"`
+	Tier           string       `json:"tier"`
+	ArenaCoins     int          `json:"arenaCoins"`
+	DailyMissions  []PvPMission `json:"daily"`
+	WeeklyMissions []PvPMission `json:"weekly"`
+}
+
+type PvPMission struct {
+	Code      string `json:"code"`
+	Progress  int    `json:"progress"`
+	Target    int    `json:"target"`
+	Completed bool   `json:"completed"`
+	Claimed   bool   `json:"claimed"`
+	Reward    int    `json:"reward"`
 }
 
 type GenericRequest struct {
