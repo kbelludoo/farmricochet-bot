@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.7291336059570312,
+  "goroutines": 10,
+  "ramAllocMB": 1.4508056640625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "7h17m22s"
+  "uptime": "7h19m19s"
 }
