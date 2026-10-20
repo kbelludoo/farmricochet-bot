@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 1330,
-      "expPerHour": 1623.9229347011133,
+      "durationSec": 2660,
+      "expPerHour": 1623.5997348845817,
       "extra": {
         "essence": 0,
         "forgeFragments": 0,
@@ -13,10 +13,10 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 2432,
+      "gold": 2496,
       "hp": 448,
       "id": "acc-1",
-      "kills": 5,
+      "kills": 10,
       "level": 2,
       "logs": [
         "[23:35:46] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 2304",
@@ -27,19 +27,21 @@
         "[23:57:56] ✅ Fase 2 Concluída! +64 Gold",
         "[23:57:58] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)",
         "[23:58:21] 🎁 Baú 'Baú de Itens' aberto com sucesso!",
-        "[23:58:23] 🔨 1 itens comuns desmontados em fragmentos de forja."
+        "[23:58:23] 🔨 1 itens comuns desmontados em fragmentos de forja.",
+        "[00:20:07] ✅ Fase 2 Concluída! +64 Gold",
+        "[00:20:09] ▶ Fase 2 iniciada (Meta: 1830 wheat | Taxa: 1.10/s | Est: 1329s)"
       ],
       "mana": 100,
       "maxHp": 448,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792454278038,
+      "updatedAt": 1792455609286,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.6490707397460938,
+  "ramAllocMB": 1.3209915161132812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "42m28s"
+  "uptime": "44m30s"
 }
