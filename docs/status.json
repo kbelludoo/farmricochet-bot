@@ -8,7 +8,7 @@
         "essence": 16,
         "forgeFragments": 0,
         "gems": 36,
-        "onlinePlayers": 603,
+        "onlinePlayers": 605,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
@@ -23,7 +23,8 @@
         "[12:36:51] Automação total iniciada. Loop de farm e campanha em execução.",
         "[12:36:52] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
         "[12:55:58] ✅ Fase 2 Concluída! +64 Gold",
-        "[12:56:00] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)"
+        "[12:56:00] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
+        "[12:56:26] 🎁 Baú 'Baú de Armas' aberto com sucesso!"
       ],
       "mana": 100,
       "maxHp": 457,
@@ -35,7 +36,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 2.0516510009765625,
+  "ramAllocMB": 1.8959732055664062,
   "ramSysMB": 13.099861145019531,
-  "uptime": "19m24s"
+  "uptime": "21m25s"
 }
