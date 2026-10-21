@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 29595,
-      "expPerHour": 1751.6448963472196,
+      "durationSec": 30829,
+      "expPerHour": 1751.5761178536472,
       "extra": {
         "essence": 12,
         "forgeFragments": 0,
@@ -13,14 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 8512,
+      "gold": 8576,
       "hp": 453,
       "id": "acc-1",
-      "kills": 120,
+      "kills": 125,
       "level": 2,
       "logs": [
-        "[07:58:08] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[08:18:39] ✅ Fase 2 Concluída! +64 Gold",
         "[08:18:41] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
         "[08:39:12] ✅ Fase 2 Concluída! +64 Gold",
         "[08:39:14] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
@@ -33,19 +31,21 @@
         "[10:01:26] ✅ Fase 2 Concluída! +64 Gold",
         "[10:01:28] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
         "[10:21:59] ✅ Fase 2 Concluída! +64 Gold",
-        "[10:22:02] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)"
+        "[10:22:02] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
+        "[10:42:33] ✅ Fase 2 Concluída! +64 Gold",
+        "[10:42:35] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)"
       ],
       "mana": 100,
       "maxHp": 453,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792578121992,
+      "updatedAt": 1792579355425,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.4640426635742188,
+  "ramAllocMB": 1.4035491943359375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "8h33m32s"
+  "uptime": "8h35m30s"
 }
