@@ -447,8 +447,8 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 		durationSec = 8.0
 	}
 
-	b.addLog(fmt.Sprintf("▶ Fase %d iniciada (Meta: %d %s | Taxa: %.2f/s | Est: %.0fs)",
-		activeLvl.Number, targetGoal, runResp.ObjectiveResource, rate, durationSec))
+	b.addLog(fmt.Sprintf("▶ Fase %d iniciada (Meta: %d %s | Base: %.2f/s -> Real: %.2f/s [%.2fx] | Est: %.0fs)",
+		activeLvl.Number, targetGoal, runResp.ObjectiveResource, rate, rate*speedMult, speedMult, durationSec))
 
 	// Prepara estruturas para eventos de produção válidos
 	structureEvents := b.buildStructureEvents(boot, runResp)
