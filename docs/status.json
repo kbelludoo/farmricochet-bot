@@ -8,7 +8,7 @@
         "essence": 12,
         "forgeFragments": 0,
         "gems": 30,
-        "onlinePlayers": 538,
+        "onlinePlayers": 533,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
@@ -19,7 +19,6 @@
       "kills": 50,
       "level": 2,
       "logs": [
-        "[03:10:22] ✅ Fase 2 Concluída! +64 Gold",
         "[03:10:24] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
         "[03:30:55] ✅ Fase 2 Concluída! +64 Gold",
         "[03:30:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
@@ -33,19 +32,20 @@
         "[04:53:10] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
         "[05:13:41] ✅ Fase 2 Concluída! +64 Gold",
         "[05:13:43] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[05:34:14] ✅ Fase 2 Concluída! +64 Gold"
+        "[05:34:14] ✅ Fase 2 Concluída! +64 Gold",
+        "[05:34:16] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)"
       ],
       "mana": 100,
       "maxHp": 453,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792560854863,
+      "updatedAt": 1792560856305,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.4961013793945312,
+  "ramAllocMB": 1.6687469482421875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "3h25m31s"
+  "uptime": "3h27m30s"
 }
