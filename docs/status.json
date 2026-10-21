@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 2295,
-      "expPerHour": 1882.1917115715726,
+      "durationSec": 3444,
+      "expPerHour": 1881.2905037502558,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,10 +13,10 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 9088,
+      "gold": 9152,
       "hp": 457,
       "id": "acc-1",
-      "kills": 10,
+      "kills": 15,
       "level": 2,
       "logs": [
         "[12:36:51] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 8896",
@@ -26,19 +26,21 @@
         "[12:56:00] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
         "[12:56:26] 🎁 Baú 'Baú de Armas' aberto com sucesso!",
         "[13:15:07] ✅ Fase 2 Concluída! +64 Gold",
-        "[13:15:09] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)"
+        "[13:15:09] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
+        "[13:34:16] ✅ Fase 2 Concluída! +64 Gold",
+        "[13:34:17] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792588509732,
+      "updatedAt": 1792589657713,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9607925415039062,
+  "ramAllocMB": 1.9552536010742188,
   "ramSysMB": 13.099861145019531,
-  "uptime": "55m27s"
+  "uptime": "57m28s"
 }
