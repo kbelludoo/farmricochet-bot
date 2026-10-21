@@ -2,50 +2,38 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 36994,
-      "expPerHour": 1751.595592025577,
+      "durationSec": 0,
+      "expPerHour": 0,
       "extra": {
-        "essence": 12,
+        "essence": 16,
         "forgeFragments": 0,
-        "gems": 30,
-        "onlinePlayers": 530,
+        "gems": 36,
+        "onlinePlayers": 592,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
       },
       "gold": 8896,
-      "hp": 453,
+      "hp": 457,
       "id": "acc-1",
-      "kills": 150,
+      "kills": 0,
       "level": 2,
       "logs": [
-        "[10:01:28] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[10:21:59] ✅ Fase 2 Concluída! +64 Gold",
-        "[10:22:02] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[10:42:33] ✅ Fase 2 Concluída! +64 Gold",
-        "[10:42:35] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[11:03:06] ✅ Fase 2 Concluída! +64 Gold",
-        "[11:03:08] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[11:23:39] ✅ Fase 2 Concluída! +64 Gold",
-        "[11:23:41] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[11:44:12] ✅ Fase 2 Concluída! +64 Gold",
-        "[11:44:14] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[12:04:45] ✅ Fase 2 Concluída! +64 Gold",
-        "[12:04:48] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[12:25:19] ✅ Fase 2 Concluída! +64 Gold",
-        "[12:25:21] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)"
+        "[12:36:51] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 8896",
+        "[12:36:51] Automação total iniciada. Loop de farm e campanha em execução.",
+        "[12:36:52] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)"
       ],
       "mana": 100,
-      "maxHp": 453,
+      "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792585521371,
+      "updatedAt": 1792586211921,
       "vocation": "knight"
     }
   ],
-  "goroutines": 10,
-  "ramAllocMB": 1.924774169921875,
+  "goroutines": 11,
+  "ramAllocMB": 1.80926513671875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "10h27m32s"
+  "uptime": "1m24s"
 }
