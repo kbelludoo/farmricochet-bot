@@ -2,25 +2,23 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 12330,
-      "expPerHour": 1751.746182265767,
+      "durationSec": 13563,
+      "expPerHour": 1751.767746310808,
       "extra": {
         "essence": 12,
         "forgeFragments": 0,
         "gems": 30,
-        "onlinePlayers": 536,
+        "onlinePlayers": 538,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 7616,
+      "gold": 7680,
       "hp": 453,
       "id": "acc-1",
-      "kills": 50,
+      "kills": 55,
       "level": 2,
       "logs": [
-        "[03:10:24] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
-        "[03:30:55] ✅ Fase 2 Concluída! +64 Gold",
         "[03:30:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
         "[03:51:29] ✅ Fase 2 Concluída! +64 Gold",
         "[03:51:30] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
@@ -33,19 +31,21 @@
         "[05:13:41] ✅ Fase 2 Concluída! +64 Gold",
         "[05:13:43] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
         "[05:34:14] ✅ Fase 2 Concluída! +64 Gold",
-        "[05:34:16] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)"
+        "[05:34:16] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)",
+        "[05:54:47] ✅ Fase 2 Concluída! +64 Gold",
+        "[05:54:50] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.49/s [1.35x] | Est: 1231s)"
       ],
       "mana": 100,
       "maxHp": 453,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792560856305,
+      "updatedAt": 1792562090033,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.4372482299804688,
+  "ramAllocMB": 1.38348388671875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "3h45m31s"
+  "uptime": "3h47m31s"
 }
