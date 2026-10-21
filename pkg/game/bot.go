@@ -1,4 +1,4 @@
-package game
+﻿package game
 
 import (
 	"context"
@@ -576,9 +576,60 @@ func (b *Bot) buildStructureEvents(boot *BootstrapResponse, run *RunStartRespons
 // buildEnvelope cria o pacote de telemetria canônico do jogo
 func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time.Duration, goal int, run *RunStartResponse, events []StructureEvent) RunEnvelope {
 	ms := elapsed.Milliseconds()
-	resource := run.ObjectiveResource
-	if resource == "" {
-		resource = "wheat"
+
+	// Mapeia recursos e monstros reais da fase ativa
+	collection := make(map[string]int)
+	enemyDefeats := make(map[string]int)
+	enemiesDefeated := 0
+
+	b.mu.RLock()
+	boot := b.lastBootstrap
+	b.mu.RUnlock()
+
+	if boot != nil && boot.ActiveLevel != nil {
+		// 1. Mapeia e contabiliza os monstros reais presentes no mapa da fase
+		for _, ent := range boot.ActiveLevel.Entities {
+			if ent.Kind == "mob" || ent.Kind == "enemy" {
+				mobType := ent.Type
+				if mobType == "" {
+					mobType = "mob_standard"
+				}
+				enemyDefeats[mobType]++
+				enemiesDefeated++
+			}
+		}
+
+		// 2. Distribui a coleta proporcionalmente entre os recursos exigidos (ex: trigo + madeira)
+		obj := boot.ActiveLevel.Objective
+		if obj != nil && len(obj.Resources) > 0 {
+			totalReq := 0
+			for _, reqQty := range obj.Resources {
+				totalReq += reqQty
+			}
+			if totalReq <= 0 {
+				totalReq = goal
+			}
+			for resName, reqQty := range obj.Resources {
+				if progress >= goal {
+					collection[resName] = reqQty
+				} else {
+					collection[resName] = int(float64(progress) * (float64(reqQty) / float64(totalReq)))
+				}
+			}
+		}
+	}
+
+	if len(collection) == 0 {
+		res := run.ObjectiveResource
+		if res == "" {
+			res = "wheat"
+		}
+		collection[res] = progress
+	}
+
+	if enemiesDefeated == 0 {
+		enemyDefeats["mob_standard"] = 2
+		enemiesDefeated = 2
 	}
 
 	telemetry := &RunTelemetry{
@@ -588,7 +639,7 @@ func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time
 		Metrics: TelemetryMetrics{
 			DamageDealt:    float64(progress * 15),
 			DamageReceived: float64(progress * 2),
-			Collection:     map[string]int{resource: progress},
+			Collection:     collection,
 		},
 		Visibility: VisibilityStats{
 			ActiveMs: ms,
@@ -599,8 +650,8 @@ func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time
 		ResourcesCollected: progress,
 		CoinsEarned:        int64(progress / 2),
 		ArenaCleared:       true,
-		EnemiesDefeated:    5,
-		EnemyDefeats:       map[string]int{"mob_standard": 5},
+		EnemiesDefeated:    enemiesDefeated,
+		EnemyDefeats:       enemyDefeats,
 		HeroAliveKills:     map[string]int{},
 		StructureEvents:    events,
 	}
