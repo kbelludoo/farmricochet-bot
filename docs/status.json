@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 6887,
-      "expPerHour": 1881.5454726965602,
+      "durationSec": 8036,
+      "expPerHour": 1881.4545920070627,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,14 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 9344,
+      "gold": 9408,
       "hp": 457,
       "id": "acc-1",
-      "kills": 30,
+      "kills": 35,
       "level": 2,
       "logs": [
-        "[12:36:51] Automação total iniciada. Loop de farm e campanha em execução.",
-        "[12:36:52] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
         "[12:55:58] ✅ Fase 2 Concluída! +64 Gold",
         "[12:56:00] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
         "[12:56:26] 🎁 Baú 'Baú de Armas' aberto com sucesso!",
@@ -33,19 +31,21 @@
         "[14:12:32] ✅ Fase 2 Concluída! +64 Gold",
         "[14:12:33] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
         "[14:31:39] ✅ Fase 2 Concluída! +64 Gold",
-        "[14:31:41] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)"
+        "[14:31:41] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
+        "[14:50:48] ✅ Fase 2 Concluída! +64 Gold",
+        "[14:50:51] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792593101665,
+      "updatedAt": 1792594250998,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.6679153442382812,
+  "ramAllocMB": 1.6618270874023438,
   "ramSysMB": 13.099861145019531,
-  "uptime": "2h13m33s"
+  "uptime": "2h15m32s"
 }
