@@ -19,7 +19,6 @@
       "kills": 50,
       "level": 2,
       "logs": [
-        "[13:34:16] ✅ Fase 2 Concluída! +64 Gold",
         "[13:34:17] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
         "[13:53:23] ✅ Fase 2 Concluída! +64 Gold",
         "[13:53:25] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
@@ -33,19 +32,20 @@
         "[15:10:01] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
         "[15:29:07] ✅ Fase 2 Concluída! +64 Gold",
         "[15:29:09] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)",
-        "[15:48:15] ✅ Fase 2 Concluída! +64 Gold"
+        "[15:48:15] ✅ Fase 2 Concluída! +64 Gold",
+        "[15:48:19] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 1.60/s [1.45x] | Est: 1146s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792597695799,
+      "updatedAt": 1792597699143,
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.6054534912109375,
+  "goroutines": 10,
+  "ramAllocMB": 1.5677642822265625,
   "ramSysMB": 13.099861145019531,
-  "uptime": "3h11m24s"
+  "uptime": "3h13m25s"
 }
