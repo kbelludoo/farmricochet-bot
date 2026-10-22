@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 20700,
-      "expPerHour": 2817.3515568290877,
+      "durationSec": 21367,
+      "expPerHour": 2830.4936987351616,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 13184,
+      "gold": 13248,
       "hp": 457,
       "id": "acc-1",
-      "kills": 135,
+      "kills": 140,
       "level": 2,
       "logs": [
-        "[06:21:05] ✅ Fase 2 Concluída! +64 Gold",
-        "[06:21:07] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
-        "[06:21:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[06:21:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:22:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:23:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:24:10] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +29,23 @@
         "[06:27:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:28:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:29:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[06:30:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[06:30:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[06:30:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[06:31:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[06:32:12] ✅ Fase 2 Concluída! +64 Gold",
+        "[06:32:14] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792650067526,
+      "updatedAt": 1792650733999,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3640289306640625,
+  "ramAllocMB": 1.969268798828125,
   "ramSysMB": 13.099861145019531,
-  "uptime": "5h54m12s"
+  "uptime": "5h56m12s"
 }
