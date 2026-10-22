@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 58060,
-      "expPerHour": 3087.812749426298,
+      "durationSec": 58727,
+      "expPerHour": 3089.542905090827,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 16768,
+      "gold": 16832,
       "hp": 457,
       "id": "acc-1",
-      "kills": 415,
+      "kills": 420,
       "level": 2,
       "logs": [
-        "[16:43:47] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
-        "[16:44:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[16:45:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[16:45:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[16:46:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[16:47:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[16:48:10] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +29,23 @@
         "[16:51:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[16:52:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[16:53:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[16:54:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[16:54:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[16:54:52] ✅ Fase 2 Concluída! +64 Gold",
+        "[16:54:55] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
+        "[16:54:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[16:55:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792687427111,
+      "updatedAt": 1792688095080,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9212570190429688,
+  "ramAllocMB": 1.892303466796875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "16h18m21s"
+  "uptime": "16h20m16s"
 }
