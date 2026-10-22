@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 74209,
-      "expPerHour": 3521.9325918564764,
+      "durationSec": 74535,
+      "expPerHour": 3535.491404537194,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 19200,
+      "gold": 19264,
       "hp": 457,
       "id": "acc-1",
-      "kills": 605,
+      "kills": 610,
       "level": 2,
       "logs": [
-        "[21:09:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:09:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:10:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:11:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:12:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:12:54] ✅ Fase 2 Concluída! +64 Gold",
         "[21:12:55] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +29,23 @@
         "[21:15:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:16:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:17:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:18:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[21:18:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[21:18:20] ✅ Fase 2 Concluída! +64 Gold",
+        "[21:18:22] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[21:18:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[21:19:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792703577126,
+      "updatedAt": 1792703902173,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3969879150390625,
+  "ramAllocMB": 1.5709609985351562,
   "ramSysMB": 13.099861145019531,
-  "uptime": "20h42m10s"
+  "uptime": "20h44m12s"
 }
