@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 48049,
-      "expPerHour": 3056.864258863267,
+      "durationSec": 48716,
+      "expPerHour": 3059.308615794172,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 15808,
+      "gold": 15872,
       "hp": 457,
       "id": "acc-1",
-      "kills": 340,
+      "kills": 345,
       "level": 2,
       "logs": [
-        "[13:56:54] ✅ Fase 2 Concluída! +64 Gold",
-        "[13:56:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
-        "[13:57:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:57:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:58:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:59:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:00:10] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +29,23 @@
         "[14:03:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:04:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:05:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[14:06:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[14:06:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[14:06:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[14:07:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[14:08:01] ✅ Fase 2 Concluída! +64 Gold",
+        "[14:08:04] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792677417089,
+      "updatedAt": 1792678084842,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8678512573242188,
+  "ramAllocMB": 2.046630859375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "13h30m16s"
+  "uptime": "13h32m14s"
 }
