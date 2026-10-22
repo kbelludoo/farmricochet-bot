@@ -19,8 +19,6 @@
       "kills": 465,
       "level": 2,
       "logs": [
-        "[18:28:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[18:29:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:30:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:30:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:31:40] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,7 +31,9 @@
         "[18:35:25] 🎁 Baú 'Baú de Heróis' aberto com sucesso!",
         "[18:35:26] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:35:27] 👥 Equipe atualizada com sucesso (2/3 heróis)! Adicionados: Ladino (farmer)",
-        "[18:36:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[18:36:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[18:36:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[18:37:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.4731369018554688,
+  "ramAllocMB": 2.0228424072265625,
   "ramSysMB": 13.099861145019531,
-  "uptime": "18h0m16s"
+  "uptime": "18h2m15s"
 }
