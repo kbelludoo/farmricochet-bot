@@ -2,25 +2,23 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 14696,
-      "expPerHour": 2645.567323692864,
+      "durationSec": 15363,
+      "expPerHour": 2671.340846471924,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
         "gems": 40,
-        "onlinePlayers": 498,
+        "onlinePlayers": 497,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 12608,
+      "gold": 12672,
       "hp": 457,
       "id": "acc-1",
-      "kills": 90,
+      "kills": 95,
       "level": 2,
       "logs": [
-        "[03:43:05] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.53/s [2.30x] | Est: 722s)",
-        "[03:55:07] ✅ Fase 2 Concluída! +64 Gold",
         "[03:55:07] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.35x na próxima run...",
         "[03:55:10] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.59/s [2.35x] | Est: 707s)",
         "[04:06:57] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +31,21 @@
         "[04:29:53] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.50x na próxima run...",
         "[04:29:56] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
         "[04:41:01] ✅ Fase 2 Concluída! +64 Gold",
-        "[04:41:02] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)"
+        "[04:41:02] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
+        "[04:52:08] ✅ Fase 2 Concluída! +64 Gold",
+        "[04:52:10] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792644062808,
+      "updatedAt": 1792644730197,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6442413330078125,
+  "ramAllocMB": 1.7170867919921875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "4h14m12s"
+  "uptime": "4h16m10s"
 }
