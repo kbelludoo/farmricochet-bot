@@ -2,28 +2,23 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 16030,
-      "expPerHour": 2694.898396589283,
+      "durationSec": 16696,
+      "expPerHour": 2716.6927691139867,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
         "gems": 40,
-        "onlinePlayers": 492,
+        "onlinePlayers": 491,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 12736,
+      "gold": 12800,
       "hp": 457,
       "id": "acc-1",
-      "kills": 100,
+      "kills": 105,
       "level": 2,
       "logs": [
-        "[04:06:57] ✅ Fase 2 Concluída! +64 Gold",
-        "[04:06:57] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.40x na próxima run...",
-        "[04:06:58] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.64/s [2.40x] | Est: 692s)",
-        "[04:18:31] ✅ Fase 2 Concluída! +64 Gold",
-        "[04:18:31] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.45x na próxima run...",
         "[04:18:34] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.70/s [2.45x] | Est: 678s)",
         "[04:29:53] ✅ Fase 2 Concluída! +64 Gold",
         "[04:29:53] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.50x na próxima run...",
@@ -33,19 +28,24 @@
         "[04:52:08] ✅ Fase 2 Concluída! +64 Gold",
         "[04:52:10] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
         "[05:03:15] ✅ Fase 2 Concluída! +64 Gold",
-        "[05:03:16] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)"
+        "[05:03:16] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
+        "[05:14:21] ✅ Fase 2 Concluída! +64 Gold",
+        "[05:14:23] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
+        "[05:14:25] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[05:15:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[05:15:55] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792645396787,
+      "updatedAt": 1792646063929,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6380081176757812,
+  "ramAllocMB": 1.7239990234375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "4h38m11s"
+  "uptime": "4h40m10s"
 }
