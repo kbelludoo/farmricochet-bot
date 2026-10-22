@@ -19,9 +19,6 @@
       "kills": 290,
       "level": 2,
       "logs": [
-        "[12:04:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[12:05:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[12:05:44] ✅ Fase 2 Concluída! +64 Gold",
         "[12:05:47] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
         "[12:06:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[12:06:55] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,7 +30,10 @@
         "[12:11:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[12:12:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[12:12:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[12:13:40] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[12:13:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[12:14:25] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[12:15:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[12:15:55] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.5501937866210938,
+  "ramAllocMB": 1.8304443359375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "11h38m13s"
+  "uptime": "11h40m10s"
 }
