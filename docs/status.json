@@ -8,7 +8,7 @@
         "essence": 16,
         "forgeFragments": 0,
         "gems": 40,
-        "onlinePlayers": 571,
+        "onlinePlayers": 576,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
@@ -41,8 +41,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.5853729248046875,
+  "goroutines": 11,
+  "ramAllocMB": 1.5626373291015625,
   "ramSysMB": 13.099861145019531,
-  "uptime": "1h2m21s"
+  "uptime": "1h4m14s"
 }
