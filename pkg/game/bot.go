@@ -458,6 +458,7 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 	heartbeatInterval := 6 * time.Second
 	nextHeartbeat := time.Now().Add(heartbeatInterval)
 	goblinDefeated := false
+	hadSyncWait := false
 
 	for {
 		select {
@@ -495,6 +496,7 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 				// Se o servidor avisar que a simulação chegou antes do relógio canônico
 				if completeResp != nil && !completeResp.Accepted {
+					hadSyncWait = true
 					waitMs := completeResp.RetryAfterMs
 					if waitMs < 1000 {
 						waitMs = 2000
@@ -507,6 +509,19 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 				// Atualiza estatísticas do bot
 				b.recordRunSuccess(activeLvl.Number, completeResp)
+
+				// Auto-Tuner adaptativo de velocidade
+				if b.config.Settings.AutoTuneSpeed {
+					if hadSyncWait {
+						optSpeed := math.Round(math.Max(1.10, b.config.Settings.SpeedMultiplier-0.05)*100) / 100
+						b.config.Settings.SpeedMultiplier = optSpeed
+						b.addLog(fmt.Sprintf("🎯 Auto-Tuner: Teto do servidor detectado! Velocidade ideal fixada em %.2fx.", optSpeed))
+					} else if b.config.Settings.SpeedMultiplier < 2.50 {
+						nextSpeed := math.Round((b.config.Settings.SpeedMultiplier+0.05)*100) / 100
+						b.config.Settings.SpeedMultiplier = nextSpeed
+						b.addLog(fmt.Sprintf("📈 Auto-Tuner: Partida aceita sem espera! Subindo para %.2fx na próxima run...", nextSpeed))
+					}
+				}
 
 				// Coleta espólios acumulados da run
 				_ = b.client.ClaimRunLoot(newUUID())

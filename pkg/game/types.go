@@ -37,6 +37,7 @@ type FarmBotSettings struct {
 	AutoPrestige     bool   `json:"autoPrestige"`     // Rastreamento e coleta de marcos de Prestígio
 	AutoInfinite     bool   `json:"autoInfinite"`     // Execução da Torre de Desafio Infinito
 	AutoPvP          bool   `json:"autoPvP"`          // Resgate de missões diárias/semanais da Arena PvP
+	AutoTuneSpeed    bool   `json:"autoTuneSpeed"`    // Auto-tuner adaptativo para encontrar o teto máximo de velocidade
 	SpeedMultiplier  float64 `json:"speedMultiplier"` // Fator de ajuste de tempo da fase (padrão: 1.0)
 }
 
@@ -61,6 +62,7 @@ func DefaultSettings() FarmBotSettings {
 		AutoPrestige:     true,
 		AutoInfinite:     true,
 		AutoPvP:          true,
+		AutoTuneSpeed:    true,
 		SpeedMultiplier:  1.0,
 	}
 }
