@@ -8,7 +8,7 @@
         "essence": 16,
         "forgeFragments": 0,
         "gems": 40,
-        "onlinePlayers": 491,
+        "onlinePlayers": 494,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
@@ -19,9 +19,6 @@
       "kills": 105,
       "level": 2,
       "logs": [
-        "[04:18:34] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.70/s [2.45x] | Est: 678s)",
-        "[04:29:53] ✅ Fase 2 Concluída! +64 Gold",
-        "[04:29:53] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.50x na próxima run...",
         "[04:29:56] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
         "[04:41:01] ✅ Fase 2 Concluída! +64 Gold",
         "[04:41:02] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
@@ -33,7 +30,10 @@
         "[05:14:23] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
         "[05:14:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[05:15:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[05:15:55] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[05:15:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[05:16:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[05:17:25] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[05:18:10] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7239990234375,
+  "ramAllocMB": 1.3886489868164062,
   "ramSysMB": 13.099861145019531,
-  "uptime": "4h40m10s"
+  "uptime": "4h42m9s"
 }
