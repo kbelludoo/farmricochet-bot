@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 70619,
-      "expPerHour": 3364.4919146450243,
+      "durationSec": 70946,
+      "expPerHour": 3379.463783617873,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 18496,
+      "gold": 18560,
       "hp": 457,
       "id": "acc-1",
-      "kills": 550,
+      "kills": 555,
       "level": 2,
       "logs": [
-        "[20:09:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[20:09:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[20:10:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[20:11:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[20:12:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[20:12:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[20:13:04] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +29,23 @@
         "[20:15:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[20:16:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[20:17:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[20:18:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[20:18:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[20:18:31] ✅ Fase 2 Concluída! +64 Gold",
+        "[20:18:34] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[20:18:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[20:19:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792699987591,
+      "updatedAt": 1792700314117,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3327560424804688,
+  "ramAllocMB": 1.6961212158203125,
   "ramSysMB": 13.099861145019531,
-  "uptime": "19h42m12s"
+  "uptime": "19h44m13s"
 }
