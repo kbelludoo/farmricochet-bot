@@ -1,4 +1,4 @@
-﻿package game
+package game
 
 import (
 	"context"
@@ -512,8 +512,23 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 				_ = b.client.ClaimRunLoot(newUUID())
 
 				// Se desbloqueou próxima fase e AutoAdvancePhase estiver ativo, avança
-				if b.config.Settings.AutoAdvancePhase && completeResp.NextLevelCode != "" {
-					_ = b.client.SetActiveLevel(completeResp.NextLevelCode)
+				if b.config.Settings.AutoAdvancePhase {
+					if completeResp.NextLevelCode != "" {
+						b.addLog(fmt.Sprintf("🚀 Próxima fase desbloqueada: %s (Nv. %d)! Avançando...", completeResp.NextLevelCode, completeResp.NextLevelNumber))
+						_ = b.client.SetActiveLevel(completeResp.NextLevelCode)
+					} else {
+						if newBoot, bootErr := b.client.GetBootstrap(); bootErr == nil && newBoot != nil && newBoot.Progress != nil {
+							if newBoot.Progress.HighestUnlockedLevel > activeLvl.Number {
+								for _, lvl := range newBoot.Levels {
+									if lvl.Number == newBoot.Progress.HighestUnlockedLevel {
+										b.addLog(fmt.Sprintf("🚀 Avançando para nível desbloqueado: %s (Nv. %d)!", lvl.Code, lvl.Number))
+										_ = b.client.SetActiveLevel(lvl.Code)
+										break
+									}
+								}
+							}
+						}
+					}
 				}
 
 				return nil
@@ -541,12 +556,12 @@ func (b *Bot) buildStructureEvents(boot *BootstrapResponse, run *RunStartRespons
 
 	structIdx := 0
 	for _, ent := range boot.ActiveLevel.Entities {
-		if ent.Kind == "structure" || strings.HasPrefix(ent.Type, "wheat") || strings.HasPrefix(ent.Type, "wood") || strings.HasPrefix(ent.Type, "stone") {
+		if ent.Kind == "structure" || strings.HasPrefix(ent.Type, "wheat") || strings.HasPrefix(ent.Type, "wood") || strings.HasPrefix(ent.Type, "sawmill") || strings.HasPrefix(ent.Type, "stone") {
 			structIdx++
 			resource := "wheat"
-			if strings.Contains(ent.Type, "wood") {
+			if strings.Contains(ent.Type, "wood") || strings.Contains(ent.Type, "sawmill") || strings.Contains(ent.Type, "lumber") {
 				resource = "wood"
-			} else if strings.Contains(ent.Type, "stone") {
+			} else if strings.Contains(ent.Type, "stone") || strings.Contains(ent.Type, "mine") || strings.Contains(ent.Type, "quarry") {
 				resource = "stone"
 			}
 
@@ -632,6 +647,11 @@ func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time
 		enemiesDefeated = 2
 	}
 
+	telemetryOutcome := "playing"
+	if outcome == "settle" {
+		telemetryOutcome = "completed"
+	}
+
 	telemetry := &RunTelemetry{
 		SchemaVersion:      1,
 		CombatIntegrity:    []any{},
@@ -645,7 +665,7 @@ func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time
 			ActiveMs: ms,
 		},
 		ClientRunId:        run.ClientRunId,
-		Outcome:            outcome,
+		Outcome:            telemetryOutcome,
 		DurationMs:         ms,
 		ResourcesCollected: progress,
 		CoinsEarned:        int64(progress / 2),
