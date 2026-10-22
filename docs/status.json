@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 44714,
-      "expPerHour": 3043.311891603943,
+      "durationSec": 45382,
+      "expPerHour": 3046.1411673995503,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 15488,
+      "gold": 15552,
       "hp": 457,
       "id": "acc-1",
-      "kills": 315,
+      "kills": 320,
       "level": 2,
       "logs": [
-        "[13:01:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:02:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:03:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:03:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:04:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:05:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:06:10] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +29,23 @@
         "[13:09:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:10:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:11:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:12:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[13:12:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[13:12:27] ✅ Fase 2 Concluída! +64 Gold",
+        "[13:12:29] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 1.10/s -\u003e Real: 2.75/s [2.50x] | Est: 664s)",
+        "[13:12:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[13:13:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792674082016,
+      "updatedAt": 1792674749215,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3614273071289062,
+  "ramAllocMB": 1.4980239868164062,
   "ramSysMB": 13.099861145019531,
-  "uptime": "12h36m14s"
+  "uptime": "12h38m15s"
 }
