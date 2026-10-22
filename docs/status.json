@@ -8,7 +8,7 @@
         "essence": 16,
         "forgeFragments": 0,
         "gems": 40,
-        "onlinePlayers": 495,
+        "onlinePlayers": 493,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
@@ -19,8 +19,6 @@
       "kills": 110,
       "level": 2,
       "logs": [
-        "[05:21:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[05:21:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[05:22:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[05:23:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[05:24:10] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,7 +31,9 @@
         "[05:27:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[05:28:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[05:29:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[05:30:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[05:30:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[05:30:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[05:31:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.3702545166015625,
+  "ramAllocMB": 1.6011199951171875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "4h54m11s"
+  "uptime": "4h56m10s"
 }
