@@ -2,26 +2,23 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 1137,
-      "expPerHour": 7594.248177037384,
+      "durationSec": 1390,
+      "expPerHour": 7768.5196850679795,
       "extra": {
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 493,
+        "onlinePlayers": 492,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 37120,
+      "gold": 37184,
       "hp": 466,
       "id": "acc-1",
-      "kills": 20,
+      "kills": 25,
       "level": 2,
       "logs": [
-        "[22:28:41] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 36800",
-        "[22:28:41] Automação total iniciada. Loop de farm e campanha em execução.",
-        "[22:28:41] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 6.00/s [2.65x] | Est: 305s)",
         "[22:33:46] ✅ Fase 2 Concluída! +64 Gold",
         "[22:33:46] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.80x na próxima run...",
         "[22:33:49] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 6.34/s [2.80x] | Est: 289s)",
@@ -33,19 +30,22 @@
         "[22:43:18] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.02/s [3.10x] | Est: 261s)",
         "[22:47:39] ✅ Fase 2 Concluída! +64 Gold",
         "[22:47:39] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 3.25x na próxima run...",
-        "[22:47:42] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.36/s [3.25x] | Est: 249s)"
+        "[22:47:42] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.36/s [3.25x] | Est: 249s)",
+        "[22:51:51] ✅ Fase 2 Concluída! +64 Gold",
+        "[22:51:51] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 3.40x na próxima run...",
+        "[22:51:53] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.70/s [3.40x] | Est: 238s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792795662140,
+      "updatedAt": 1792795913355,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.9834671020507812,
+  "ramAllocMB": 1.5652084350585938,
   "ramSysMB": 13.349861145019531,
-  "uptime": "21m35s"
+  "uptime": "23m33s"
 }
