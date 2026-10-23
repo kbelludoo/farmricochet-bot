@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 110724,
-      "expPerHour": 4545.332293125349,
+      "durationSec": 111051,
+      "expPerHour": 4551.39660551057,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,17 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 26368,
+      "gold": 26432,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1165,
+      "kills": 1170,
       "level": 2,
       "logs": [
-        "[07:16:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[07:17:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[07:18:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[07:18:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[07:19:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[07:20:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[07:21:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[07:21:29] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +28,24 @@
         "[07:23:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[07:24:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[07:24:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[07:25:40] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[07:25:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[07:26:25] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[07:26:56] ✅ Fase 2 Concluída! +64 Gold",
+        "[07:26:59] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[07:27:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[07:27:55] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792740092494,
+      "updatedAt": 1792740419507,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.865966796875,
+  "ramAllocMB": 1.4602890014648438,
   "ramSysMB": 13.099861145019531,
-  "uptime": "30h50m11s"
+  "uptime": "30h52m11s"
 }
