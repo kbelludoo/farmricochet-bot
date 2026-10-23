@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 161933,
-      "expPerHour": 5162.130978712885,
+      "durationSec": 162259,
+      "expPerHour": 5165.072659551442,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,18 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 36224,
+      "gold": 36288,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1935,
+      "kills": 1940,
       "level": 2,
       "logs": [
-        "[21:30:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:31:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:32:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:33:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:33:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:34:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:34:58] ✅ Fase 2 Concluída! +64 Gold",
         "[21:35:00] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
         "[21:35:25] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +27,25 @@
         "[21:37:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:38:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:39:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:39:55] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[21:39:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[21:40:24] ✅ Fase 2 Concluída! +64 Gold",
+        "[21:40:26] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[21:40:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[21:40:41] 🔨 1 itens comuns desmontados em fragmentos de forja.",
+        "[21:41:25] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[21:42:10] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792791299958,
+      "updatedAt": 1792791626219,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9741592407226562,
+  "ramAllocMB": 1.3177871704101562,
   "ramSysMB": 13.099861145019531,
-  "uptime": "45h4m11s"
+  "uptime": "45h6m11s"
 }
