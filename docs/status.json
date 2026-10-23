@@ -19,9 +19,6 @@
       "kills": 1610,
       "level": 2,
       "logs": [
-        "[15:38:48] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:39:13] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:39:38] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:40:03] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:40:28] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:40:53] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
@@ -33,7 +30,10 @@
         "[15:41:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[15:42:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[15:42:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[15:43:40] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[15:43:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[15:44:25] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[15:45:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[15:45:55] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8305816650390625,
+  "ramAllocMB": 1.4110336303710938,
   "ramSysMB": 13.099861145019531,
-  "uptime": "39h8m11s"
+  "uptime": "39h10m10s"
 }
