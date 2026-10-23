@@ -437,7 +437,7 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 	// Calcula a duração total exigida pela taxa canônica do servidor
 	speedMult := b.config.Settings.SpeedMultiplier
-	if speedMult <= 0.2 || speedMult > 3.0 {
+	if speedMult <= 0.2 || speedMult > 10.0 {
 		speedMult = 1.0
 	}
 
@@ -513,11 +513,14 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 				// Auto-Tuner adaptativo de velocidade
 				if b.config.Settings.AutoTuneSpeed {
 					if hadSyncWait {
-						optSpeed := math.Round(math.Max(1.10, b.config.Settings.SpeedMultiplier-0.05)*100) / 100
+						actualElapsedSec := time.Since(runStart).Seconds()
+						actualMaxMult := float64(targetGoal) / (rate * actualElapsedSec)
+						optSpeed := math.Round(math.Max(1.10, actualMaxMult-0.05)*100) / 100
 						b.config.Settings.SpeedMultiplier = optSpeed
-						b.addLog(fmt.Sprintf("🎯 Auto-Tuner: Teto do servidor detectado! Velocidade ideal fixada em %.2fx.", optSpeed))
-					} else if b.config.Settings.SpeedMultiplier < 2.50 {
-						nextSpeed := math.Round((b.config.Settings.SpeedMultiplier+0.05)*100) / 100
+						b.config.Settings.AutoTuneSpeed = false
+						b.addLog(fmt.Sprintf("🎯 LIMITE DESCOBERTO! Servidor exigiu %.0fs reais -> Teto cravado em %.2fx (%.2f/s)!", actualElapsedSec, optSpeed, rate*optSpeed))
+					} else if b.config.Settings.SpeedMultiplier < 10.0 {
+						nextSpeed := math.Round((b.config.Settings.SpeedMultiplier+0.15)*100) / 100
 						b.config.Settings.SpeedMultiplier = nextSpeed
 						b.addLog(fmt.Sprintf("📈 Auto-Tuner: Partida aceita sem espera! Subindo para %.2fx na próxima run...", nextSpeed))
 					}
@@ -845,8 +848,11 @@ func (b *Bot) processMissions() {
 	if err == nil && milestones != nil {
 		for _, ms := range milestones.Milestones {
 			if ms.Completed && !ms.Claimed {
-				_ = b.client.ClaimMilestone(ms.ID)
-				b.addLog(fmt.Sprintf("⭐ Marco resgatado: %s", ms.Name))
+				if claimErr := b.client.ClaimMilestone(ms.ID); claimErr == nil {
+					b.addLog(fmt.Sprintf("⭐ Marco resgatado: %s", ms.Name))
+	
+				}
+
 				time.Sleep(600 * time.Millisecond)
 			}
 		}
