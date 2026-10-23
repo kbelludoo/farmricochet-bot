@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 139426,
-      "expPerHour": 4972.943828228894,
+      "durationSec": 139769,
+      "expPerHour": 4976.178318648814,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,13 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 32000,
+      "gold": 32064,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1605,
+      "kills": 1610,
       "level": 2,
       "logs": [
-        "[15:14:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[15:14:25] ✅ Fase 2 Concluída! +64 Gold",
         "[15:14:27] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
         "[15:15:10] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +32,20 @@
         "[15:19:53] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
         "[15:20:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[15:23:28] ⚠️ Conflito de sessão detectado (409). Tentando recuperar controle do lease...",
-        "[15:23:41] ✅ Controle da sessão retomado com sucesso!"
+        "[15:23:41] ✅ Controle da sessão retomado com sucesso!",
+        "[15:25:35] ✅ Fase 2 Concluída! +64 Gold"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792768793614,
+      "updatedAt": 1792769135013,
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.8144912719726562,
+  "goroutines": 13,
+  "ramAllocMB": 1.89019775390625,
   "ramSysMB": 13.099861145019531,
-  "uptime": "38h48m12s"
+  "uptime": "38h50m11s"
 }
