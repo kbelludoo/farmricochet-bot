@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 160628,
-      "expPerHour": 5150.2656273656485,
+      "durationSec": 160955,
+      "expPerHour": 5153.237796556813,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 35968,
+      "gold": 36032,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1915,
+      "kills": 1920,
       "level": 2,
       "logs": [
-        "[21:09:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:09:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:10:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:11:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:12:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:12:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:13:13] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +29,23 @@
         "[21:15:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:16:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[21:17:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[21:18:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[21:18:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[21:18:40] ✅ Fase 2 Concluída! +64 Gold",
+        "[21:18:42] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[21:18:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[21:19:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792789996536,
+      "updatedAt": 1792790322841,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.56060791015625,
+  "ramAllocMB": 1.714447021484375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "44h42m11s"
+  "uptime": "44h44m12s"
 }
