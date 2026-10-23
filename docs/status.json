@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 163890,
-      "expPerHour": 5179.552210717949,
+      "durationSec": 164216,
+      "expPerHour": 5182.424931803803,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 36608,
+      "gold": 36672,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1965,
+      "kills": 1970,
       "level": 2,
       "logs": [
-        "[22:03:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[22:03:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[22:04:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[22:05:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[22:06:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[22:06:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[22:07:35] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +29,23 @@
         "[22:09:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[22:10:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[22:11:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[22:12:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[22:12:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[22:12:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[22:13:01] ✅ Fase 2 Concluída! +64 Gold",
+        "[22:13:03] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[22:13:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792793257297,
+      "updatedAt": 1792793583109,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3927078247070312,
+  "ramAllocMB": 1.5026779174804688,
   "ramSysMB": 13.099861145019531,
-  "uptime": "45h36m10s"
+  "uptime": "45h38m11s"
 }
