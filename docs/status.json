@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 132575,
-      "expPerHour": 4887.798395150373,
+      "durationSec": 132901,
+      "expPerHour": 4892.045613445891,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 30656,
+      "gold": 30720,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1500,
+      "kills": 1505,
       "level": 2,
       "logs": [
-        "[13:21:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:21:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:22:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:23:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:24:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:24:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:25:40] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +29,23 @@
         "[13:27:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:28:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[13:29:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[13:30:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[13:30:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[13:30:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[13:31:06] ✅ Fase 2 Concluída! +64 Gold",
+        "[13:31:08] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[13:31:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792761942491,
+      "updatedAt": 1792762268157,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3613433837890625,
+  "ramAllocMB": 1.8322372436523438,
   "ramSysMB": 13.099861145019531,
-  "uptime": "36h54m12s"
+  "uptime": "36h56m10s"
 }
