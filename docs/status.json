@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 150173,
-      "expPerHour": 5048.551173051888,
+      "durationSec": 150500,
+      "expPerHour": 5051.953580620198,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 33920,
+      "gold": 33984,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1755,
+      "kills": 1760,
       "level": 2,
       "logs": [
-        "[18:15:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[18:15:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[18:16:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[18:17:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:18:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:18:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:18:58] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +29,23 @@
         "[18:21:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:22:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[18:23:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[18:24:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[18:24:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[18:24:25] ✅ Fase 2 Concluída! +64 Gold",
+        "[18:24:27] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[18:24:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[18:25:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792779541655,
+      "updatedAt": 1792779867435,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.368927001953125,
+  "ramAllocMB": 1.591461181640625,
   "ramSysMB": 13.099861145019531,
-  "uptime": "41h48m12s"
+  "uptime": "41h50m12s"
 }
