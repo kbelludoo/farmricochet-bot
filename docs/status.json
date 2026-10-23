@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 91163,
-      "expPerHour": 4099.001833283724,
+      "durationSec": 91489,
+      "expPerHour": 4107.991748623126,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 22528,
+      "gold": 22592,
       "hp": 457,
       "id": "acc-1",
-      "kills": 865,
+      "kills": 870,
       "level": 2,
       "logs": [
-        "[01:51:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[01:51:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[01:52:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[01:53:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[01:54:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[01:54:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[01:55:28] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +29,23 @@
         "[01:57:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[01:58:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[01:59:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[02:00:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[02:00:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[02:00:55] ✅ Fase 2 Concluída! +64 Gold",
+        "[02:00:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[02:00:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[02:01:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792720531274,
+      "updatedAt": 1792720857278,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3270797729492188,
+  "ramAllocMB": 1.7323837280273438,
   "ramSysMB": 13.099861145019531,
-  "uptime": "25h24m12s"
+  "uptime": "25h26m11s"
 }
