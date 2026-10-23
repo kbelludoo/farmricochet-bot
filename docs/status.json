@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 136161,
-      "expPerHour": 4933.539931812515,
+      "durationSec": 136488,
+      "expPerHour": 4937.5516939111185,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 31360,
+      "gold": 31424,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1555,
+      "kills": 1560,
       "level": 2,
       "logs": [
-        "[14:21:11] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[14:21:56] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[14:22:41] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[14:23:27] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:24:11] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:24:56] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:25:26] ✅ Fase 2 Concluída! +64 Gold",
@@ -33,19 +29,23 @@
         "[14:27:56] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:28:41] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[14:29:26] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[14:30:11] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[14:30:11] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[14:30:53] ✅ Fase 2 Concluída! +64 Gold",
+        "[14:30:56] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[14:30:57] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[14:31:41] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792765529945,
+      "updatedAt": 1792765857452,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7409133911132812,
+  "ramAllocMB": 2.0240554809570312,
   "ramSysMB": 13.099861145019531,
-  "uptime": "37h54m12s"
+  "uptime": "37h56m12s"
 }
