@@ -19,11 +19,6 @@
       "kills": 1610,
       "level": 2,
       "logs": [
-        "[15:19:53] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
-        "[15:20:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[15:23:28] ⚠️ Conflito de sessão detectado (409). Tentando recuperar controle do lease...",
-        "[15:23:41] ✅ Controle da sessão retomado com sucesso!",
-        "[15:25:35] ✅ Fase 2 Concluída! +64 Gold",
         "[15:26:18] Aviso: context deadline exceeded (Client.Timeout or context cancellation while reading body). Aguardando 5s...",
         "[15:26:43] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:27:08] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
@@ -33,7 +28,12 @@
         "[15:28:48] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:29:13] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:29:38] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:30:03] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s..."
+        "[15:30:03] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:30:28] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:30:53] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:31:18] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:31:43] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:32:08] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s..."
       ],
       "mana": 100,
       "maxHp": 457,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 13,
-  "ramAllocMB": 1.4267959594726562,
+  "ramAllocMB": 1.2424392700195312,
   "ramSysMB": 13.099861145019531,
-  "uptime": "38h54m13s"
+  "uptime": "38h56m11s"
 }
