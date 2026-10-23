@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 116921,
-      "expPerHour": 4655.4423020700615,
+      "durationSec": 117246,
+      "expPerHour": 4660.954271190616,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,17 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 27584,
+      "gold": 27648,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1260,
+      "kills": 1265,
       "level": 2,
       "logs": [
-        "[08:59:22] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
-        "[08:59:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[09:00:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[09:00:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[09:01:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[09:02:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[09:03:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[09:03:55] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +28,24 @@
         "[09:05:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[09:06:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[09:06:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[09:07:40] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[09:07:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[09:08:25] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[09:09:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[09:09:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[09:10:11] ✅ Fase 2 Concluída! +64 Gold",
+        "[09:10:13] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792746287978,
+      "updatedAt": 1792746613283,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.583343505859375,
+  "ramAllocMB": 1.6889495849609375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "32h32m12s"
+  "uptime": "32h34m12s"
 }
