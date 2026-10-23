@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 1390,
-      "expPerHour": 7768.5196850679795,
+      "durationSec": 1630,
+      "expPerHour": 7948.916419185695,
       "extra": {
         "essence": 26,
         "forgeFragments": 0,
@@ -13,15 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 37184,
+      "gold": 37248,
       "hp": 466,
       "id": "acc-1",
-      "kills": 25,
+      "kills": 30,
       "level": 2,
       "logs": [
-        "[22:33:46] ✅ Fase 2 Concluída! +64 Gold",
-        "[22:33:46] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.80x na próxima run...",
-        "[22:33:49] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 6.34/s [2.80x] | Est: 289s)",
         "[22:38:38] ✅ Fase 2 Concluída! +64 Gold",
         "[22:38:38] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 2.95x na próxima run...",
         "[22:38:41] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 6.68/s [2.95x] | Est: 274s)",
@@ -33,19 +30,22 @@
         "[22:47:42] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.36/s [3.25x] | Est: 249s)",
         "[22:51:51] ✅ Fase 2 Concluída! +64 Gold",
         "[22:51:51] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 3.40x na próxima run...",
-        "[22:51:53] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.70/s [3.40x] | Est: 238s)"
+        "[22:51:53] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.70/s [3.40x] | Est: 238s)",
+        "[22:55:51] ✅ Fase 2 Concluída! +64 Gold",
+        "[22:55:51] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 3.55x na próxima run...",
+        "[22:55:54] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 8.04/s [3.55x] | Est: 228s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792795913355,
+      "updatedAt": 1792796154472,
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.3404006958007812,
+  "goroutines": 11,
+  "ramAllocMB": 2.1036300659179688,
   "ramSysMB": 13.349861145019531,
-  "uptime": "25m36s"
+  "uptime": "27m34s"
 }
