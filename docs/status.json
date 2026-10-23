@@ -2,21 +2,21 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 873,
-      "expPerHour": 7416.335393257978,
+      "durationSec": 1137,
+      "expPerHour": 7594.248177037384,
       "extra": {
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 495,
+        "onlinePlayers": 493,
         "stone": 0,
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 37056,
+      "gold": 37120,
       "hp": 466,
       "id": "acc-1",
-      "kills": 15,
+      "kills": 20,
       "level": 2,
       "logs": [
         "[22:28:41] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 36800",
@@ -30,19 +30,22 @@
         "[22:38:41] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 6.68/s [2.95x] | Est: 274s)",
         "[22:43:15] ✅ Fase 2 Concluída! +64 Gold",
         "[22:43:15] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 3.10x na próxima run...",
-        "[22:43:18] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.02/s [3.10x] | Est: 261s)"
+        "[22:43:18] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.02/s [3.10x] | Est: 261s)",
+        "[22:47:39] ✅ Fase 2 Concluída! +64 Gold",
+        "[22:47:39] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 3.25x na próxima run...",
+        "[22:47:42] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 7.36/s [3.25x] | Est: 249s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792795397988,
+      "updatedAt": 1792795662140,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.4628067016601562,
+  "ramAllocMB": 1.4021682739257812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "17m33s"
+  "uptime": "19m33s"
 }
