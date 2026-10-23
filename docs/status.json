@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 107789,
-      "expPerHour": 4488.744787744151,
+      "durationSec": 108116,
+      "expPerHour": 4495.171670995122,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 25792,
+      "gold": 25856,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1120,
+      "kills": 1125,
       "level": 2,
       "logs": [
-        "[06:27:10] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
-        "[06:27:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[06:28:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[06:29:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:30:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:30:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:31:40] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +29,23 @@
         "[06:33:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:34:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[06:35:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[06:36:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[06:36:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[06:36:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[06:37:40] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[06:38:01] ✅ Fase 2 Concluída! +64 Gold",
+        "[06:38:03] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792737156738,
+      "updatedAt": 1792737483091,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.3704910278320312,
+  "ramAllocMB": 1.8043136596679688,
   "ramSysMB": 13.099861145019531,
-  "uptime": "30h0m10s"
+  "uptime": "30h2m13s"
 }
