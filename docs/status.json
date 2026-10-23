@@ -19,10 +19,6 @@
       "kills": 1610,
       "level": 2,
       "logs": [
-        "[15:28:23] Aviso: context deadline exceeded (Client.Timeout or context cancellation while reading body). Aguardando 5s...",
-        "[15:28:48] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:29:13] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:29:38] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:30:03] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:30:28] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:30:53] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
@@ -33,7 +29,11 @@
         "[15:32:58] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:33:23] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:33:48] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:34:13] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s..."
+        "[15:34:13] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:34:38] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:35:03] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:35:28] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:35:53] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s..."
       ],
       "mana": 100,
       "maxHp": 457,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.2379913330078125,
+  "goroutines": 13,
+  "ramAllocMB": 1.2522506713867188,
   "ramSysMB": 13.099861145019531,
-  "uptime": "38h58m12s"
+  "uptime": "39h0m11s"
 }
