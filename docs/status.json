@@ -19,11 +19,6 @@
       "kills": 1610,
       "level": 2,
       "logs": [
-        "[15:26:18] Aviso: context deadline exceeded (Client.Timeout or context cancellation while reading body). Aguardando 5s...",
-        "[15:26:43] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:27:08] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:27:33] Aviso: context deadline exceeded (Client.Timeout or context cancellation while reading body). Aguardando 5s...",
-        "[15:27:58] Aviso: context deadline exceeded (Client.Timeout or context cancellation while reading body). Aguardando 5s...",
         "[15:28:23] Aviso: context deadline exceeded (Client.Timeout or context cancellation while reading body). Aguardando 5s...",
         "[15:28:48] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:29:13] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
@@ -33,7 +28,12 @@
         "[15:30:53] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:31:18] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
         "[15:31:43] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
-        "[15:32:08] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s..."
+        "[15:32:08] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:32:33] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:32:58] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:33:23] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:33:48] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s...",
+        "[15:34:13] Aviso: requisição falhou (GET /api/v1/bootstrap?mapImages=cdn): Get \"https://api.farmricochet.com/api/v1/bootstrap?mapImages=cdn\": context deadline exceeded (Client.Timeout exceeded while awaiting headers). Aguardando 5s..."
       ],
       "mana": 100,
       "maxHp": 457,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 13,
-  "ramAllocMB": 1.2424392700195312,
+  "goroutines": 12,
+  "ramAllocMB": 1.2379913330078125,
   "ramSysMB": 13.099861145019531,
-  "uptime": "38h56m11s"
+  "uptime": "38h58m12s"
 }
