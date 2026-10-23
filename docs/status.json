@@ -2,8 +2,8 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 101265,
-      "expPerHour": 4351.338621927574,
+      "durationSec": 101591,
+      "expPerHour": 4358.637790035378,
       "extra": {
         "essence": 16,
         "forgeFragments": 0,
@@ -13,16 +13,12 @@
         "wheat": 13758,
         "wood": 473
       },
-      "gold": 24512,
+      "gold": 24576,
       "hp": 457,
       "id": "acc-1",
-      "kills": 1020,
+      "kills": 1025,
       "level": 2,
       "logs": [
-        "[04:39:10] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[04:39:55] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[04:40:40] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[04:41:25] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[04:42:10] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[04:42:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[04:43:40] ⭐ Marco resgatado: Guardião da Fazenda I",
@@ -33,19 +29,23 @@
         "[04:45:55] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[04:46:40] ⭐ Marco resgatado: Guardião da Fazenda I",
         "[04:47:25] ⭐ Marco resgatado: Guardião da Fazenda I",
-        "[04:48:10] ⭐ Marco resgatado: Guardião da Fazenda I"
+        "[04:48:10] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[04:48:55] ⭐ Marco resgatado: Guardião da Fazenda I",
+        "[04:49:16] ✅ Fase 2 Concluída! +64 Gold",
+        "[04:49:18] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 5.66/s [2.50x] | Est: 323s)",
+        "[04:49:40] ⭐ Marco resgatado: Guardião da Fazenda I"
       ],
       "mana": 100,
       "maxHp": 457,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792730632377,
+      "updatedAt": 1792730958545,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.4211502075195312,
+  "ramAllocMB": 1.9974212646484375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "28h12m10s"
+  "uptime": "28h14m11s"
 }
