@@ -19,11 +19,6 @@
       "kills": 30,
       "level": 10,
       "logs": [
-        "[06:15:02] 🚀 Próxima fase desbloqueada: act-1-autumn-5 (Nv. 10)! Avançando...",
-        "[06:15:04] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)",
-        "[06:18:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
-        "[06:18:03] ⏳ Sincronizando com relógio do servidor (147/2080)... aguardando 5000ms",
-        "[06:18:20] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
         "[06:18:20] ⏳ Sincronizando com relógio do servidor (147/2080)... aguardando 5000ms",
         "[06:18:37] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
         "[06:18:37] ⏳ Sincronizando com relógio do servidor (147/2080)... aguardando 5000ms",
@@ -33,19 +28,24 @@
         "[06:21:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
         "[06:21:55] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
         "[06:22:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
-        "[06:22:12] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms"
+        "[06:22:12] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
+        "[06:22:29] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
+        "[06:22:29] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
+        "[06:22:45] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
+        "[06:22:45] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[06:22:48] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 10",
-      "updatedAt": 1792822735913,
+      "updatedAt": 1792822968515,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6272735595703125,
+  "ramAllocMB": 1.8343887329101562,
   "ramSysMB": 13.349861145019531,
-  "uptime": "31m36s"
+  "uptime": "33m36s"
 }
