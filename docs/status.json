@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 20: Ato 1 — Invasão · Pântano 5/5",
-      "durationSec": 4958,
-      "expPerHour": 6970.03692144609,
+      "currentArea": "Fase 21: Ato 1 — Invasão · Sombria 1/5",
+      "durationSec": 5162,
+      "expPerHour": 7113.493252598921,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 446,
-        "stone": 7332,
-        "wheat": 53795,
-        "wood": 17361
+        "onlinePlayers": 447,
+        "stone": 9370,
+        "wheat": 54670,
+        "wood": 19144
       },
-      "gold": 48283,
+      "gold": 48511,
       "hp": 466,
       "id": "acc-1",
-      "kills": 80,
-      "level": 20,
+      "kills": 85,
+      "level": 21,
       "logs": [
-        "[07:09:59] ▶ Fase 19 iniciada (Meta: 2410 wheat | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 179s)",
-        "[07:10:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:11:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:11:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:12:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:13:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2388/2410 gold=0",
-        "[07:13:10] ⏳ Sincronizando com relógio do servidor (2388/2410)... aguardando 5000ms",
-        "[07:13:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:13:17] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-swamp-5 nextId=62312d84-e627-4260-8d03-93c4b9d96128 auth=2410/2410 gold=228",
-        "[07:13:17] ✅ Fase 19 Concluída! +228 Gold",
         "[07:13:17] 🚀 Próxima fase desbloqueada: act-1-swamp-5 (Nv. 20)! Avançando...",
         "[07:13:20] ▶ Fase 20 iniciada (Meta: 2450 wheat | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 182s)",
         "[07:14:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:14:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:15:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:15:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:16:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:16:34] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2428/2450 gold=0",
+        "[07:16:34] ⏳ Sincronizando com relógio do servidor (2428/2450)... aguardando 5000ms",
+        "[07:16:41] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-dark-1 nextId=c06f96c7-a87c-45c1-b45c-37777658933d auth=2450/2450 gold=228",
+        "[07:16:41] ✅ Fase 20 Concluída! +228 Gold",
+        "[07:16:41] 🚀 Próxima fase desbloqueada: act-1-dark-1 (Nv. 21)! Avançando...",
+        "[07:16:43] ▶ Fase 21 iniciada (Meta: 2480 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 192s)",
+        "[07:17:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:17:01] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 5",
+        "[07:17:45] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 20",
-      "updatedAt": 1792825999981,
+      "status": "Jogando Fase 21",
+      "updatedAt": 1792826203329,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7787322998046875,
+  "ramAllocMB": 1.8388748168945312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h25m35s"
+  "uptime": "1h27m35s"
 }
