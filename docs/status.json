@@ -19,13 +19,6 @@
       "kills": 525,
       "level": 35,
       "logs": [
-        "[16:26:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:26:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:26:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:27:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:27:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:28:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:28:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:28:29] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=3132/3160 gold=0",
         "[16:28:29] ✅ Fase 36 Concluída! +0 Gold",
         "[16:28:29] 🚀 Próxima fase desbloqueada: act-2-autumn-4 (Nv. 35)! Avançando...",
@@ -33,7 +26,14 @@
         "[16:29:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[16:29:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:29:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:29:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[16:29:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:30:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:30:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:30:34] 🌱 Talento evoluído: Vitalidade dos Heróis -\u003e Nv. 2",
+        "[16:31:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:31:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:32:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:32:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.83770751953125,
+  "ramAllocMB": 1.8517074584960938,
   "ramSysMB": 13.349861145019531,
-  "uptime": "10h39m38s"
+  "uptime": "10h41m37s"
 }
