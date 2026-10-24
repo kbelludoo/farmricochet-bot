@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 453,
+        "onlinePlayers": 451,
         "stone": 5125,
         "wheat": 77981,
         "wood": 88960
@@ -19,10 +19,6 @@
       "kills": 30,
       "level": 10,
       "logs": [
-        "[06:14:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2034/2050 gold=0",
-        "[06:14:55] ⏳ Sincronizando com relógio do servidor (2034/2050)... aguardando 5000ms",
-        "[06:15:02] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-5 nextId=94bf8489-3b25-45ae-b35f-61b111ce67c3 auth=2050/2050 gold=81",
-        "[06:15:02] ✅ Fase 9 Concluída! +81 Gold",
         "[06:15:02] 🚀 Próxima fase desbloqueada: act-1-autumn-5 (Nv. 10)! Avançando...",
         "[06:15:04] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)",
         "[06:18:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
@@ -33,7 +29,11 @@
         "[06:18:37] ⏳ Sincronizando com relógio do servidor (147/2080)... aguardando 5000ms",
         "[06:18:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
         "[06:18:53] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[06:18:55] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)"
+        "[06:18:55] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)",
+        "[06:21:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
+        "[06:21:55] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
+        "[06:22:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
+        "[06:22:12] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8197784423828125,
+  "ramAllocMB": 1.6272735595703125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "29m37s"
+  "uptime": "31m36s"
 }
