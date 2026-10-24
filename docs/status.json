@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 451,
+        "onlinePlayers": 450,
         "stone": 6319,
         "wheat": 14656,
         "wood": 19622
@@ -19,8 +19,6 @@
       "kills": 110,
       "level": 26,
       "logs": [
-        "[07:39:24] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[07:39:27] ▶ Fase 25 iniciada (Meta: 2650 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 205s)",
         "[07:39:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:40:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:41:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
@@ -33,7 +31,9 @@
         "[07:43:13] 🚀 Próxima fase desbloqueada: act-1-boss (Nv. 26)! Avançando...",
         "[07:43:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:43:16] ▶ Fase 26 iniciada (Meta: 2690 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 208s)",
-        "[07:44:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:44:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:44:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:45:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8506698608398438,
+  "ramAllocMB": 1.5634918212890625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h53m36s"
+  "uptime": "1h55m36s"
 }
