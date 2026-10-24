@@ -19,10 +19,6 @@
       "kills": 840,
       "level": 36,
       "logs": [
-        "[22:05:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[22:06:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[22:06:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[22:06:45] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3081/3110 gold=0",
         "[22:06:45] ⏳ Sincronizando com relógio do servidor (3081/3110)... aguardando 5000ms",
         "[22:06:54] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-autumn-5 nextId=c8c8fb49-42d8-4625-9fca-6863555a27b1 auth=3110/3110 gold=424",
         "[22:06:54] ✅ Fase 35 Concluída! +424 Gold",
@@ -33,7 +29,11 @@
         "[22:07:20] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[22:07:20] 👥 Equipe atualizada com sucesso (3/3 heróis)! Adicionados: Cavaleiro (knight)",
         "[22:08:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[22:08:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[22:08:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[22:08:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:08:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[22:09:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:09:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9528121948242188,
+  "ramAllocMB": 1.7136001586914062,
   "ramSysMB": 13.349861145019531,
-  "uptime": "16h17m37s"
+  "uptime": "16h19m38s"
 }
