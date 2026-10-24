@@ -19,9 +19,6 @@
       "kills": 260,
       "level": 30,
       "logs": [
-        "[10:34:38] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-farm-5 nextId=b4d6ce59-6693-4884-971a-128af2307d34 auth=2870/2870 gold=374",
-        "[10:34:38] ✅ Fase 30 Concluída! +374 Gold",
-        "[10:34:38] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
         "[10:34:40] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 217s)",
         "[10:35:02] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[10:35:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
@@ -33,7 +30,10 @@
         "[10:38:30] 🚀 Próxima fase desbloqueada: act-2-farm-4 (Nv. 30)! Avançando...",
         "[10:38:32] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 214s)",
         "[10:38:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[10:39:31] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[10:39:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[10:40:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[10:41:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[10:41:46] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.562530517578125,
+  "ramAllocMB": 1.4812774658203125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "4h49m37s"
+  "uptime": "4h51m36s"
 }
