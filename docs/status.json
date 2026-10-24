@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 35: Ato 2 — Resistência · Outono 4/5",
-      "durationSec": 26711,
-      "expPerHour": 5579.577548984303,
+      "currentArea": "Fase 36: Ato 2 — Resistência · Outono 5/5",
+      "durationSec": 27255,
+      "expPerHour": 5547.494417208757,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
         "onlinePlayers": 441,
-        "stone": 14884,
-        "wheat": 22914,
-        "wood": 65608
+        "stone": 18955,
+        "wheat": 24716,
+        "wood": 69093
       },
-      "gold": 17731,
+      "gold": 18563,
       "hp": 466,
       "id": "acc-1",
-      "kills": 345,
-      "level": 35,
+      "kills": 350,
+      "level": 36,
       "logs": [
-        "[13:19:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[13:19:53] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms",
-        "[13:20:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:20:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[13:20:10] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms",
-        "[13:20:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[13:20:26] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms",
-        "[13:20:43] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[13:20:43] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[13:20:45] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
         "[13:20:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:21:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:22:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:23:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:23:48] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[13:23:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:24:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:24:45] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3081/3110 gold=0",
+        "[13:24:45] ⏳ Sincronizando com relógio do servidor (3081/3110)... aguardando 5000ms",
+        "[13:24:54] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-autumn-5 nextId=c8c8fb49-42d8-4625-9fca-6863555a27b1 auth=3110/3110 gold=416",
+        "[13:24:54] ✅ Fase 35 Concluída! +416 Gold",
+        "[13:24:54] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
+        "[13:24:56] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
+        "[13:25:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:26:03] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 35",
-      "updatedAt": 1792848045737,
+      "status": "Jogando Fase 36",
+      "updatedAt": 1792848296967,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9615325927734375,
+  "ramAllocMB": 1.760528564453125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "7h33m36s"
+  "uptime": "7h35m35s"
 }
