@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 10: Ato 1 — Invasão · Outono 5/5",
-      "durationSec": 1463,
-      "expPerHour": 8856.1516092535,
+      "currentArea": "Fase 11: Ato 1 — Invasão · Neve 1/5",
+      "durationSec": 2115,
+      "expPerHour": 7146.740100495151,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 451,
-        "stone": 5125,
-        "wheat": 77981,
-        "wood": 88960
+        "onlinePlayers": 450,
+        "stone": 6590,
+        "wheat": 78619,
+        "wood": 90182
       },
-      "gold": 45210,
+      "gold": 45453,
       "hp": 466,
       "id": "acc-1",
-      "kills": 30,
-      "level": 10,
+      "kills": 35,
+      "level": 11,
       "logs": [
-        "[06:18:20] ⏳ Sincronizando com relógio do servidor (147/2080)... aguardando 5000ms",
-        "[06:18:37] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
-        "[06:18:37] ⏳ Sincronizando com relógio do servidor (147/2080)... aguardando 5000ms",
-        "[06:18:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
-        "[06:18:53] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[06:18:55] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)",
-        "[06:21:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
-        "[06:21:55] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
-        "[06:22:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
         "[06:22:12] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
         "[06:22:29] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
         "[06:22:29] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
         "[06:22:45] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
         "[06:22:45] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[06:22:48] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)"
+        "[06:22:48] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)",
+        "[06:25:48] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2062/2080 gold=0",
+        "[06:25:48] ⏳ Sincronizando com relógio do servidor (2062/2080)... aguardando 5000ms",
+        "[06:25:54] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-1 nextId=59439767-d9f1-4710-a0fa-a5db32e3459f auth=2080/2080 gold=81",
+        "[06:25:54] ✅ Fase 10 Concluída! +81 Gold",
+        "[06:25:54] 🚀 Próxima fase desbloqueada: act-1-snow-1 (Nv. 11)! Avançando...",
+        "[06:25:57] ▶ Fase 11 iniciada (Meta: 2110 stone | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 170s)",
+        "[06:26:00] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 3",
+        "[06:26:01] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 1",
+        "[06:26:02] 🌱 Talento evoluído: Mineração -\u003e Nv. 1"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 10",
-      "updatedAt": 1792822968515,
+      "status": "Jogando Fase 11",
+      "updatedAt": 1792823157455,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8343887329101562,
+  "ramAllocMB": 1.9233551025390625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "33m36s"
+  "uptime": "35m37s"
 }
