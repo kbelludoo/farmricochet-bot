@@ -1,14 +1,14 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 21: Ato 1 — Invasão · Sombria 1/5",
+      "currentArea": "Fase 22: Ato 1 — Invasão · Sombria 2/5",
       "durationSec": 5613,
       "expPerHour": 6925.658460880865,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 447,
+        "onlinePlayers": 448,
         "stone": 9370,
         "wheat": 19826,
         "wood": 24294
@@ -17,12 +17,8 @@
       "hp": 466,
       "id": "acc-1",
       "kills": 90,
-      "level": 21,
+      "level": 22,
       "logs": [
-        "[07:20:23] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2480 gold=0",
-        "[07:20:23] ⏳ Sincronizando com relógio do servidor (0/2480)... aguardando 5000ms",
-        "[07:20:40] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2480 gold=0",
-        "[07:20:40] ⏳ Sincronizando com relógio do servidor (0/2480)... aguardando 5000ms",
         "[07:20:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:20:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2480 gold=0",
         "[07:20:57] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
@@ -33,19 +29,23 @@
         "[07:23:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:24:13] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-dark-2 nextId=51f2ed78-88c4-45d5-8942-05dbadc468fd auth=2480/2480 gold=261",
         "[07:24:13] ✅ Fase 21 Concluída! +261 Gold",
-        "[07:24:13] 🚀 Próxima fase desbloqueada: act-1-dark-2 (Nv. 22)! Avançando..."
+        "[07:24:13] 🚀 Próxima fase desbloqueada: act-1-dark-2 (Nv. 22)! Avançando...",
+        "[07:24:14] ▶ Fase 22 iniciada (Meta: 2530 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 196s)",
+        "[07:24:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:25:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:26:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 21",
-      "updatedAt": 1792826653079,
+      "status": "Jogando Fase 22",
+      "updatedAt": 1792826654744,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.813262939453125,
+  "ramAllocMB": 1.8710403442382812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h33m35s"
+  "uptime": "1h35m36s"
 }
