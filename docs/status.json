@@ -1,30 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 14: Ato 1 — Invasão · Neve 4/5",
-      "durationSec": 2644,
-      "expPerHour": 8168.645696755069,
+      "currentArea": "Fase 15: Ato 1 — Invasão · Neve 5/5",
+      "durationSec": 2834,
+      "expPerHour": 8381.619730594562,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 458,
-        "stone": 542,
-        "wheat": 68049,
-        "wood": 51158
+        "onlinePlayers": 457,
+        "stone": 2092,
+        "wheat": 68775,
+        "wood": 52556
       },
-      "gold": 45940,
+      "gold": 46135,
       "hp": 466,
       "id": "acc-1",
-      "kills": 50,
-      "level": 14,
+      "kills": 55,
+      "level": 15,
       "logs": [
-        "[06:26:45] 🌱 Talento evoluído: Mineração -\u003e Nv. 2",
-        "[06:27:30] 🌱 Talento evoluído: Mineração -\u003e Nv. 3",
-        "[06:28:49] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-2 nextId=514bb814-fffd-465f-9b49-275cb7df8cf7 auth=2110/2110 gold=146",
-        "[06:28:49] ✅ Fase 11 Concluída! +146 Gold",
-        "[06:28:49] 🚀 Próxima fase desbloqueada: act-1-snow-2 (Nv. 12)! Avançando...",
-        "[06:28:51] ▶ Fase 12 iniciada (Meta: 2150 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 163s)",
         "[06:31:44] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-3 nextId=a1e9db5c-e485-48d5-98fc-04957e73056b auth=2150/2150 gold=146",
         "[06:31:44] ✅ Fase 12 Concluída! +146 Gold",
         "[06:31:44] 🚀 Próxima fase desbloqueada: act-1-snow-3 (Nv. 13)! Avançando...",
@@ -33,19 +27,25 @@
         "[06:34:43] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-4 nextId=13910052-aa84-4c46-b8ce-4582f8ef5ea6 auth=2180/2180 gold=195",
         "[06:34:43] ✅ Fase 13 Concluída! +195 Gold",
         "[06:34:43] 🚀 Próxima fase desbloqueada: act-1-snow-4 (Nv. 14)! Avançando...",
-        "[06:34:46] ▶ Fase 14 iniciada (Meta: 2220 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 168s)"
+        "[06:34:46] ▶ Fase 14 iniciada (Meta: 2220 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 168s)",
+        "[06:37:47] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2198/2220 gold=0",
+        "[06:37:47] ⏳ Sincronizando com relógio do servidor (2198/2220)... aguardando 5000ms",
+        "[06:37:53] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-5 nextId=60e02ac3-e3e0-4234-83ac-5f820ac775c2 auth=2220/2220 gold=195",
+        "[06:37:53] ✅ Fase 14 Concluída! +195 Gold",
+        "[06:37:53] 🚀 Próxima fase desbloqueada: act-1-snow-5 (Nv. 15)! Avançando...",
+        "[06:37:56] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 14",
-      "updatedAt": 1792823686053,
+      "status": "Jogando Fase 15",
+      "updatedAt": 1792823876787,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6618728637695312,
+  "ramAllocMB": 1.5388717651367188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "45m36s"
+  "uptime": "47m35s"
 }
