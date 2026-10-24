@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 23: Ato 1 — Invasão · Sombria 3/5",
-      "durationSec": 5821,
-      "expPerHour": 7050.124177621816,
+      "currentArea": "Fase 24: Ato 1 — Invasão · Sombria 4/5",
+      "durationSec": 6033,
+      "expPerHour": 7160.263507910326,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
         "onlinePlayers": 449,
-        "stone": 12732,
-        "wheat": 19826,
-        "wood": 27194
+        "stone": 1086,
+        "wheat": 12300,
+        "wood": 15078
       },
-      "gold": 49294,
+      "gold": 45374,
       "hp": 466,
       "id": "acc-1",
-      "kills": 95,
-      "level": 23,
+      "kills": 100,
+      "level": 24,
       "logs": [
-        "[07:24:13] ✅ Fase 21 Concluída! +261 Gold",
-        "[07:24:13] 🚀 Próxima fase desbloqueada: act-1-dark-2 (Nv. 22)! Avançando...",
-        "[07:24:14] ▶ Fase 22 iniciada (Meta: 2530 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 196s)",
-        "[07:24:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:25:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:26:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:26:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:27:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:27:40] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-dark-3 nextId=9c05b343-24b0-492a-8fec-5e3a34f35274 auth=2530/2530 gold=261",
         "[07:27:40] ✅ Fase 22 Concluída! +261 Gold",
         "[07:27:40] 🚀 Próxima fase desbloqueada: act-1-dark-3 (Nv. 23)! Avançando...",
         "[07:27:42] ▶ Fase 23 iniciada (Meta: 2570 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 199s)",
         "[07:28:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:29:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:29:45] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:29:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:30:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:30:31] 🌱 Talento evoluído: Fortuna -\u003e Nv. 2",
+        "[07:31:12] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-dark-4 nextId=93e69f11-d71a-4247-8f23-5187441131c1 auth=2570/2570 gold=261",
+        "[07:31:12] ✅ Fase 23 Concluída! +261 Gold",
+        "[07:31:12] 🚀 Próxima fase desbloqueada: act-1-dark-4 (Nv. 24)! Avançando...",
+        "[07:31:14] ▶ Fase 24 iniciada (Meta: 2610 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 202s)",
+        "[07:31:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:32:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 23",
-      "updatedAt": 1792826862849,
+      "status": "Jogando Fase 24",
+      "updatedAt": 1792827074272,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8100509643554688,
+  "ramAllocMB": 1.82476806640625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h39m37s"
+  "uptime": "1h41m36s"
 }
