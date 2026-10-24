@@ -19,13 +19,6 @@
       "kills": 650,
       "level": 36,
       "logs": [
-        "[18:32:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:33:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:33:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:34:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:34:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:35:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:35:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:35:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:35:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:36:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3081/3110 gold=0",
@@ -33,7 +26,14 @@
         "[18:36:12] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-autumn-5 nextId=c8c8fb49-42d8-4625-9fca-6863555a27b1 auth=3110/3110 gold=424",
         "[18:36:12] ✅ Fase 35 Concluída! +424 Gold",
         "[18:36:12] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
-        "[18:36:14] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)"
+        "[18:36:14] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
+        "[18:36:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:36:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:36:34] 🌱 Talento evoluído: Vitalidade dos Heróis -\u003e Nv. 3",
+        "[18:37:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:37:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:38:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:38:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7917022705078125,
+  "ramAllocMB": 1.9297561645507812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "12h45m38s"
+  "uptime": "12h47m37s"
 }
