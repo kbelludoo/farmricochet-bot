@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 447,
+        "onlinePlayers": 448,
         "stone": 4580,
         "wheat": 85097,
         "wood": 86804
@@ -19,8 +19,6 @@
       "kills": 5,
       "level": 5,
       "logs": [
-        "[05:50:39] Automação total iniciada. Loop de farm e campanha em execução.",
-        "[05:50:39] ⚠️ Conflito/expiração de lease antes de iniciar fase. Re-adquirindo sessão...",
         "[05:50:39] Aviso: falha ao iniciar run: HTTP 409 em /api/v1/runs/start: {\"error\":{\"message\":\"active game lease, level and composition are required\"}}\n. Aguardando 5s...",
         "[05:50:44] ⚠️ Conflito/expiração de lease antes de iniciar fase. Re-adquirindo sessão...",
         "[05:50:44] Aviso: falha ao iniciar run: HTTP 409 em /api/v1/runs/start: {\"error\":{\"message\":\"active game lease, level and composition are required\"}}\n. Aguardando 5s...",
@@ -33,7 +31,9 @@
         "[05:53:17] ✅ Fase 4 Concluída! +65 Gold",
         "[05:53:17] 🎯 LIMITE DESCOBERTO! Servidor exigiu 148s reais -\u003e Teto cravado em 5.60x (12.68/s)!",
         "[05:53:17] 🚀 Próxima fase desbloqueada: act-1-farm-5 (Nv. 5)! Avançando...",
-        "[05:53:19] ▶ Fase 5 iniciada (Meta: 1920 wheat | Base: 2.26/s -\u003e Real: 12.68/s [5.60x] | Est: 151s)"
+        "[05:53:19] ▶ Fase 5 iniciada (Meta: 1920 wheat | Base: 2.26/s -\u003e Real: 12.68/s [5.60x] | Est: 151s)",
+        "[05:56:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=306/1920 gold=0",
+        "[05:56:03] ⏳ Sincronizando com relógio do servidor (306/1920)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.632476806640625,
+  "ramAllocMB": 2.0153961181640625,
   "ramSysMB": 13.099861145019531,
-  "uptime": "3m35s"
+  "uptime": "5m35s"
 }
