@@ -19,10 +19,6 @@
       "kills": 935,
       "level": 41,
       "logs": [
-        "[23:23:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[23:23:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[23:23:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[23:24:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[23:24:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[23:25:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[23:25:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +29,11 @@
         "[23:25:44] 🚀 Próxima fase desbloqueada: act-2-snow-5 (Nv. 41)! Avançando...",
         "[23:25:46] ▶ Fase 41 iniciada (Meta: 3430 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 167s)",
         "[23:26:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[23:26:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[23:26:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:26:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[23:26:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:27:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[23:27:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9436264038085938,
+  "ramAllocMB": 1.7456817626953125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "17h35m38s"
+  "uptime": "17h37m37s"
 }
