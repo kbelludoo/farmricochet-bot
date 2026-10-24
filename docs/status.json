@@ -19,8 +19,6 @@
       "kills": 315,
       "level": 35,
       "logs": [
-        "[12:32:21] ✅ Fase 35 Concluída! +416 Gold",
-        "[12:32:21] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
         "[12:32:22] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
         "[12:32:47] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:33:32] 🎟️ 2 missões do Passe de Batalha resgatadas!",
@@ -33,7 +31,9 @@
         "[12:36:27] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
         "[12:36:32] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:37:17] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:38:02] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[12:38:02] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:38:47] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:39:32] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 10,
-  "ramAllocMB": 1.5933609008789062,
+  "goroutines": 11,
+  "ramAllocMB": 1.9195022583007812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "6h47m35s"
+  "uptime": "6h49m37s"
 }
