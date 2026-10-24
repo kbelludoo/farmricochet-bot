@@ -1,28 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 6: Ato 1 — Invasão · Outono 1/5",
-      "durationSec": 547,
-      "expPerHour": 7891.607631719999,
+      "currentArea": "Fase 7: Ato 1 — Invasão · Outono 2/5",
+      "durationSec": 929,
+      "expPerHour": 6973.463042276627,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 446,
+        "onlinePlayers": 447,
         "stone": 583,
-        "wheat": 83021,
-        "wood": 82668
+        "wheat": 77446,
+        "wood": 85185
       },
-      "gold": 44805,
+      "gold": 44967,
       "hp": 466,
       "id": "acc-1",
-      "kills": 10,
-      "level": 6,
+      "kills": 15,
+      "level": 7,
       "logs": [
-        "[05:59:39] ⏳ Sincronizando com relógio do servidor (1905/1920)... aguardando 5000ms",
-        "[05:59:46] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-1 nextId=88909f5d-c973-41a6-8b3f-7cdfe1d1c129 auth=1920/1920 gold=65",
-        "[05:59:46] ✅ Fase 5 Concluída! +65 Gold",
-        "[05:59:46] 🚀 Próxima fase desbloqueada: act-1-autumn-1 (Nv. 6)! Avançando...",
         "[05:59:49] ▶ Fase 6 iniciada (Meta: 1950 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 157s)",
         "[06:00:30] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 2",
         "[06:02:37] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=74/1950 gold=0",
@@ -33,19 +29,23 @@
         "[06:03:11] ⏳ Sincronizando com relógio do servidor (74/1950)... aguardando 5000ms",
         "[06:03:27] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=74/1950 gold=0",
         "[06:03:27] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[06:03:29] ▶ Fase 6 iniciada (Meta: 1950 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 157s)"
+        "[06:03:29] ▶ Fase 6 iniciada (Meta: 1950 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 157s)",
+        "[06:06:08] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-2 nextId=8a2dd2b9-acec-44aa-bed8-29d5214b286a auth=1950/1950 gold=81",
+        "[06:06:08] ✅ Fase 6 Concluída! +81 Gold",
+        "[06:06:08] 🚀 Próxima fase desbloqueada: act-1-autumn-2 (Nv. 7)! Avançando...",
+        "[06:06:11] ▶ Fase 7 iniciada (Meta: 1980 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 159s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 6",
-      "updatedAt": 1792821809270,
+      "status": "Jogando Fase 7",
+      "updatedAt": 1792821971245,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.9557266235351562,
+  "ramAllocMB": 1.8417587280273438,
   "ramSysMB": 13.349861145019531,
-  "uptime": "13m35s"
+  "uptime": "15m37s"
 }
