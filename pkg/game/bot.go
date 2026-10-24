@@ -511,6 +511,8 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 					if hbErr == nil && hbResp != nil && hbResp.AuthoritativeProgress > 0 {
 						lastProgress = hbResp.AuthoritativeProgress
 					}
+					// Aguarda o servidor consolidar o progresso antes do settle
+					time.Sleep(2 * time.Second)
 				}
 
 				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, nil)
@@ -531,12 +533,11 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 						lastProgress = completeResp.AuthoritativeProgress
 					}
 					waitMs := completeResp.RetryAfterMs
-					if waitMs < 1000 {
-						waitMs = 1500
+					if waitMs < 4000 {
+						waitMs = 5000
 					}
 					b.addLog(fmt.Sprintf("⏳ Sincronizando com relógio do servidor (%d/%d)... aguardando %dms",
 						completeResp.AuthoritativeProgress, completeResp.ObjectiveAmount, waitMs))
-					time.Sleep(time.Duration(waitMs) * time.Millisecond)
 
 					// Durante a espera, envia heartbeat para avançar authoritativeProgress com os recursos restantes
 					missing := targetGoal - lastProgress
@@ -552,6 +553,7 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 							lastProgress = hbResp.AuthoritativeProgress
 						}
 					}
+					time.Sleep(time.Duration(waitMs) * time.Millisecond)
 					continue
 				}
 
