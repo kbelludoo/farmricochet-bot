@@ -19,9 +19,6 @@
       "kills": 330,
       "level": 36,
       "logs": [
-        "[12:59:17] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[12:59:17] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[12:59:19] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
         "[12:59:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:00:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:01:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
@@ -33,7 +30,10 @@
         "[13:03:28] ✅ Fase 35 Concluída! +416 Gold",
         "[13:03:28] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
         "[13:03:31] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
-        "[13:03:33] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[13:03:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:04:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:05:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:05:48] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.6340789794921875,
+  "ramAllocMB": 1.9317703247070312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "7h13m36s"
+  "uptime": "7h15m38s"
 }
