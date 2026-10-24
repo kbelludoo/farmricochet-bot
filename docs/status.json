@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 459,
+        "onlinePlayers": 458,
         "stone": 2038,
         "wheat": 81347,
         "wood": 84929
@@ -21,7 +21,15 @@
       "logs": [
         "[05:03:39] Fazenda conectada! Fase ativa: Fase 4 (Ato 1 — Invasão · Fazenda 4/5) | Ouro: 46208",
         "[05:03:39] Automação total iniciada. Loop de farm e campanha em execução.",
-        "[05:03:39] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)"
+        "[05:03:39] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)",
+        "[05:05:49] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1770/1890 gold=0",
+        "[05:05:49] ⏳ Sincronizando com relógio do servidor (1770/1890)... aguardando 5000ms",
+        "[05:05:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1836/1890 gold=0",
+        "[05:05:57] ⏳ Sincronizando com relógio do servidor (1836/1890)... aguardando 5000ms",
+        "[05:06:04] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1860/1890 gold=0",
+        "[05:06:04] ⏳ Sincronizando com relógio do servidor (1860/1890)... aguardando 5000ms",
+        "[05:06:11] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[05:06:11] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -33,7 +41,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.3948898315429688,
+  "ramAllocMB": 1.6909027099609375,
   "ramSysMB": 13.099861145019531,
-  "uptime": "37s"
+  "uptime": "2m37s"
 }
