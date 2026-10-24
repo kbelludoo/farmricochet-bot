@@ -19,9 +19,6 @@
       "kills": 140,
       "level": 30,
       "logs": [
-        "[08:11:34] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-farm-5 nextId=b4d6ce59-6693-4884-971a-128af2307d34 auth=2870/2870 gold=374",
-        "[08:11:34] ✅ Fase 30 Concluída! +374 Gold",
-        "[08:11:35] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
         "[08:11:36] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 226s)",
         "[08:11:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:11:46] 🌱 Talento evoluído: Poder dos Heróis -\u003e Nv. 2",
@@ -33,7 +30,10 @@
         "[08:15:34] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-farm-4 nextId=cd6bc588-d04d-4149-a4c8-c56ad9e1ff9b auth=2892/2920 gold=249",
         "[08:15:34] ✅ Fase 31 Concluída! +249 Gold",
         "[08:15:34] 🚀 Próxima fase desbloqueada: act-2-farm-4 (Nv. 30)! Avançando...",
-        "[08:15:35] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 222s)"
+        "[08:15:35] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 222s)",
+        "[08:16:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:17:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:17:45] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8211898803710938,
+  "ramAllocMB": 1.8569793701171875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "2h25m36s"
+  "uptime": "2h27m36s"
 }
