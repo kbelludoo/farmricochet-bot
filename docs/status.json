@@ -8,7 +8,7 @@
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 456,
+        "onlinePlayers": 458,
         "stone": 0,
         "wheat": 79741,
         "wood": 83105
@@ -19,28 +19,33 @@
       "kills": 5,
       "level": 4,
       "logs": [
-        "[04:51:51] Fazenda conectada! Fase ativa: Fase 3 (Ato 1 — Invasão · Fazenda 3/5) | Ouro: 45888",
-        "[04:51:51] Automação total iniciada. Loop de farm e campanha em execução.",
-        "[04:51:52] ▶ Fase 3 iniciada (Meta: 1860 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 126s)",
-        "[04:53:59] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1841/1860 gold=0",
-        "[04:53:59] ⏳ Sincronizando com relógio do servidor (1841/1860)... aguardando 1000ms",
-        "[04:54:00] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-farm-4 nextId=ac5d5a8b-2023-4159-8da2-5ba344cbc7aa auth=1860/1860 gold=64",
-        "[04:54:00] ✅ Fase 3 Concluída! +64 Gold",
-        "[04:54:00] 🎯 LIMITE DESCOBERTO! Servidor exigiu 128s reais -\u003e Teto cravado em 6.34x (14.36/s)!",
-        "[04:54:00] 🚀 Próxima fase desbloqueada: act-1-farm-4 (Nv. 4)! Avançando...",
-        "[04:54:02] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.36/s [6.34x] | Est: 132s)"
+        "[04:56:39] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 1000ms",
+        "[04:56:40] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[04:56:40] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 1000ms",
+        "[04:56:41] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[04:56:41] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 1000ms",
+        "[04:56:42] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[04:56:42] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 1000ms",
+        "[04:56:44] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[04:56:44] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 1000ms",
+        "[04:56:45] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[04:56:45] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 1000ms",
+        "[04:56:46] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[04:56:46] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 1000ms",
+        "[04:56:47] Aviso: conclusão da run recusada: rate_limit: pausa solicitada pelo servidor (HTTP 429). Aguardando 5s...",
+        "[04:56:52] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.36/s [6.34x] | Est: 132s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 4",
-      "updatedAt": 1792817642967,
+      "updatedAt": 1792817812440,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5132064819335938,
+  "ramAllocMB": 1.473419189453125,
   "ramSysMB": 13.099861145019531,
-  "uptime": "4m24s"
+  "uptime": "6m24s"
 }
