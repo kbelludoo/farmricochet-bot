@@ -8,32 +8,32 @@
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 491,
+        "onlinePlayers": 486,
         "stone": 0,
         "wheat": 13831,
         "wood": 473
       },
-      "gold": 38976,
+      "gold": 39040,
       "hp": 466,
       "id": "acc-1",
       "kills": 0,
       "level": 2,
       "logs": [
-        "[00:06:10] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 38976",
-        "[00:06:10] Automação total iniciada. Loop de farm e campanha em execução.",
-        "[00:06:10] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 6.00/s [2.65x] | Est: 305s)"
+        "[00:06:59] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 39040",
+        "[00:06:59] Automação total iniciada. Loop de farm e campanha em execução.",
+        "[00:06:59] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 124s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792800370789,
+      "updatedAt": 1792800419353,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.478729248046875,
-  "ramSysMB": 12.849861145019531,
-  "uptime": "6s"
+  "ramAllocMB": 1.6226043701171875,
+  "ramSysMB": 13.099861145019531,
+  "uptime": "1m15s"
 }
