@@ -450,15 +450,15 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 	b.addLog(fmt.Sprintf("▶ Fase %d iniciada (Meta: %d %s | Base: %.2f/s -> Real: %.2f/s [%.2fx] | Est: %.0fs)",
 		activeLvl.Number, targetGoal, runResp.ObjectiveResource, rate, rate*speedMult, speedMult, durationSec))
 
-	// Prepara estruturas para eventos de produção válidos
-	structureEvents := b.buildStructureEvents(boot, runResp)
-
 	// Loop de simulação da fase com heartbeats a cada 6 segundos
 	runStart := time.Now()
 	heartbeatInterval := 6 * time.Second
 	nextHeartbeat := time.Now().Add(heartbeatInterval)
 	goblinDefeated := false
 	hadSyncWait := false
+
+	lastProgress := 0
+	structureSeq := 0
 
 	for {
 		select {
@@ -478,28 +478,54 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 			// Envia heartbeat se o intervalo chegou
 			if time.Now().After(nextHeartbeat) && progressRatio < 1.0 {
-				hbEnv := b.buildEnvelope(b.holderId, "", currentProgress, elapsed, targetGoal, runResp, structureEvents)
-				_, hbErr := b.client.HeartbeatRun(runId, hbEnv)
+				delta := currentProgress - lastProgress
+				var batch []StructureEvent
+				if delta > 0 {
+					batch, structureSeq = b.generateStructureBatch(boot, runResp, structureSeq, delta, elapsed)
+					for _, ev := range batch {
+						lastProgress += ev.Amount
+					}
+				}
+				hbEnv := b.buildEnvelope(b.holderId, "", currentProgress, elapsed, targetGoal, runResp, batch)
+				hbResp, hbErr := b.client.HeartbeatRun(runId, hbEnv)
 				if hbErr != nil {
 					log.Printf("[%s] Heartbeat run aviso: %v", b.ID(), hbErr)
+				} else if hbResp != nil {
+					log.Printf("[%s] [HB] prog=%d/%d auth=%d/%d", b.ID(), currentProgress, targetGoal, hbResp.AuthoritativeProgress, hbResp.ObjectiveAmount)
 				}
 				nextHeartbeat = time.Now().Add(heartbeatInterval)
 			}
 
 			// Se a fase atingiu a duração necessária, conclui
 			if progressRatio >= 1.0 {
-				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, structureEvents)
+				delta := targetGoal - lastProgress
+				var batch []StructureEvent
+				if delta > 0 {
+					batch, structureSeq = b.generateStructureBatch(boot, runResp, structureSeq, delta, elapsed)
+					for _, ev := range batch {
+						lastProgress += ev.Amount
+					}
+				}
+				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, batch)
 				completeResp, compErr := b.client.CompleteRun(runId, completeEnv)
 				if compErr != nil {
 					return fmt.Errorf("conclusão da run recusada: %w", compErr)
+				}
+				if completeResp != nil {
+					b.addLog(fmt.Sprintf("🔍 Complete: accepted=%v outcome=%s nextCode=%s nextId=%s auth=%d/%d gold=%d",
+						completeResp.Accepted, completeResp.Outcome, completeResp.NextLevelCode, completeResp.NextLevelId,
+						completeResp.AuthoritativeProgress, completeResp.ObjectiveAmount, completeResp.GoldReward))
 				}
 
 				// Se o servidor avisar que a simulação chegou antes do relógio canônico
 				if completeResp != nil && !completeResp.Accepted {
 					hadSyncWait = true
+					if completeResp.AuthoritativeProgress > 0 {
+						lastProgress = completeResp.AuthoritativeProgress
+					}
 					waitMs := completeResp.RetryAfterMs
 					if waitMs < 1000 {
-						waitMs = 2000
+						waitMs = 1500
 					}
 					b.addLog(fmt.Sprintf("⏳ Sincronizando com relógio do servidor (%d/%d)... aguardando %dms",
 						completeResp.AuthoritativeProgress, completeResp.ObjectiveAmount, waitMs))
@@ -557,11 +583,11 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 	}
 }
 
-// buildStructureEvents gera eventos de produção compatíveis com as estruturas do mapa
-func (b *Bot) buildStructureEvents(boot *BootstrapResponse, run *RunStartResponse) []StructureEvent {
+// generateStructureBatch gera eventos de produção dinâmicos baseados no progresso do período
+func (b *Bot) generateStructureBatch(boot *BootstrapResponse, run *RunStartResponse, seqStart int, deltaResources int, elapsed time.Duration) ([]StructureEvent, int) {
 	var events []StructureEvent
-	if boot.ActiveLevel == nil {
-		return events
+	if boot == nil || boot.ActiveLevel == nil || deltaResources <= 0 {
+		return events, seqStart
 	}
 
 	levelVersionId := boot.ActiveLevel.LevelVersionId
@@ -572,38 +598,65 @@ func (b *Bot) buildStructureEvents(boot *BootstrapResponse, run *RunStartRespons
 		heroId = boot.Composition.Slots[0].CharacterId
 	}
 
-	structIdx := 0
+	type sInfo struct {
+		id       string
+		code     string
+		resource string
+	}
+	var structs []sInfo
 	for _, ent := range boot.ActiveLevel.Entities {
-		if ent.Kind == "structure" || strings.HasPrefix(ent.Type, "wheat") || strings.HasPrefix(ent.Type, "wood") || strings.HasPrefix(ent.Type, "sawmill") || strings.HasPrefix(ent.Type, "stone") {
-			structIdx++
-			resource := "wheat"
+		if ent.Kind == "structure" {
+			res := "wheat"
 			if strings.Contains(ent.Type, "wood") || strings.Contains(ent.Type, "sawmill") || strings.Contains(ent.Type, "lumber") {
-				resource = "wood"
+				res = "wood"
 			} else if strings.Contains(ent.Type, "stone") || strings.Contains(ent.Type, "mine") || strings.Contains(ent.Type, "quarry") {
-				resource = "stone"
+				res = "stone"
 			}
-
-			ev := StructureEvent{
-				EventId:          fmt.Sprintf("%s%012x", run.ID[:24], structIdx),
-				LevelVersionId:   levelVersionId,
-				MapVersionId:     mapVersionId,
-				Sequence:         structIdx,
-				StructureId:      ent.ID,
-				StructureCode:    ent.Type,
-				StructureVersion: 1,
-				HeroId:           heroId,
-				EventType:        "production",
-				OccurredAtMs:     int64(structIdx * 2500),
-				Resource:         resource,
-				Quantity:         5,
-			}
-			events = append(events, ev)
-			if len(events) >= 12 {
-				break
-			}
+			structs = append(structs, sInfo{id: ent.ID, code: ent.Type, resource: res})
 		}
 	}
-	return events
+
+	if len(structs) == 0 {
+		return events, seqStart
+	}
+
+	seq := seqStart
+	remaining := deltaResources
+	sIdx := 0
+
+	for remaining > 0 {
+		chunk := 12
+		if remaining < chunk {
+			chunk = remaining
+		}
+		remaining -= chunk
+
+		st := structs[sIdx%len(structs)]
+		sIdx++
+		seq++
+
+		ev := StructureEvent{
+			EventId:          fmt.Sprintf("%s%012x", run.ID[:24], seq),
+			LevelVersionId:   levelVersionId,
+			MapVersionId:     mapVersionId,
+			Sequence:         seq,
+			StructureId:      st.id,
+			StructureCode:    st.code,
+			StructureVersion: 1,
+			HeroId:           heroId,
+			EventType:        "production",
+			OccurredAtMs:     elapsed.Milliseconds(),
+			Resource:         st.resource,
+			Amount:           chunk,
+			Quantity:         chunk,
+		}
+		events = append(events, ev)
+		if len(events) >= 40 {
+			break
+		}
+	}
+
+	return events, seq
 }
 
 // buildEnvelope cria o pacote de telemetria canônico do jogo
@@ -670,6 +723,15 @@ func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time
 		telemetryOutcome = "completed"
 	}
 
+	heroAliveKills := make(map[string]int)
+	if boot != nil && boot.Composition != nil {
+		for _, slot := range boot.Composition.Slots {
+			if slot.CharacterId != "" {
+				heroAliveKills[slot.CharacterId] = enemiesDefeated
+			}
+		}
+	}
+
 	telemetry := &RunTelemetry{
 		SchemaVersion:      1,
 		CombatIntegrity:    []any{},
@@ -690,8 +752,7 @@ func (b *Bot) buildEnvelope(holderId, outcome string, progress int, elapsed time
 		ArenaCleared:       true,
 		EnemiesDefeated:    enemiesDefeated,
 		EnemyDefeats:       enemyDefeats,
-		HeroAliveKills:     map[string]int{},
-		StructureEvents:    events,
+		HeroAliveKills:     heroAliveKills,
 	}
 
 	return RunEnvelope{

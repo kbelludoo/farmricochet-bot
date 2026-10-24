@@ -3,6 +3,7 @@ package game
 import (
 	"crypto/rand"
 	"fmt"
+	"log"
 	"net/http"
 	"net/url"
 	"time"
@@ -125,10 +126,11 @@ func (c *FarmClient) StartRun(req RunStartRequest) (*RunStartResponse, error) {
 func (c *FarmClient) HeartbeatRun(runId string, envelope RunEnvelope) (*RunHeartbeatResponse, error) {
 	endpoint := fmt.Sprintf("/api/v1/runs/%s/heartbeat", url.PathEscape(runId))
 	var resp RunHeartbeatResponse
-	err := c.httpCli.PutJSON(endpoint, envelope, &resp)
+	status, body, err := c.httpCli.DoRequest(http.MethodPut, endpoint, envelope, &resp)
 	if err != nil {
 		return nil, err
 	}
+	log.Printf("[HEARTBEAT-RAW] HTTP %d: %s", status, string(body))
 	return &resp, nil
 }
 
@@ -139,6 +141,7 @@ func (c *FarmClient) CompleteRun(runId string, envelope RunEnvelope) (*RunComple
 	if err != nil {
 		return nil, err
 	}
+	log.Printf("[COMPLETE-RUN-RAW] HTTP %d: %s", status, string(body))
 	if status == 429 {
 		return nil, fmt.Errorf("rate_limit: pausa solicitada pelo servidor (HTTP 429)")
 	}

@@ -250,7 +250,7 @@ type RunTelemetry struct {
 	EnemiesDefeated    int             `json:"enemiesDefeated"`
 	EnemyDefeats       map[string]int  `json:"enemyDefeats"`
 	HeroAliveKills     map[string]int  `json:"heroAliveKills"`
-	StructureEvents    []StructureEvent `json:"structureEvents"`
+	StructureEvents    []StructureEvent `json:"structureEvents,omitempty"`
 }
 
 type TelemetryMetrics struct {
@@ -282,12 +282,15 @@ type StructureEvent struct {
 	EventType        string `json:"eventType"` // "production"
 	OccurredAtMs     int64  `json:"occurredAtMs"`
 	Resource         string `json:"resource"`
-	Quantity         int    `json:"quantity"`
+	Amount           int    `json:"amount"`
+	Quantity         int    `json:"quantity,omitempty"`
 }
 
 type RunHeartbeatResponse struct {
-	LeaseExpiresAt string `json:"leaseExpiresAt"`
-	Progress       int    `json:"progress"`
+	LeaseExpiresAt        string `json:"leaseExpiresAt"`
+	Progress              int    `json:"progress"`
+	AuthoritativeProgress int    `json:"authoritativeProgress"`
+	ObjectiveAmount       int    `json:"objectiveAmount"`
 }
 
 type RunCompleteResponse struct {
