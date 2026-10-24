@@ -19,21 +19,21 @@
       "kills": 515,
       "level": 35,
       "logs": [
-        "[16:19:23] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[16:19:23] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms",
-        "[16:19:40] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[16:19:40] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms",
-        "[16:19:56] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
-        "[16:19:56] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms",
-        "[16:20:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:20:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:20:13] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
         "[16:20:13] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[16:20:16] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
         "[16:20:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[16:20:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:21:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:21:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[16:21:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:22:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:22:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:23:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:23:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:23:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:23:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:24:16] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3081/3110 gold=0",
+        "[16:24:16] ⏳ Sincronizando com relógio do servidor (3081/3110)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7548828125,
+  "ramAllocMB": 1.70306396484375,
   "ramSysMB": 13.349861145019531,
-  "uptime": "10h31m38s"
+  "uptime": "10h33m38s"
 }
