@@ -19,13 +19,6 @@
       "kills": 345,
       "level": 35,
       "logs": [
-        "[13:11:44] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
-        "[13:11:47] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
-        "[13:11:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:12:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:13:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:14:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:14:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:15:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:15:50] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=330/3160 gold=91",
         "[13:15:50] ✅ Fase 36 Concluída! +91 Gold",
@@ -33,7 +26,14 @@
         "[13:15:53] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
         "[13:16:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:17:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:17:48] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[13:17:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:18:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:19:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:19:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
+        "[13:19:53] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms",
+        "[13:20:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:20:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=330/3110 gold=0",
+        "[13:20:10] ⏳ Sincronizando com relógio do servidor (330/3110)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9281005859375,
+  "ramAllocMB": 1.787322998046875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "7h27m35s"
+  "uptime": "7h29m35s"
 }
