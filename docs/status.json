@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 449,
+        "onlinePlayers": 452,
         "stone": 1086,
         "wheat": 12300,
         "wood": 15078
@@ -19,9 +19,6 @@
       "kills": 100,
       "level": 24,
       "logs": [
-        "[07:27:40] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-dark-3 nextId=9c05b343-24b0-492a-8fec-5e3a34f35274 auth=2530/2530 gold=261",
-        "[07:27:40] ✅ Fase 22 Concluída! +261 Gold",
-        "[07:27:40] 🚀 Próxima fase desbloqueada: act-1-dark-3 (Nv. 23)! Avançando...",
         "[07:27:42] ▶ Fase 23 iniciada (Meta: 2570 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 199s)",
         "[07:28:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:29:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
@@ -33,7 +30,10 @@
         "[07:31:12] 🚀 Próxima fase desbloqueada: act-1-dark-4 (Nv. 24)! Avançando...",
         "[07:31:14] ▶ Fase 24 iniciada (Meta: 2610 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 202s)",
         "[07:31:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:32:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:32:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:32:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:33:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:34:15] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.82476806640625,
+  "goroutines": 12,
+  "ramAllocMB": 1.7640914916992188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h41m36s"
+  "uptime": "1h43m38s"
 }
