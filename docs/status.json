@@ -1,7 +1,7 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 36: Ato 2 — Resistência · Outono 5/5",
+      "currentArea": "Fase 35: Ato 2 — Resistência · Outono 4/5",
       "durationSec": 46178,
       "expPerHour": 6127.471198542521,
       "extra": {
@@ -17,14 +17,8 @@
       "hp": 466,
       "id": "acc-1",
       "kills": 655,
-      "level": 36,
+      "level": 35,
       "logs": [
-        "[18:36:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:36:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:36:34] 🌱 Talento evoluído: Vitalidade dos Heróis -\u003e Nv. 3",
-        "[18:37:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:37:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:38:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:38:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:38:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:38:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,19 +27,25 @@
         "[18:40:18] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=165/3160 gold=186",
         "[18:40:18] ✅ Fase 36 Concluída! +186 Gold",
         "[18:40:18] 🚀 Próxima fase desbloqueada: act-2-autumn-4 (Nv. 35)! Avançando...",
-        "[18:40:18] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[18:40:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:40:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:40:20] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
+        "[18:41:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:41:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:41:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:41:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 36",
-      "updatedAt": 1792867218092,
+      "status": "Jogando Fase 35",
+      "updatedAt": 1792867220410,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9136505126953125,
+  "ramAllocMB": 1.7919387817382812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "12h49m41s"
+  "uptime": "12h51m37s"
 }
