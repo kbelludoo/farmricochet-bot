@@ -19,9 +19,6 @@
       "kills": 310,
       "level": 36,
       "logs": [
-        "[12:28:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:29:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:29:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:30:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:31:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:31:17] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 5",
@@ -33,7 +30,10 @@
         "[12:32:21] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
         "[12:32:22] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
         "[12:32:47] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:33:32] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[12:33:32] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:34:17] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:35:02] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:35:47] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.6194076538085938,
+  "ramAllocMB": 1.804901123046875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "6h43m36s"
+  "uptime": "6h45m35s"
 }
