@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 451,
+        "onlinePlayers": 452,
         "stone": 2766,
         "wheat": 82790,
         "wood": 85585
@@ -21,19 +21,28 @@
       "logs": [
         "[05:26:01] Fazenda conectada! Fase ativa: Fase 4 (Ato 1 — Invasão · Fazenda 4/5) | Ouro: 46336",
         "[05:26:01] Automação total iniciada. Loop de farm e campanha em execução.",
-        "[05:26:01] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)"
+        "[05:26:01] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)",
+        "[05:28:16] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1836/1890 gold=0",
+        "[05:28:16] ⏳ Sincronizando com relógio do servidor (1836/1890)... aguardando 5000ms",
+        "[05:28:23] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1836/1890 gold=0",
+        "[05:28:23] ⏳ Sincronizando com relógio do servidor (1836/1890)... aguardando 5000ms",
+        "[05:28:29] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1836/1890 gold=0",
+        "[05:28:29] ⏳ Sincronizando com relógio do servidor (1836/1890)... aguardando 5000ms",
+        "[05:28:36] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1836/1890 gold=0",
+        "[05:28:36] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[05:28:37] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 4",
-      "updatedAt": 1792819561310,
+      "updatedAt": 1792819717522,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.2632293701171875,
+  "ramAllocMB": 1.4793014526367188,
   "ramSysMB": 13.099861145019531,
-  "uptime": "2m13s"
+  "uptime": "4m16s"
 }
