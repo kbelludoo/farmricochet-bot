@@ -1,28 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 12: Ato 1 — Invasão · Neve 2/5",
-      "durationSec": 2290,
-      "expPerHour": 7544.263473013799,
+      "currentArea": "Fase 13: Ato 1 — Invasão · Neve 3/5",
+      "durationSec": 2465,
+      "expPerHour": 7884.864904279119,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 449,
-        "stone": 7506,
-        "wheat": 66075,
+        "onlinePlayers": 451,
+        "stone": 9580,
+        "wheat": 67054,
         "wood": 51158
       },
-      "gold": 45599,
+      "gold": 45745,
       "hp": 466,
       "id": "acc-1",
-      "kills": 40,
-      "level": 12,
+      "kills": 45,
+      "level": 13,
       "logs": [
-        "[06:25:48] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2062/2080 gold=0",
-        "[06:25:48] ⏳ Sincronizando com relógio do servidor (2062/2080)... aguardando 5000ms",
-        "[06:25:54] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-1 nextId=59439767-d9f1-4710-a0fa-a5db32e3459f auth=2080/2080 gold=81",
-        "[06:25:54] ✅ Fase 10 Concluída! +81 Gold",
         "[06:25:54] 🚀 Próxima fase desbloqueada: act-1-snow-1 (Nv. 11)! Avançando...",
         "[06:25:57] ▶ Fase 11 iniciada (Meta: 2110 stone | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 170s)",
         "[06:26:00] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 3",
@@ -33,19 +29,23 @@
         "[06:28:49] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-2 nextId=514bb814-fffd-465f-9b49-275cb7df8cf7 auth=2110/2110 gold=146",
         "[06:28:49] ✅ Fase 11 Concluída! +146 Gold",
         "[06:28:49] 🚀 Próxima fase desbloqueada: act-1-snow-2 (Nv. 12)! Avançando...",
-        "[06:28:51] ▶ Fase 12 iniciada (Meta: 2150 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 163s)"
+        "[06:28:51] ▶ Fase 12 iniciada (Meta: 2150 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 163s)",
+        "[06:31:44] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-3 nextId=a1e9db5c-e485-48d5-98fc-04957e73056b auth=2150/2150 gold=146",
+        "[06:31:44] ✅ Fase 12 Concluída! +146 Gold",
+        "[06:31:44] 🚀 Próxima fase desbloqueada: act-1-snow-3 (Nv. 13)! Avançando...",
+        "[06:31:47] ▶ Fase 13 iniciada (Meta: 2180 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 165s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 12",
-      "updatedAt": 1792823331520,
+      "status": "Jogando Fase 13",
+      "updatedAt": 1792823507235,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.776702880859375,
+  "ramAllocMB": 1.920166015625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "39m36s"
+  "uptime": "41m34s"
 }
