@@ -19,8 +19,6 @@
       "kills": 350,
       "level": 36,
       "logs": [
-        "[13:20:45] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
-        "[13:20:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:21:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:22:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:23:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
@@ -33,7 +31,9 @@
         "[13:24:54] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
         "[13:24:56] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
         "[13:25:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:26:03] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[13:26:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:26:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:27:33] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.760528564453125,
+  "ramAllocMB": 1.5348358154296875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "7h35m35s"
+  "uptime": "7h37m36s"
 }
