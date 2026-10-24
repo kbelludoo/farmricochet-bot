@@ -19,12 +19,6 @@
       "kills": 870,
       "level": 40,
       "logs": [
-        "[22:26:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[22:26:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[22:27:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[22:27:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[22:27:34] 🌱 Talento evoluído: Mineração -\u003e Nv. 6",
-        "[22:28:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[22:28:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[22:29:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[22:29:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[22:29:32] 🚀 Próxima fase desbloqueada: act-2-snow-4 (Nv. 40)! Avançando...",
         "[22:29:35] ▶ Fase 40 iniciada (Meta: 3380 wheat | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 168s)",
         "[22:29:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[22:29:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[22:29:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[22:30:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:30:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[22:31:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:31:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[22:32:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:32:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7829742431640625,
+  "ramAllocMB": 1.8743362426757812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "16h39m40s"
+  "uptime": "16h41m38s"
 }
