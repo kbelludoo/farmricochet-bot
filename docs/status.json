@@ -19,9 +19,6 @@
       "kills": 270,
       "level": 30,
       "logs": [
-        "[11:38:02] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[11:38:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[11:39:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[11:40:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[11:41:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[11:41:05] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2870 gold=0",
@@ -33,7 +30,10 @@
         "[11:41:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[11:41:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2870 gold=0",
         "[11:41:55] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[11:41:57] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 214s)"
+        "[11:41:57] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 214s)",
+        "[11:42:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[11:43:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[11:44:02] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.544097900390625,
+  "ramAllocMB": 1.7159500122070312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "5h51m35s"
+  "uptime": "5h53m36s"
 }
