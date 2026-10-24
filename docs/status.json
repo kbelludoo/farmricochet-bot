@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 453,
+        "onlinePlayers": 450,
         "stone": 3572,
         "wheat": 13420,
         "wood": 17238
@@ -19,9 +19,6 @@
       "kills": 105,
       "level": 25,
       "logs": [
-        "[07:35:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:36:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:37:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:38:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:38:34] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=234/2650 gold=0",
         "[07:38:34] ⏳ Sincronizando com relógio do servidor (234/2650)... aguardando 5000ms",
@@ -33,7 +30,10 @@
         "[07:39:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=234/2650 gold=0",
         "[07:39:24] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[07:39:27] ▶ Fase 25 iniciada (Meta: 2650 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 205s)",
-        "[07:39:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:39:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:40:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:41:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:41:45] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6952972412109375,
+  "ramAllocMB": 1.6671981811523438,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h49m36s"
+  "uptime": "1h51m37s"
 }
