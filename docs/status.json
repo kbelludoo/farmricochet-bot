@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 452,
+        "onlinePlayers": 453,
         "stone": 5125,
         "wheat": 77981,
         "wood": 88960
@@ -19,8 +19,6 @@
       "kills": 30,
       "level": 10,
       "logs": [
-        "[06:06:11] ▶ Fase 7 iniciada (Meta: 1980 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 159s)",
-        "[06:09:00] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-3 nextId=6fcc8b4e-c7e0-4f81-8155-25402d6732f0 auth=1980/1980 gold=81",
         "[06:09:00] ✅ Fase 7 Concluída! +81 Gold",
         "[06:09:00] 🚀 Próxima fase desbloqueada: act-1-autumn-3 (Nv. 8)! Avançando...",
         "[06:09:02] ▶ Fase 8 iniciada (Meta: 2020 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 162s)",
@@ -33,7 +31,9 @@
         "[06:15:02] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-5 nextId=94bf8489-3b25-45ae-b35f-61b111ce67c3 auth=2050/2050 gold=81",
         "[06:15:02] ✅ Fase 9 Concluída! +81 Gold",
         "[06:15:02] 🚀 Próxima fase desbloqueada: act-1-autumn-5 (Nv. 10)! Avançando...",
-        "[06:15:04] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)"
+        "[06:15:04] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)",
+        "[06:18:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=147/2080 gold=0",
+        "[06:18:03] ⏳ Sincronizando com relógio do servidor (147/2080)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.4502487182617188,
+  "ramAllocMB": 2.052581787109375,
   "ramSysMB": 13.349861145019531,
-  "uptime": "25m36s"
+  "uptime": "27m37s"
 }
