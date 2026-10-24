@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 450,
+        "onlinePlayers": 451,
         "stone": 6590,
         "wheat": 78619,
         "wood": 90182
@@ -19,8 +19,6 @@
       "kills": 35,
       "level": 11,
       "logs": [
-        "[06:22:12] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
-        "[06:22:29] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
         "[06:22:29] ⏳ Sincronizando com relógio do servidor (300/2080)... aguardando 5000ms",
         "[06:22:45] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=300/2080 gold=0",
         "[06:22:45] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
@@ -33,7 +31,9 @@
         "[06:25:57] ▶ Fase 11 iniciada (Meta: 2110 stone | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 170s)",
         "[06:26:00] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 3",
         "[06:26:01] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 1",
-        "[06:26:02] 🌱 Talento evoluído: Mineração -\u003e Nv. 1"
+        "[06:26:02] 🌱 Talento evoluído: Mineração -\u003e Nv. 1",
+        "[06:26:45] 🌱 Talento evoluído: Mineração -\u003e Nv. 2",
+        "[06:27:30] 🌱 Talento evoluído: Mineração -\u003e Nv. 3"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.9233551025390625,
+  "ramAllocMB": 1.6046142578125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "35m37s"
+  "uptime": "37m36s"
 }
