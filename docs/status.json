@@ -1,31 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 27: Ato 2 — Resistência · Fazenda 1/5",
-      "durationSec": 7258,
-      "expPerHour": 6844.2727594558655,
+      "currentArea": "Fase 28: Ato 2 — Resistência · Fazenda 2/5",
+      "durationSec": 7752,
+      "expPerHour": 6687.292241628812,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 447,
+        "onlinePlayers": 451,
         "stone": 9352,
         "wheat": 16063,
-        "wood": 22265
+        "wood": 28674
       },
-      "gold": 47202,
+      "gold": 47950,
       "hp": 466,
       "id": "acc-1",
-      "kills": 115,
-      "level": 27,
+      "kills": 120,
+      "level": 28,
       "logs": [
-        "[07:53:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:54:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:55:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:55:23] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2740 gold=0",
-        "[07:55:23] ⏳ Sincronizando com relógio do servidor (0/2740)... aguardando 5000ms",
-        "[07:55:40] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2740 gold=0",
-        "[07:55:40] ⏳ Sincronizando com relógio do servidor (0/2740)... aguardando 5000ms",
         "[07:55:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2740 gold=0",
         "[07:55:57] ⏳ Sincronizando com relógio do servidor (0/2740)... aguardando 5000ms",
         "[07:56:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
@@ -33,19 +26,26 @@
         "[07:56:14] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[07:56:16] ▶ Fase 27 iniciada (Meta: 2740 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 212s)",
         "[07:56:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:57:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:57:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:58:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:59:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:59:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:59:51] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-farm-2 nextId=ae9ec08a-6431-44c3-8782-78bc2394d890 auth=2740/2740 gold=374",
+        "[07:59:51] ✅ Fase 27 Concluída! +374 Gold",
+        "[07:59:51] 🚀 Próxima fase desbloqueada: act-2-farm-2 (Nv. 28)! Avançando...",
+        "[07:59:52] ▶ Fase 28 iniciada (Meta: 2780 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 215s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 27",
-      "updatedAt": 1792828576799,
+      "status": "Jogando Fase 28",
+      "updatedAt": 1792828792622,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6108551025390625,
+  "ramAllocMB": 2.2979354858398438,
   "ramSysMB": 13.349861145019531,
-  "uptime": "2h7m37s"
+  "uptime": "2h9m38s"
 }
