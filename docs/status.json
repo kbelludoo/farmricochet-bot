@@ -8,7 +8,7 @@
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 486,
+        "onlinePlayers": 487,
         "stone": 0,
         "wheat": 14996,
         "wood": 2465
@@ -19,10 +19,6 @@
       "kills": 5,
       "level": 3,
       "logs": [
-        "[00:32:06] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[00:32:07] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[00:32:07] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[00:32:08] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
         "[00:32:08] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
         "[00:32:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
         "[00:32:09] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
@@ -33,19 +29,23 @@
         "[00:32:13] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
         "[00:32:13] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
         "[00:32:14] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[00:32:14] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms"
+        "[00:32:14] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
+        "[00:32:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
+        "[00:32:15] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
+        "[00:32:16] Aviso: conclusão da run recusada: rate_limit: pausa solicitada pelo servidor (HTTP 429). Aguardando 5s...",
+        "[00:32:21] ▶ Fase 3 iniciada (Meta: 1860 wheat | Base: 2.26/s -\u003e Real: 14.31/s [6.32x] | Est: 130s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 3",
-      "updatedAt": 1792801774621,
+      "updatedAt": 1792801941429,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.3069915771484375,
+  "ramAllocMB": 1.6084671020507812,
   "ramSysMB": 13.099861145019531,
-  "uptime": "10m23s"
+  "uptime": "12m24s"
 }
