@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 455,
+        "onlinePlayers": 450,
         "stone": 2092,
         "wheat": 68775,
         "wood": 52556
@@ -19,33 +19,33 @@
       "kills": 55,
       "level": 15,
       "logs": [
-        "[06:31:44] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-3 nextId=a1e9db5c-e485-48d5-98fc-04957e73056b auth=2150/2150 gold=146",
-        "[06:31:44] ✅ Fase 12 Concluída! +146 Gold",
-        "[06:31:44] 🚀 Próxima fase desbloqueada: act-1-snow-3 (Nv. 13)! Avançando...",
-        "[06:31:47] ▶ Fase 13 iniciada (Meta: 2180 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 165s)",
-        "[06:34:15] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 2",
-        "[06:34:43] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-4 nextId=13910052-aa84-4c46-b8ce-4582f8ef5ea6 auth=2180/2180 gold=195",
-        "[06:34:43] ✅ Fase 13 Concluída! +195 Gold",
-        "[06:34:43] 🚀 Próxima fase desbloqueada: act-1-snow-4 (Nv. 14)! Avançando...",
-        "[06:34:46] ▶ Fase 14 iniciada (Meta: 2220 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 168s)",
         "[06:37:47] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2198/2220 gold=0",
         "[06:37:47] ⏳ Sincronizando com relógio do servidor (2198/2220)... aguardando 5000ms",
         "[06:37:53] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-5 nextId=60e02ac3-e3e0-4234-83ac-5f820ac775c2 auth=2220/2220 gold=195",
         "[06:37:53] ✅ Fase 14 Concluída! +195 Gold",
         "[06:37:53] 🚀 Próxima fase desbloqueada: act-1-snow-5 (Nv. 15)! Avançando...",
-        "[06:37:56] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)"
+        "[06:37:56] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)",
+        "[06:41:00] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2241/2260 gold=0",
+        "[06:41:00] ⏳ Sincronizando com relógio do servidor (2241/2260)... aguardando 5000ms",
+        "[06:41:16] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2241/2260 gold=0",
+        "[06:41:16] ⏳ Sincronizando com relógio do servidor (2241/2260)... aguardando 5000ms",
+        "[06:41:33] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2241/2260 gold=0",
+        "[06:41:33] ⏳ Sincronizando com relógio do servidor (2241/2260)... aguardando 5000ms",
+        "[06:41:50] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2241/2260 gold=0",
+        "[06:41:50] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[06:41:53] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 15",
-      "updatedAt": 1792823876787,
+      "updatedAt": 1792824112914,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5111007690429688,
+  "ramAllocMB": 1.9606246948242188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "49m36s"
+  "uptime": "51m36s"
 }
