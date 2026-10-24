@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 453,
+        "onlinePlayers": 451,
         "stone": 2766,
         "wheat": 82790,
         "wood": 85585
@@ -19,10 +19,6 @@
       "kills": 0,
       "level": 4,
       "logs": [
-        "[05:39:15] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 5000ms",
-        "[05:39:21] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
-        "[05:39:21] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 5000ms",
-        "[05:39:28] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
         "[05:39:28] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[05:39:30] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)",
         "[05:41:59] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
@@ -33,7 +29,11 @@
         "[05:42:12] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 5000ms",
         "[05:42:19] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
         "[05:42:19] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[05:42:20] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)"
+        "[05:42:20] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)",
+        "[05:44:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/1890 gold=0",
+        "[05:44:32] ⏳ Sincronizando com relógio do servidor (0/1890)... aguardando 5000ms",
+        "[05:44:38] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/1890 gold=0",
+        "[05:44:38] ⏳ Sincronizando com relógio do servidor (0/1890)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.9996871948242188,
+  "goroutines": 11,
+  "ramAllocMB": 1.6314010620117188,
   "ramSysMB": 13.099861145019531,
-  "uptime": "16m32s"
+  "uptime": "18m44s"
 }
