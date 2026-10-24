@@ -19,11 +19,6 @@
       "kills": 665,
       "level": 35,
       "logs": [
-        "[18:46:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:47:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:47:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:47:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:47:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:48:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:48:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:48:35] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=81/3160 gold=279",
@@ -33,7 +28,12 @@
         "[18:49:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:49:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:50:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:50:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[18:50:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:50:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:50:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:51:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:51:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:52:18] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.55499267578125,
+  "ramAllocMB": 1.392730712890625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "12h59m40s"
+  "uptime": "13h1m40s"
 }
