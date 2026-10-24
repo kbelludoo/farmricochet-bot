@@ -19,33 +19,33 @@
       "kills": 105,
       "level": 25,
       "logs": [
-        "[07:32:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:32:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:33:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:34:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:34:48] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2586/2610 gold=0",
-        "[07:34:48] ⏳ Sincronizando com relógio do servidor (2586/2610)... aguardando 5000ms",
-        "[07:34:55] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-dark-5 nextId=9f56c657-d67b-4c03-817c-a5ccfadf765d auth=2610/2610 gold=266",
-        "[07:34:55] ✅ Fase 24 Concluída! +266 Gold",
-        "[07:34:55] 🚀 Próxima fase desbloqueada: act-1-dark-5 (Nv. 25)! Avançando...",
-        "[07:34:57] ▶ Fase 25 iniciada (Meta: 2650 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 205s)",
-        "[07:35:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:35:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:36:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:37:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:38:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:38:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:38:34] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=234/2650 gold=0",
+        "[07:38:34] ⏳ Sincronizando com relógio do servidor (234/2650)... aguardando 5000ms",
+        "[07:38:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:38:51] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=234/2650 gold=0",
+        "[07:38:51] ⏳ Sincronizando com relógio do servidor (234/2650)... aguardando 5000ms",
+        "[07:39:08] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=234/2650 gold=0",
+        "[07:39:08] ⏳ Sincronizando com relógio do servidor (234/2650)... aguardando 5000ms",
+        "[07:39:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=234/2650 gold=0",
+        "[07:39:24] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[07:39:27] ▶ Fase 25 iniciada (Meta: 2650 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 205s)",
+        "[07:39:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 25",
-      "updatedAt": 1792827297637,
+      "updatedAt": 1792827567197,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7768173217773438,
+  "ramAllocMB": 1.6952972412109375,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h47m35s"
+  "uptime": "1h49m36s"
 }
