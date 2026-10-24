@@ -19,9 +19,6 @@
       "kills": 225,
       "level": 31,
       "logs": [
-        "[09:52:47] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[09:52:50] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 218s)",
-        "[09:53:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[09:53:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[09:54:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[09:55:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
@@ -33,7 +30,10 @@
         "[09:56:48] ✅ Fase 30 Concluída! +374 Gold",
         "[09:56:48] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
         "[09:56:50] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 222s)",
-        "[09:57:31] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[09:57:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:58:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:59:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:59:46] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8299331665039062,
+  "ramAllocMB": 1.6873016357421875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "4h7m35s"
+  "uptime": "4h9m36s"
 }
