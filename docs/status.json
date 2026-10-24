@@ -2,21 +2,21 @@
   "accounts": [
     {
       "currentArea": "Fase 2: Ato 1 — Invasão · Fazenda 2/5",
-      "durationSec": 125,
-      "expPerHour": 17213.107500000257,
+      "durationSec": 249,
+      "expPerHour": 17303.774482743833,
       "extra": {
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 486,
+        "onlinePlayers": 485,
         "stone": 0,
         "wheat": 13831,
         "wood": 473
       },
-      "gold": 39168,
+      "gold": 39232,
       "hp": 466,
       "id": "acc-1",
-      "kills": 5,
+      "kills": 10,
       "level": 2,
       "logs": [
         "[00:06:59] Fazenda conectada! Fase ativa: Fase 2 (Ato 1 — Invasão · Fazenda 2/5) | Ouro: 39040",
@@ -25,19 +25,23 @@
         "[00:09:04] 🔍 Complete: accepted=true outcome=abandoned nextCode= nextId= auth=0/1830 gold=64",
         "[00:09:04] ✅ Fase 2 Concluída! +64 Gold",
         "[00:09:04] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 6.65x na próxima run...",
-        "[00:09:07] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 15.06/s [6.65x] | Est: 122s)"
+        "[00:09:07] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 15.06/s [6.65x] | Est: 122s)",
+        "[00:11:08] 🔍 Complete: accepted=true outcome=abandoned nextCode= nextId= auth=0/1830 gold=64",
+        "[00:11:08] ✅ Fase 2 Concluída! +64 Gold",
+        "[00:11:08] 📈 Auto-Tuner: Partida aceita sem espera! Subindo para 6.80x na próxima run...",
+        "[00:11:10] ▶ Fase 2 iniciada (Meta: 1830 wheat | Base: 2.26/s -\u003e Real: 15.40/s [6.80x] | Est: 119s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 2",
-      "updatedAt": 1792800547234,
+      "updatedAt": 1792800670918,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.4580307006835938,
+  "ramAllocMB": 1.6493148803710938,
   "ramSysMB": 13.099861145019531,
-  "uptime": "3m28s"
+  "uptime": "5m18s"
 }
