@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 435,
+        "onlinePlayers": 432,
         "stone": 11167,
         "wheat": 23623,
         "wood": 49381
@@ -19,8 +19,6 @@
       "kills": 190,
       "level": 30,
       "logs": [
-        "[09:15:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[09:15:35] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-farm-5 nextId=b4d6ce59-6693-4884-971a-128af2307d34 auth=2870/2870 gold=374",
         "[09:15:35] ✅ Fase 30 Concluída! +374 Gold",
         "[09:15:35] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
         "[09:15:37] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 222s)",
@@ -33,7 +31,9 @@
         "[09:19:31] ✅ Fase 31 Concluída! +332 Gold",
         "[09:19:31] 🚀 Próxima fase desbloqueada: act-2-farm-4 (Nv. 30)! Avançando...",
         "[09:19:34] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 218s)",
-        "[09:20:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[09:20:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[09:20:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[09:21:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 2.057403564453125,
+  "ramAllocMB": 1.6710739135742188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "3h29m36s"
+  "uptime": "3h31m36s"
 }
