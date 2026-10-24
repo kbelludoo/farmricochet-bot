@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 449,
+        "onlinePlayers": 446,
         "stone": 583,
         "wheat": 83021,
         "wood": 82668
@@ -19,33 +19,33 @@
       "kills": 10,
       "level": 6,
       "logs": [
-        "[05:56:20] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=306/1920 gold=0",
-        "[05:56:20] ⏳ Sincronizando com relógio do servidor (306/1920)... aguardando 5000ms",
-        "[05:56:36] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=306/1920 gold=0",
-        "[05:56:36] ⏳ Sincronizando com relógio do servidor (306/1920)... aguardando 5000ms",
-        "[05:56:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=306/1920 gold=0",
-        "[05:56:53] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[05:56:55] ▶ Fase 5 iniciada (Meta: 1920 wheat | Base: 2.26/s -\u003e Real: 12.68/s [5.60x] | Est: 151s)",
-        "[05:58:15] 🌱 Talento evoluído: Poder dos Heróis -\u003e Nv. 1",
-        "[05:59:39] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1905/1920 gold=0",
         "[05:59:39] ⏳ Sincronizando com relógio do servidor (1905/1920)... aguardando 5000ms",
         "[05:59:46] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-1 nextId=88909f5d-c973-41a6-8b3f-7cdfe1d1c129 auth=1920/1920 gold=65",
         "[05:59:46] ✅ Fase 5 Concluída! +65 Gold",
         "[05:59:46] 🚀 Próxima fase desbloqueada: act-1-autumn-1 (Nv. 6)! Avançando...",
         "[05:59:49] ▶ Fase 6 iniciada (Meta: 1950 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 157s)",
-        "[06:00:30] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 2"
+        "[06:00:30] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 2",
+        "[06:02:37] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=74/1950 gold=0",
+        "[06:02:37] ⏳ Sincronizando com relógio do servidor (74/1950)... aguardando 5000ms",
+        "[06:02:54] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=74/1950 gold=0",
+        "[06:02:54] ⏳ Sincronizando com relógio do servidor (74/1950)... aguardando 5000ms",
+        "[06:03:11] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=74/1950 gold=0",
+        "[06:03:11] ⏳ Sincronizando com relógio do servidor (74/1950)... aguardando 5000ms",
+        "[06:03:27] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=74/1950 gold=0",
+        "[06:03:27] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[06:03:29] ▶ Fase 6 iniciada (Meta: 1950 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 157s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 6",
-      "updatedAt": 1792821588981,
+      "updatedAt": 1792821809270,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6042404174804688,
+  "ramAllocMB": 1.9557266235351562,
   "ramSysMB": 13.349861145019531,
-  "uptime": "11m36s"
+  "uptime": "13m35s"
 }
