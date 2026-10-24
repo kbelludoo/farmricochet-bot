@@ -19,12 +19,6 @@
       "kills": 665,
       "level": 35,
       "logs": [
-        "[18:52:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:52:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:52:35] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=81/3110 gold=0",
-        "[18:52:35] ⏳ Sincronizando com relógio do servidor (81/3110)... aguardando 5000ms",
-        "[18:52:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=81/3110 gold=0",
-        "[18:52:52] ⏳ Sincronizando com relógio do servidor (81/3110)... aguardando 5000ms",
         "[18:53:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:53:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:53:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=81/3110 gold=0",
@@ -33,7 +27,13 @@
         "[18:53:26] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[18:53:28] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
         "[18:53:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:53:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[18:53:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:54:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:54:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:55:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:55:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:56:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:56:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.0535659790039062,
+  "ramAllocMB": 1.7575149536132812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "13h3m40s"
+  "uptime": "13h5m39s"
 }
