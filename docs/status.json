@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 41: Ato 2 — Resistência · Neve 5/5",
-      "durationSec": 63305,
-      "expPerHour": 6380.499000462784,
+      "currentArea": "Fase 40: Ato 2 — Resistência · Neve 4/5",
+      "durationSec": 63486,
+      "expPerHour": 6396.285342157328,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
         "onlinePlayers": 441,
-        "stone": 27946,
-        "wheat": 5347,
-        "wood": 48162
+        "stone": 28537,
+        "wheat": 5621,
+        "wood": 48682
       },
-      "gold": 19308,
+      "gold": 19715,
       "hp": 466,
       "id": "acc-1",
-      "kills": 935,
-      "level": 41,
+      "kills": 940,
+      "level": 40,
       "logs": [
-        "[23:24:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[23:25:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[23:25:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[23:25:35] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3348/3380 gold=0",
-        "[23:25:35] ⏳ Sincronizando com relógio do servidor (3348/3380)... aguardando 5000ms",
-        "[23:25:44] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-snow-5 nextId=5326a708-ab43-4400-9de7-c2a18742515f auth=3380/3380 gold=559",
-        "[23:25:44] ✅ Fase 40 Concluída! +559 Gold",
-        "[23:25:44] 🚀 Próxima fase desbloqueada: act-2-snow-5 (Nv. 41)! Avançando...",
-        "[23:25:46] ▶ Fase 41 iniciada (Meta: 3430 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 167s)",
-        "[23:26:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[23:26:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[23:26:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[23:26:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[23:27:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[23:27:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[23:27:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:28:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[23:28:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:28:46] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-snow-4 nextId=de07a8d4-cbf2-4343-b813-26385dc10bde auth=495/3430 gold=407",
+        "[23:28:46] ✅ Fase 41 Concluída! +407 Gold",
+        "[23:28:46] 🚀 Próxima fase desbloqueada: act-2-snow-4 (Nv. 40)! Avançando...",
+        "[23:28:48] ▶ Fase 40 iniciada (Meta: 3380 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 165s)",
+        "[23:29:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[23:29:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:29:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[23:29:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 41",
-      "updatedAt": 1792884346196,
+      "status": "Jogando Fase 40",
+      "updatedAt": 1792884528249,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7456817626953125,
+  "ramAllocMB": 1.4740982055664062,
   "ramSysMB": 13.349861145019531,
-  "uptime": "17h37m37s"
+  "uptime": "17h39m38s"
 }
