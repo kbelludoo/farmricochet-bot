@@ -1,31 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 18: Ato 1 — Invasão · Pântano 3/5",
-      "durationSec": 4568,
-      "expPerHour": 6618.698981872446,
+      "currentArea": "Fase 19: Ato 1 — Invasão · Pântano 4/5",
+      "durationSec": 4758,
+      "expPerHour": 6809.29626339232,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 447,
+        "onlinePlayers": 448,
         "stone": 5336,
-        "wheat": 51759,
-        "wood": 13225
+        "wheat": 52938,
+        "wood": 15614
       },
-      "gold": 47827,
+      "gold": 48055,
       "hp": 466,
       "id": "acc-1",
-      "kills": 70,
-      "level": 18,
+      "kills": 75,
+      "level": 19,
       "logs": [
-        "[07:00:49] ▶ Fase 16 iniciada (Meta: 2290 wheat | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 171s)",
-        "[07:03:42] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-swamp-2 nextId=85cb024c-55ec-49c1-8eb2-8865207270a7 auth=2290/2290 gold=228",
-        "[07:03:42] ✅ Fase 16 Concluída! +228 Gold",
-        "[07:03:42] 🚀 Próxima fase desbloqueada: act-1-swamp-2 (Nv. 17)! Avançando...",
-        "[07:03:44] ▶ Fase 17 iniciada (Meta: 2330 wheat | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 174s)",
-        "[07:04:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:05:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:05:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:06:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:06:48] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-swamp-3 nextId=e5c66f7d-b67d-4f17-9f30-8183a3e1be0e auth=2330/2330 gold=228",
@@ -33,19 +26,26 @@
         "[07:06:48] 🚀 Próxima fase desbloqueada: act-1-swamp-3 (Nv. 18)! Avançando...",
         "[07:06:50] ▶ Fase 18 iniciada (Meta: 2370 wheat | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 177s)",
         "[07:07:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:08:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:08:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:08:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:09:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:09:57] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-swamp-4 nextId=dc01b878-8886-4c2e-a3d6-48a88e91e629 auth=2370/2370 gold=228",
+        "[07:09:57] ✅ Fase 18 Concluída! +228 Gold",
+        "[07:09:57] 🚀 Próxima fase desbloqueada: act-1-swamp-4 (Nv. 19)! Avançando...",
+        "[07:09:59] ▶ Fase 19 iniciada (Meta: 2410 wheat | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 179s)",
+        "[07:10:15] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 18",
-      "updatedAt": 1792825610147,
+      "status": "Jogando Fase 19",
+      "updatedAt": 1792825799493,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5113677978515625,
+  "ramAllocMB": 1.5257415771484375,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h17m35s"
+  "uptime": "1h19m37s"
 }
