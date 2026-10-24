@@ -1,25 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 4: Ato 1 — Invasão · Fazenda 4/5",
-      "durationSec": 0,
-      "expPerHour": 0,
+      "currentArea": "Fase 5: Ato 1 — Invasão · Fazenda 5/5",
+      "durationSec": 158,
+      "expPerHour": 13665.169898190934,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 449,
-        "stone": 3684,
-        "wheat": 84716,
-        "wood": 86036
+        "onlinePlayers": 447,
+        "stone": 4580,
+        "wheat": 85097,
+        "wood": 86804
       },
-      "gold": 45938,
+      "gold": 46068,
       "hp": 466,
       "id": "acc-1",
-      "kills": 0,
-      "level": 4,
+      "kills": 5,
+      "level": 5,
       "logs": [
-        "[05:50:39] Fazenda conectada! Fase ativa: Fase 4 (Ato 1 — Invasão · Fazenda 4/5) | Ouro: 45938",
         "[05:50:39] Automação total iniciada. Loop de farm e campanha em execução.",
         "[05:50:39] ⚠️ Conflito/expiração de lease antes de iniciar fase. Re-adquirindo sessão...",
         "[05:50:39] Aviso: falha ao iniciar run: HTTP 409 em /api/v1/runs/start: {\"error\":{\"message\":\"active game lease, level and composition are required\"}}\n. Aguardando 5s...",
@@ -27,19 +26,26 @@
         "[05:50:44] Aviso: falha ao iniciar run: HTTP 409 em /api/v1/runs/start: {\"error\":{\"message\":\"active game lease, level and composition are required\"}}\n. Aguardando 5s...",
         "[05:50:47] ⚠️ Conflito de sessão detectado (409). Tentando recuperar controle do lease...",
         "[05:50:47] ✅ Controle da sessão retomado com sucesso!",
-        "[05:50:49] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)"
+        "[05:50:49] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)",
+        "[05:53:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1874/1890 gold=0",
+        "[05:53:10] ⏳ Sincronizando com relógio do servidor (1874/1890)... aguardando 5000ms",
+        "[05:53:17] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-farm-5 nextId=16b8636e-87eb-4b8a-9b20-50ba6b94b37e auth=1890/1890 gold=65",
+        "[05:53:17] ✅ Fase 4 Concluída! +65 Gold",
+        "[05:53:17] 🎯 LIMITE DESCOBERTO! Servidor exigiu 148s reais -\u003e Teto cravado em 5.60x (12.68/s)!",
+        "[05:53:17] 🚀 Próxima fase desbloqueada: act-1-farm-5 (Nv. 5)! Avançando...",
+        "[05:53:19] ▶ Fase 5 iniciada (Meta: 1920 wheat | Base: 2.26/s -\u003e Real: 12.68/s [5.60x] | Est: 151s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 4",
-      "updatedAt": 1792821049587,
+      "status": "Jogando Fase 5",
+      "updatedAt": 1792821199702,
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.4283676147460938,
+  "goroutines": 11,
+  "ramAllocMB": 1.632476806640625,
   "ramSysMB": 13.099861145019531,
-  "uptime": "1m36s"
+  "uptime": "3m35s"
 }
