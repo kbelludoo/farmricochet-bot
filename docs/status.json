@@ -19,33 +19,33 @@
       "kills": 795,
       "level": 35,
       "logs": [
-        "[21:10:15] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
-        "[21:10:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[21:10:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[21:11:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[21:11:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[21:11:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[21:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[21:12:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[21:12:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[21:13:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[21:13:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[21:14:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[21:14:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[21:14:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=162/3110 gold=0",
-        "[21:14:15] ⏳ Sincronizando com relógio do servidor (162/3110)... aguardando 5000ms"
+        "[21:14:15] ⏳ Sincronizando com relógio do servidor (162/3110)... aguardando 5000ms",
+        "[21:14:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=162/3110 gold=0",
+        "[21:14:32] ⏳ Sincronizando com relógio do servidor (162/3110)... aguardando 5000ms",
+        "[21:14:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[21:14:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[21:14:49] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=162/3110 gold=0",
+        "[21:14:49] ⏳ Sincronizando com relógio do servidor (162/3110)... aguardando 5000ms",
+        "[21:15:06] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=162/3110 gold=0",
+        "[21:15:06] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[21:15:07] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
+        "[21:15:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[21:15:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 35",
-      "updatedAt": 1792876215588,
+      "updatedAt": 1792876507483,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9879684448242188,
+  "ramAllocMB": 1.6235885620117188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "15h23m39s"
+  "uptime": "15h25m37s"
 }
