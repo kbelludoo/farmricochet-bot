@@ -19,12 +19,6 @@
       "kills": 305,
       "level": 35,
       "logs": [
-        "[12:24:05] ✅ Fase 35 Concluída! +416 Gold",
-        "[12:24:05] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
-        "[12:24:07] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
-        "[12:24:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:25:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:26:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:26:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:27:32] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:28:10] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=165/3160 gold=91",
@@ -33,7 +27,13 @@
         "[12:28:12] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
         "[12:28:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[12:29:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:29:46] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[12:29:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:30:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:31:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:31:17] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 5",
+        "[12:32:02] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:32:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3081/3110 gold=0",
+        "[12:32:12] ⏳ Sincronizando com relógio do servidor (3081/3110)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.0066299438476562,
+  "ramAllocMB": 1.7954940795898438,
   "ramSysMB": 13.349861145019531,
-  "uptime": "6h39m36s"
+  "uptime": "6h41m36s"
 }
