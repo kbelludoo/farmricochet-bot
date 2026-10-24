@@ -459,6 +459,7 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 	lastProgress := 0
 	structureSeq := 0
+	syncAttempts := 0
 
 	for {
 		select {
@@ -498,22 +499,27 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 			// Se a fase atingiu a duração necessária, conclui
 			if progressRatio >= 1.0 {
-				delta := targetGoal - lastProgress
-				if delta > 0 {
+				// Garante que todo o progresso (targetGoal) foi emitido em batches
+				for lastProgress < targetGoal {
+					delta := targetGoal - lastProgress
 					var batch []StructureEvent
 					batch, structureSeq = b.generateStructureBatch(boot, runResp, structureSeq, delta, elapsed)
+					if len(batch) == 0 {
+						break
+					}
 					for _, ev := range batch {
 						lastProgress += ev.Amount
 					}
-					// Envia heartbeat final com as estruturas para o servidor computar o authoritativeProgress
+					// Envia heartbeat com as estruturas para o servidor computar o authoritativeProgress
 					hbEnv := b.buildEnvelope(b.holderId, "", targetGoal, elapsed, targetGoal, runResp, batch)
 					hbResp, hbErr := b.client.HeartbeatRun(runId, hbEnv)
 					if hbErr == nil && hbResp != nil && hbResp.AuthoritativeProgress > 0 {
 						lastProgress = hbResp.AuthoritativeProgress
 					}
-					// Aguarda o servidor consolidar o progresso antes do settle
-					time.Sleep(2 * time.Second)
+					time.Sleep(1 * time.Second)
 				}
+				// Aguarda o servidor consolidar o progresso antes do settle
+				time.Sleep(1500 * time.Millisecond)
 
 				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, nil)
 				completeResp, compErr := b.client.CompleteRun(runId, completeEnv)
@@ -529,6 +535,11 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 				// Se o servidor avisar que a simulação chegou antes do relógio canônico
 				if completeResp != nil && !completeResp.Accepted {
 					hadSyncWait = true
+					syncAttempts++
+					if syncAttempts > 3 {
+						b.addLog("⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...")
+						return nil
+					}
 					if completeResp.AuthoritativeProgress > 0 {
 						lastProgress = completeResp.AuthoritativeProgress
 					}
@@ -539,7 +550,6 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 					b.addLog(fmt.Sprintf("⏳ Sincronizando com relógio do servidor (%d/%d)... aguardando %dms",
 						completeResp.AuthoritativeProgress, completeResp.ObjectiveAmount, waitMs))
 
-					// Durante a espera, envia heartbeat para avançar authoritativeProgress com os recursos restantes
 					missing := targetGoal - lastProgress
 					if missing > 0 {
 						var syncBatch []StructureEvent
@@ -548,7 +558,11 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 							lastProgress += ev.Amount
 						}
 						syncHbEnv := b.buildEnvelope(b.holderId, "", targetGoal, time.Since(runStart), targetGoal, runResp, syncBatch)
-						hbResp, _ := b.client.HeartbeatRun(runId, syncHbEnv)
+						hbResp, hbErr := b.client.HeartbeatRun(runId, syncHbEnv)
+						if hbErr != nil {
+							b.addLog("⚠️ Lease do heartbeat inativa. Reiniciando run limpa...")
+							return nil
+						}
 						if hbResp != nil && hbResp.AuthoritativeProgress > 0 {
 							lastProgress = hbResp.AuthoritativeProgress
 						}
@@ -648,8 +662,14 @@ func (b *Bot) generateStructureBatch(boot *BootstrapResponse, run *RunStartRespo
 	remaining := deltaResources
 	sIdx := 0
 
+	maxEvents := 60
+	chunkSize := 12
+	if deltaResources > maxEvents*chunkSize {
+		chunkSize = (deltaResources / maxEvents) + 1
+	}
+
 	for remaining > 0 {
-		chunk := 12
+		chunk := chunkSize
 		if remaining < chunk {
 			chunk = remaining
 		}
@@ -675,7 +695,7 @@ func (b *Bot) generateStructureBatch(boot *BootstrapResponse, run *RunStartRespo
 			Quantity:         chunk,
 		}
 		events = append(events, ev)
-		if len(events) >= 40 {
+		if len(events) >= maxEvents {
 			break
 		}
 	}
