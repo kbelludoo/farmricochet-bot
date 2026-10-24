@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 450,
+        "onlinePlayers": 447,
         "stone": 2766,
         "wheat": 82790,
         "wood": 85585
@@ -19,8 +19,6 @@
       "kills": 0,
       "level": 4,
       "logs": [
-        "[05:44:38] ⏳ Sincronizando com relógio do servidor (0/1890)... aguardando 5000ms",
-        "[05:44:45] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/1890 gold=0",
         "[05:44:45] ⏳ Sincronizando com relógio do servidor (0/1890)... aguardando 5000ms",
         "[05:44:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/1890 gold=0",
         "[05:44:52] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
@@ -33,7 +31,9 @@
         "[05:47:31] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 5000ms",
         "[05:47:38] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
         "[05:47:38] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[05:47:39] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)"
+        "[05:47:39] ▶ Fase 4 iniciada (Meta: 1890 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 128s)",
+        "[05:50:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1878/1890 gold=0",
+        "[05:50:09] ⏳ Sincronizando com relógio do servidor (1878/1890)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5315475463867188,
+  "ramAllocMB": 1.5980682373046875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "22m14s"
+  "uptime": "24m14s"
 }
