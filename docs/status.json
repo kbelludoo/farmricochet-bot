@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 36: Ato 2 — Resistência · Outono 5/5",
-      "durationSec": 46429,
-      "expPerHour": 6140.85964322243,
+      "currentArea": "Fase 35: Ato 2 — Resistência · Outono 4/5",
+      "durationSec": 46675,
+      "expPerHour": 6154.785269189527,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
         "onlinePlayers": 441,
-        "stone": 18786,
-        "wheat": 16155,
-        "wood": 47733
+        "stone": 18876,
+        "wheat": 16195,
+        "wood": 47811
       },
-      "gold": 757,
+      "gold": 1036,
       "hp": 466,
       "id": "acc-1",
-      "kills": 660,
-      "level": 36,
+      "kills": 665,
+      "level": 35,
       "logs": [
-        "[18:44:20] ⏳ Sincronizando com relógio do servidor (3081/3110)... aguardando 5000ms",
-        "[18:44:29] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-autumn-5 nextId=c8c8fb49-42d8-4625-9fca-6863555a27b1 auth=3110/3110 gold=424",
-        "[18:44:29] ✅ Fase 35 Concluída! +424 Gold",
-        "[18:44:29] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
-        "[18:44:31] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
-        "[18:44:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:44:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:45:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:45:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:46:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:46:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:47:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[18:47:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:47:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[18:47:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[18:47:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:48:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:48:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:48:35] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=81/3160 gold=279",
+        "[18:48:35] ✅ Fase 36 Concluída! +279 Gold",
+        "[18:48:35] 🚀 Próxima fase desbloqueada: act-2-autumn-4 (Nv. 35)! Avançando...",
+        "[18:48:36] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
+        "[18:49:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:49:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:50:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[18:50:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 36",
-      "updatedAt": 1792867471534,
+      "status": "Jogando Fase 35",
+      "updatedAt": 1792867716509,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.80755615234375,
+  "ramAllocMB": 1.55499267578125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "12h57m37s"
+  "uptime": "12h59m40s"
 }
