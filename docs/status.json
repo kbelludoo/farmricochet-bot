@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 437,
+        "onlinePlayers": 439,
         "stone": 10538,
         "wheat": 11884,
         "wood": 27068
@@ -19,12 +19,6 @@
       "kills": 150,
       "level": 30,
       "logs": [
-        "[08:23:39] ✅ Fase 31 Concluída! +249 Gold",
-        "[08:23:39] 🚀 Próxima fase desbloqueada: act-2-farm-4 (Nv. 30)! Avançando...",
-        "[08:23:41] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 222s)",
-        "[08:23:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:24:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:25:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:26:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:26:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:27:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
@@ -33,19 +27,25 @@
         "[08:27:51] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
         "[08:27:51] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
         "[08:28:08] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
-        "[08:28:08] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms"
+        "[08:28:08] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
+        "[08:28:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:28:25] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
+        "[08:28:25] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[08:28:26] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 222s)",
+        "[08:29:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:29:45] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 30",
-      "updatedAt": 1792830221373,
+      "updatedAt": 1792830506901,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8418426513671875,
+  "ramAllocMB": 1.801300048828125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "2h37m36s"
+  "uptime": "2h39m36s"
 }
