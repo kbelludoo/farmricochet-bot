@@ -19,11 +19,6 @@
       "kills": 60,
       "level": 16,
       "logs": [
-        "[06:53:00] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 4",
-        "[06:53:01] 🌱 Talento evoluído: Mineração -\u003e Nv. 4",
-        "[06:56:02] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=238/2290 gold=0",
-        "[06:56:02] ⏳ Sincronizando com relógio do servidor (238/2290)... aguardando 5000ms",
-        "[06:56:19] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=238/2290 gold=0",
         "[06:56:19] ⏳ Sincronizando com relógio do servidor (238/2290)... aguardando 5000ms",
         "[06:56:36] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=238/2290 gold=0",
         "[06:56:36] ⏳ Sincronizando com relógio do servidor (238/2290)... aguardando 5000ms",
@@ -33,19 +28,24 @@
         "[06:59:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=323/2290 gold=0",
         "[06:59:57] ⏳ Sincronizando com relógio do servidor (323/2290)... aguardando 5000ms",
         "[07:00:13] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=323/2290 gold=0",
-        "[07:00:13] ⏳ Sincronizando com relógio do servidor (323/2290)... aguardando 5000ms"
+        "[07:00:13] ⏳ Sincronizando com relógio do servidor (323/2290)... aguardando 5000ms",
+        "[07:00:30] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=323/2290 gold=0",
+        "[07:00:30] ⏳ Sincronizando com relógio do servidor (323/2290)... aguardando 5000ms",
+        "[07:00:47] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=323/2290 gold=0",
+        "[07:00:47] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[07:00:49] ▶ Fase 16 iniciada (Meta: 2290 wheat | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 171s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 16",
-      "updatedAt": 1792825014489,
+      "updatedAt": 1792825249804,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5992507934570312,
+  "ramAllocMB": 1.5333633422851562,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h9m38s"
+  "uptime": "1h11m35s"
 }
