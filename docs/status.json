@@ -19,10 +19,6 @@
       "kills": 925,
       "level": 41,
       "logs": [
-        "[23:17:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[23:17:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[23:18:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[23:18:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[23:18:34] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 7",
         "[23:19:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[23:19:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +29,11 @@
         "[23:19:34] 🚀 Próxima fase desbloqueada: act-2-snow-5 (Nv. 41)! Avançando...",
         "[23:19:36] ▶ Fase 41 iniciada (Meta: 3430 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 167s)",
         "[23:20:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[23:20:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[23:20:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:20:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[23:20:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:21:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[23:21:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8170013427734375,
+  "ramAllocMB": 1.74139404296875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "17h29m38s"
+  "uptime": "17h31m37s"
 }
