@@ -19,12 +19,6 @@
       "kills": 550,
       "level": 36,
       "logs": [
-        "[16:50:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:51:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:51:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:52:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:52:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:53:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[16:53:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:53:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[16:53:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[16:54:05] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-autumn-5 nextId=c8c8fb49-42d8-4625-9fca-6863555a27b1 auth=3110/3110 gold=424",
         "[16:54:05] ✅ Fase 35 Concluída! +424 Gold",
         "[16:54:05] 🚀 Próxima fase desbloqueada: act-2-autumn-5 (Nv. 36)! Avançando...",
-        "[16:54:08] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)"
+        "[16:54:08] ▶ Fase 36 iniciada (Meta: 3160 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 231s)",
+        "[16:54:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:54:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:55:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:55:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:56:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:56:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.2063751220703125,
+  "ramAllocMB": 1.9279861450195312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "11h3m39s"
+  "uptime": "11h5m37s"
 }
