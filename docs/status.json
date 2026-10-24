@@ -8,7 +8,7 @@
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 459,
+        "onlinePlayers": 464,
         "stone": 0,
         "wheat": 14996,
         "wood": 2465
@@ -19,21 +19,21 @@
       "kills": 5,
       "level": 3,
       "logs": [
-        "[03:05:28] ⏳ Sincronizando com relógio do servidor (1855/1860)... aguardando 1000ms",
-        "[03:05:29] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1855/1860 gold=0",
-        "[03:05:29] ⏳ Sincronizando com relógio do servidor (1855/1860)... aguardando 1000ms",
-        "[03:05:30] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1855/1860 gold=0",
-        "[03:05:30] ⏳ Sincronizando com relógio do servidor (1855/1860)... aguardando 1000ms",
-        "[03:05:31] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1855/1860 gold=0",
-        "[03:05:31] ⏳ Sincronizando com relógio do servidor (1855/1860)... aguardando 1000ms",
-        "[03:05:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1855/1860 gold=0",
-        "[03:05:32] ⏳ Sincronizando com relógio do servidor (1855/1860)... aguardando 1000ms",
-        "[03:05:33] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1855/1860 gold=0",
-        "[03:05:33] ⏳ Sincronizando com relógio do servidor (1855/1860)... aguardando 1000ms",
-        "[03:05:35] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1855/1860 gold=0",
-        "[03:05:35] ⏳ Sincronizando com relógio do servidor (1855/1860)... aguardando 1000ms",
-        "[03:05:36] Aviso: conclusão da run recusada: rate_limit: pausa solicitada pelo servidor (HTTP 429). Aguardando 5s...",
-        "[03:05:41] ▶ Fase 3 iniciada (Meta: 1860 wheat | Base: 2.26/s -\u003e Real: 14.31/s [6.32x] | Est: 130s)"
+        "[03:08:16] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1858/1860 gold=0",
+        "[03:08:16] ⏳ Sincronizando com relógio do servidor (1858/1860)... aguardando 1000ms",
+        "[03:08:18] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1858/1860 gold=0",
+        "[03:08:18] ⏳ Sincronizando com relógio do servidor (1858/1860)... aguardando 1000ms",
+        "[03:08:19] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1858/1860 gold=0",
+        "[03:08:19] ⏳ Sincronizando com relógio do servidor (1858/1860)... aguardando 1000ms",
+        "[03:08:20] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1858/1860 gold=0",
+        "[03:08:20] ⏳ Sincronizando com relógio do servidor (1858/1860)... aguardando 1000ms",
+        "[03:08:21] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1858/1860 gold=0",
+        "[03:08:21] ⏳ Sincronizando com relógio do servidor (1858/1860)... aguardando 1000ms",
+        "[03:08:22] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1858/1860 gold=0",
+        "[03:08:22] ⏳ Sincronizando com relógio do servidor (1858/1860)... aguardando 1000ms",
+        "[03:08:23] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1858/1860 gold=0",
+        "[03:08:23] ⏳ Sincronizando com relógio do servidor (1858/1860)... aguardando 1000ms",
+        "[03:08:24] Aviso: conclusão da run recusada: rate_limit: pausa solicitada pelo servidor (HTTP 429). Aguardando 5s..."
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8676528930664062,
+  "ramAllocMB": 1.5500259399414062,
   "ramSysMB": 17.34986114501953,
-  "uptime": "2h45m0s"
+  "uptime": "2h46m35s"
 }
