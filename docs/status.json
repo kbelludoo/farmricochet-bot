@@ -19,21 +19,21 @@
       "kills": 765,
       "level": 35,
       "logs": [
-        "[20:34:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[20:35:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[20:35:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[20:35:38] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=81/3160 gold=186",
-        "[20:35:38] ✅ Fase 36 Concluída! +186 Gold",
-        "[20:35:39] 🚀 Próxima fase desbloqueada: act-2-autumn-4 (Nv. 35)! Avançando...",
-        "[20:35:41] ▶ Fase 35 iniciada (Meta: 3110 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 227s)",
-        "[20:35:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[20:35:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[20:36:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[20:36:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[20:37:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[20:37:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[20:38:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[20:38:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[20:38:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:38:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[20:38:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:39:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[20:39:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:39:41] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=81/3110 gold=0",
+        "[20:39:41] ⏳ Sincronizando com relógio do servidor (81/3110)... aguardando 5000ms",
+        "[20:39:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=81/3110 gold=0",
+        "[20:39:57] ⏳ Sincronizando com relógio do servidor (81/3110)... aguardando 5000ms",
+        "[20:40:14] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=81/3110 gold=0",
+        "[20:40:14] ⏳ Sincronizando com relógio do servidor (81/3110)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8783645629882812,
+  "ramAllocMB": 2.1409378051757812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "14h47m37s"
+  "uptime": "14h49m38s"
 }
