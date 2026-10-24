@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 30: Ato 2 — Resistência · Fazenda 4/5",
-      "durationSec": 13010,
-      "expPerHour": 6640.660944634975,
+      "currentArea": "Fase 31: Ato 2 — Resistência · Fazenda 5/5",
+      "durationSec": 13251,
+      "expPerHour": 6683.245646446808,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 433,
-        "stone": 14407,
-        "wheat": 25113,
-        "wood": 52206
+        "onlinePlayers": 434,
+        "stone": 17490,
+        "wheat": 26536,
+        "wood": 54897
       },
-      "gold": 49437,
+      "gold": 49811,
       "hp": 466,
       "id": "acc-1",
-      "kills": 200,
-      "level": 30,
+      "kills": 205,
+      "level": 31,
       "logs": [
-        "[09:23:33] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
-        "[09:23:36] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 222s)",
-        "[09:23:45] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:24:30] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:25:15] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:26:00] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:26:45] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:27:29] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-farm-4 nextId=cd6bc588-d04d-4149-a4c8-c56ad9e1ff9b auth=156/2920 gold=249",
-        "[09:27:29] ✅ Fase 31 Concluída! +249 Gold",
         "[09:27:29] 🚀 Próxima fase desbloqueada: act-2-farm-4 (Nv. 30)! Avançando...",
         "[09:27:30] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[09:27:31] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 218s)",
         "[09:28:15] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[09:29:00] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:29:45] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[09:29:45] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:30:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:31:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:31:21] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
+        "[09:31:21] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
+        "[09:31:30] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-farm-5 nextId=b4d6ce59-6693-4884-971a-128af2307d34 auth=2870/2870 gold=374",
+        "[09:31:30] ✅ Fase 30 Concluída! +374 Gold",
+        "[09:31:30] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
+        "[09:31:31] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 222s)",
+        "[09:32:01] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 30",
-      "updatedAt": 1792834051731,
+      "status": "Jogando Fase 31",
+      "updatedAt": 1792834291585,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6935501098632812,
+  "ramAllocMB": 1.7380294799804688,
   "ramSysMB": 13.349861145019531,
-  "uptime": "3h39m37s"
+  "uptime": "3h41m35s"
 }
