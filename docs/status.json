@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 440,
+        "onlinePlayers": 437,
         "stone": 10538,
         "wheat": 11884,
         "wood": 27068
@@ -19,21 +19,21 @@
       "kills": 150,
       "level": 30,
       "logs": [
-        "[08:19:39] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
-        "[08:19:41] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 226s)",
-        "[08:20:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:20:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:21:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:22:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:23:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:23:39] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-farm-4 nextId=cd6bc588-d04d-4149-a4c8-c56ad9e1ff9b auth=2892/2920 gold=249",
         "[08:23:39] ✅ Fase 31 Concluída! +249 Gold",
         "[08:23:39] 🚀 Próxima fase desbloqueada: act-2-farm-4 (Nv. 30)! Avançando...",
         "[08:23:41] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 222s)",
         "[08:23:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:24:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:25:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:26:00] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[08:26:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:26:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:27:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:27:35] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
+        "[08:27:35] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
+        "[08:27:51] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
+        "[08:27:51] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
+        "[08:28:08] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
+        "[08:28:08] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6211776733398438,
+  "ramAllocMB": 1.8418426513671875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "2h35m35s"
+  "uptime": "2h37m36s"
 }
