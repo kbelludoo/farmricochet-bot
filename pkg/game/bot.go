@@ -458,6 +458,7 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 	hadSyncWait := false
 
 	lastProgress := 0
+	authProgress := 0
 	structureSeq := 0
 	syncAttempts := 0
 
@@ -492,6 +493,9 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 				if hbErr != nil {
 					log.Printf("[%s] Heartbeat run aviso: %v", b.ID(), hbErr)
 				} else if hbResp != nil {
+					if hbResp.AuthoritativeProgress > 0 {
+						authProgress = hbResp.AuthoritativeProgress
+					}
 					log.Printf("[%s] [HB] prog=%d/%d auth=%d/%d", b.ID(), currentProgress, targetGoal, hbResp.AuthoritativeProgress, hbResp.ObjectiveAmount)
 				}
 				nextHeartbeat = time.Now().Add(heartbeatInterval)
@@ -499,26 +503,22 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 			// Se a fase atingiu a duração necessária, conclui
 			if progressRatio >= 1.0 {
-				// Garante que todo o progresso (targetGoal) foi emitido em batches
-				for lastProgress < targetGoal {
-					delta := targetGoal - lastProgress
+				syncRetries := 0
+				for authProgress < targetGoal && syncRetries < 5 {
+					syncRetries++
+					delta := targetGoal - authProgress
 					var batch []StructureEvent
 					batch, structureSeq = b.generateStructureBatch(boot, runResp, structureSeq, delta, elapsed)
-					if len(batch) == 0 {
-						break
-					}
-					for _, ev := range batch {
-						lastProgress += ev.Amount
-					}
-					// Envia heartbeat com as estruturas para o servidor computar o authoritativeProgress
 					hbEnv := b.buildEnvelope(b.holderId, "", targetGoal, elapsed, targetGoal, runResp, batch)
 					hbResp, hbErr := b.client.HeartbeatRun(runId, hbEnv)
 					if hbErr == nil && hbResp != nil && hbResp.AuthoritativeProgress > 0 {
-						lastProgress = hbResp.AuthoritativeProgress
+						authProgress = hbResp.AuthoritativeProgress
 					}
-					time.Sleep(1 * time.Second)
+					if authProgress >= targetGoal {
+						break
+					}
+					time.Sleep(2 * time.Second)
 				}
-				// Aguarda o servidor consolidar o progresso antes do settle
 				time.Sleep(1500 * time.Millisecond)
 
 				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, nil)
@@ -641,7 +641,7 @@ func (b *Bot) generateStructureBatch(boot *BootstrapResponse, run *RunStartRespo
 		code     string
 		resource string
 	}
-	var structs []sInfo
+	byResource := make(map[string][]sInfo)
 	for _, ent := range boot.ActiveLevel.Entities {
 		if ent.Kind == "structure" {
 			res := "wheat"
@@ -650,53 +650,53 @@ func (b *Bot) generateStructureBatch(boot *BootstrapResponse, run *RunStartRespo
 			} else if strings.Contains(ent.Type, "stone") || strings.Contains(ent.Type, "mine") || strings.Contains(ent.Type, "quarry") {
 				res = "stone"
 			}
-			structs = append(structs, sInfo{id: ent.ID, code: ent.Type, resource: res})
+			byResource[res] = append(byResource[res], sInfo{id: ent.ID, code: ent.Type, resource: res})
 		}
 	}
 
-	if len(structs) == 0 {
+	if len(byResource) == 0 {
 		return events, seqStart
 	}
 
 	seq := seqStart
-	remaining := deltaResources
-	sIdx := 0
-
-	maxEvents := 60
-	chunkSize := 12
-	if deltaResources > maxEvents*chunkSize {
-		chunkSize = (deltaResources / maxEvents) + 1
+	perRes := deltaResources / len(byResource)
+	if perRes < 12 {
+		perRes = 12
 	}
 
-	for remaining > 0 {
-		chunk := chunkSize
-		if remaining < chunk {
-			chunk = remaining
+	sIdx := 0
+	for res, sList := range byResource {
+		if len(sList) == 0 {
+			continue
 		}
-		remaining -= chunk
+		rem := perRes
+		for rem > 0 {
+			chunk := 12
+			if rem < chunk {
+				chunk = rem
+			}
+			rem -= chunk
 
-		st := structs[sIdx%len(structs)]
-		sIdx++
-		seq++
+			st := sList[sIdx%len(sList)]
+			sIdx++
+			seq++
 
-		ev := StructureEvent{
-			EventId:          fmt.Sprintf("%s%012x", run.ID[:24], seq),
-			LevelVersionId:   levelVersionId,
-			MapVersionId:     mapVersionId,
-			Sequence:         seq,
-			StructureId:      st.id,
-			StructureCode:    st.code,
-			StructureVersion: 1,
-			HeroId:           heroId,
-			EventType:        "production",
-			OccurredAtMs:     elapsed.Milliseconds(),
-			Resource:         st.resource,
-			Amount:           chunk,
-			Quantity:         chunk,
-		}
-		events = append(events, ev)
-		if len(events) >= maxEvents {
-			break
+			ev := StructureEvent{
+				EventId:          fmt.Sprintf("%s%012x", run.ID[:24], seq),
+				LevelVersionId:   levelVersionId,
+				MapVersionId:     mapVersionId,
+				Sequence:         seq,
+				StructureId:      st.id,
+				StructureCode:    st.code,
+				StructureVersion: 1,
+				HeroId:           heroId,
+				EventType:        "production",
+				OccurredAtMs:     elapsed.Milliseconds(),
+				Resource:         res,
+				Amount:           chunk,
+				Quantity:         chunk,
+			}
+			events = append(events, ev)
 		}
 	}
 
