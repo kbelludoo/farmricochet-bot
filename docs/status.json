@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 446,
+        "onlinePlayers": 445,
         "stone": 10538,
         "wheat": 11884,
         "wood": 27068
@@ -19,33 +19,33 @@
       "kills": 150,
       "level": 30,
       "logs": [
-        "[08:41:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:41:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
-        "[08:41:53] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
-        "[08:42:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
-        "[08:42:09] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
-        "[08:42:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
-        "[08:42:26] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
-        "[08:42:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:42:43] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
-        "[08:42:43] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[08:42:45] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 222s)",
-        "[08:43:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:44:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[08:44:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[08:45:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[08:45:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:46:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:46:39] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2870 gold=0",
+        "[08:46:39] ⏳ Sincronizando com relógio do servidor (0/2870)... aguardando 5000ms",
+        "[08:46:56] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2870 gold=0",
+        "[08:46:56] ⏳ Sincronizando com relógio do servidor (0/2870)... aguardando 5000ms",
+        "[08:47:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[08:47:13] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2870 gold=0",
+        "[08:47:13] ⏳ Sincronizando com relógio do servidor (0/2870)... aguardando 5000ms",
+        "[08:47:29] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2870 gold=0",
+        "[08:47:29] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[08:47:31] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 222s)",
+        "[08:47:45] 🎟️ 1 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 30",
-      "updatedAt": 1792831365555,
+      "updatedAt": 1792831651538,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5084609985351562,
+  "ramAllocMB": 1.7305450439453125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "2h55m36s"
+  "uptime": "2h57m36s"
 }
