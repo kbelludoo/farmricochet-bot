@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 450,
+        "onlinePlayers": 449,
         "stone": 5336,
         "wheat": 70293,
         "wood": 55473
@@ -19,8 +19,6 @@
       "kills": 60,
       "level": 16,
       "logs": [
-        "[06:49:08] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=237/2260 gold=0",
-        "[06:49:08] ⏳ Sincronizando com relógio do servidor (237/2260)... aguardando 5000ms",
         "[06:49:25] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=237/2260 gold=0",
         "[06:49:25] ⏳ Sincronizando com relógio do servidor (237/2260)... aguardando 5000ms",
         "[06:49:42] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=237/2260 gold=0",
@@ -33,7 +31,9 @@
         "[06:52:54] 🚀 Próxima fase desbloqueada: act-1-swamp-1 (Nv. 16)! Avançando...",
         "[06:52:56] ▶ Fase 16 iniciada (Meta: 2290 wheat | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 174s)",
         "[06:53:00] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 4",
-        "[06:53:01] 🌱 Talento evoluído: Mineração -\u003e Nv. 4"
+        "[06:53:01] 🌱 Talento evoluído: Mineração -\u003e Nv. 4",
+        "[06:56:02] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=238/2290 gold=0",
+        "[06:56:02] ⏳ Sincronizando com relógio do servidor (238/2290)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7432174682617188,
+  "ramAllocMB": 2.2552108764648438,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h3m35s"
+  "uptime": "1h5m35s"
 }
