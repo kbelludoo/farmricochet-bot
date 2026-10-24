@@ -19,9 +19,6 @@
       "kills": 285,
       "level": 33,
       "logs": [
-        "[12:08:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2891/2920 gold=0",
-        "[12:08:15] ⏳ Sincronizando com relógio do servidor (2891/2920)... aguardando 5000ms",
-        "[12:08:24] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-autumn-1 nextId=25003624-1c36-45ac-8bab-1c2282b714e2 auth=2920/2920 gold=416",
         "[12:08:24] ✅ Fase 31 Concluída! +416 Gold",
         "[12:08:24] 🚀 Próxima fase desbloqueada: act-2-autumn-1 (Nv. 32)! Avançando...",
         "[12:08:27] ▶ Fase 32 iniciada (Meta: 2970 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 217s)",
@@ -33,7 +30,10 @@
         "[12:12:06] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-autumn-2 nextId=f5b20133-b4bc-4faa-af84-b6b509965497 auth=2970/2970 gold=416",
         "[12:12:06] ✅ Fase 32 Concluída! +416 Gold",
         "[12:12:06] 🚀 Próxima fase desbloqueada: act-2-autumn-2 (Nv. 33)! Avançando...",
-        "[12:12:08] ▶ Fase 33 iniciada (Meta: 3020 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 221s)"
+        "[12:12:08] ▶ Fase 33 iniciada (Meta: 3020 stone | Base: 2.44/s -\u003e Real: 13.68/s [5.60x] | Est: 221s)",
+        "[12:12:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:13:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:14:01] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.103057861328125,
+  "ramAllocMB": 1.5831069946289062,
   "ramSysMB": 13.349861145019531,
-  "uptime": "6h21m36s"
+  "uptime": "6h23m36s"
 }
