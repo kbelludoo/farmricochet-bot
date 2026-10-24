@@ -1,31 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 5: Ato 1 — Invasão · Fazenda 5/5",
-      "durationSec": 158,
-      "expPerHour": 13665.169898190934,
+      "currentArea": "Fase 6: Ato 1 — Invasão · Outono 1/5",
+      "durationSec": 547,
+      "expPerHour": 7891.607631719999,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 449,
-        "stone": 4580,
-        "wheat": 85097,
-        "wood": 86804
+        "onlinePlayers": 448,
+        "stone": 583,
+        "wheat": 83021,
+        "wood": 82668
       },
-      "gold": 46068,
+      "gold": 44805,
       "hp": 466,
       "id": "acc-1",
-      "kills": 5,
-      "level": 5,
+      "kills": 10,
+      "level": 6,
       "logs": [
-        "[05:53:10] ⏳ Sincronizando com relógio do servidor (1874/1890)... aguardando 5000ms",
-        "[05:53:17] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-farm-5 nextId=16b8636e-87eb-4b8a-9b20-50ba6b94b37e auth=1890/1890 gold=65",
-        "[05:53:17] ✅ Fase 4 Concluída! +65 Gold",
-        "[05:53:17] 🎯 LIMITE DESCOBERTO! Servidor exigiu 148s reais -\u003e Teto cravado em 5.60x (12.68/s)!",
-        "[05:53:17] 🚀 Próxima fase desbloqueada: act-1-farm-5 (Nv. 5)! Avançando...",
-        "[05:53:19] ▶ Fase 5 iniciada (Meta: 1920 wheat | Base: 2.26/s -\u003e Real: 12.68/s [5.60x] | Est: 151s)",
-        "[05:56:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=306/1920 gold=0",
         "[05:56:03] ⏳ Sincronizando com relógio do servidor (306/1920)... aguardando 5000ms",
         "[05:56:20] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=306/1920 gold=0",
         "[05:56:20] ⏳ Sincronizando com relógio do servidor (306/1920)... aguardando 5000ms",
@@ -33,19 +26,26 @@
         "[05:56:36] ⏳ Sincronizando com relógio do servidor (306/1920)... aguardando 5000ms",
         "[05:56:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=306/1920 gold=0",
         "[05:56:53] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[05:56:55] ▶ Fase 5 iniciada (Meta: 1920 wheat | Base: 2.26/s -\u003e Real: 12.68/s [5.60x] | Est: 151s)"
+        "[05:56:55] ▶ Fase 5 iniciada (Meta: 1920 wheat | Base: 2.26/s -\u003e Real: 12.68/s [5.60x] | Est: 151s)",
+        "[05:58:15] 🌱 Talento evoluído: Poder dos Heróis -\u003e Nv. 1",
+        "[05:59:39] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1905/1920 gold=0",
+        "[05:59:39] ⏳ Sincronizando com relógio do servidor (1905/1920)... aguardando 5000ms",
+        "[05:59:46] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-1 nextId=88909f5d-c973-41a6-8b3f-7cdfe1d1c129 auth=1920/1920 gold=65",
+        "[05:59:46] ✅ Fase 5 Concluída! +65 Gold",
+        "[05:59:46] 🚀 Próxima fase desbloqueada: act-1-autumn-1 (Nv. 6)! Avançando...",
+        "[05:59:49] ▶ Fase 6 iniciada (Meta: 1950 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 157s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 5",
-      "updatedAt": 1792821415637,
+      "status": "Jogando Fase 6",
+      "updatedAt": 1792821588981,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5036773681640625,
-  "ramSysMB": 13.099861145019531,
-  "uptime": "7m36s"
+  "ramAllocMB": 1.9703369140625,
+  "ramSysMB": 13.349861145019531,
+  "uptime": "9m37s"
 }
