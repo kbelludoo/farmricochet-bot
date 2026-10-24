@@ -2,50 +2,38 @@
   "accounts": [
     {
       "currentArea": "Fase 3: Ato 1 — Invasão · Fazenda 3/5",
-      "durationSec": 127,
-      "expPerHour": 17006.122940529236,
+      "durationSec": 0,
+      "expPerHour": 0,
       "extra": {
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 456,
+        "onlinePlayers": 454,
         "stone": 0,
-        "wheat": 14996,
-        "wood": 2465
+        "wheat": 79232,
+        "wood": 82239
       },
-      "gold": 39744,
+      "gold": 45888,
       "hp": 466,
       "id": "acc-1",
-      "kills": 5,
+      "kills": 0,
       "level": 3,
       "logs": [
-        "[04:48:22] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[04:48:23] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[04:48:23] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[04:48:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[04:48:24] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[04:48:25] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[04:48:25] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[04:48:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[04:48:26] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[04:48:27] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[04:48:27] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[04:48:28] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[04:48:28] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[04:48:29] Aviso: conclusão da run recusada: rate_limit: pausa solicitada pelo servidor (HTTP 429). Aguardando 5s...",
-        "[04:48:35] ▶ Fase 3 iniciada (Meta: 1860 wheat | Base: 2.26/s -\u003e Real: 14.31/s [6.32x] | Est: 130s)"
+        "[04:51:51] Fazenda conectada! Fase ativa: Fase 3 (Ato 1 — Invasão · Fazenda 3/5) | Ouro: 45888",
+        "[04:51:51] Automação total iniciada. Loop de farm e campanha em execução.",
+        "[04:51:52] ▶ Fase 3 iniciada (Meta: 1860 wheat | Base: 2.26/s -\u003e Real: 14.72/s [6.50x] | Est: 126s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 3",
-      "updatedAt": 1792817315067,
+      "updatedAt": 1792817511986,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.578277587890625,
-  "ramSysMB": 17.34986114501953,
-  "uptime": "4h28m23s"
+  "ramAllocMB": 1.2844161987304688,
+  "ramSysMB": 13.099861145019531,
+  "uptime": "22s"
 }
