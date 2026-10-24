@@ -19,9 +19,6 @@
       "kills": 265,
       "level": 31,
       "logs": [
-        "[11:24:52] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 214s)",
-        "[11:25:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[11:26:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[11:26:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[11:27:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[11:27:33] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 6",
@@ -33,7 +30,10 @@
         "[11:28:47] 🚀 Próxima fase desbloqueada: act-2-farm-5 (Nv. 31)! Avançando...",
         "[11:28:49] ▶ Fase 31 iniciada (Meta: 2920 wood | Base: 2.40/s -\u003e Real: 13.43/s [5.60x] | Est: 217s)",
         "[11:29:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[11:29:46] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[11:29:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[11:30:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[11:31:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[11:32:02] 🎟️ 2 missões do Passe de Batalha resgatadas!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9123764038085938,
+  "ramAllocMB": 1.73712158203125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "5h39m38s"
+  "uptime": "5h41m38s"
 }
