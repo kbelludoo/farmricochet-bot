@@ -19,10 +19,6 @@
       "kills": 220,
       "level": 30,
       "logs": [
-        "[09:46:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:47:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:47:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2842/2870 gold=0",
-        "[09:47:15] ⏳ Sincronizando com relógio do servidor (2842/2870)... aguardando 5000ms",
         "[09:47:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2854/2870 gold=0",
         "[09:47:32] ⏳ Sincronizando com relógio do servidor (2854/2870)... aguardando 5000ms",
         "[09:47:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
@@ -33,7 +29,11 @@
         "[09:48:07] ▶ Fase 30 iniciada (Meta: 2870 wood | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 218s)",
         "[09:48:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[09:49:16] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[09:50:01] 🎟️ 2 missões do Passe de Batalha resgatadas!"
+        "[09:50:01] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:50:46] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:51:31] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[09:51:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2870 gold=0",
+        "[09:51:57] ⏳ Sincronizando com relógio do servidor (0/2870)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 10,
-  "ramAllocMB": 1.596160888671875,
+  "goroutines": 11,
+  "ramAllocMB": 1.8951644897460938,
   "ramSysMB": 13.349861145019531,
-  "uptime": "3h59m36s"
+  "uptime": "4h1m35s"
 }
