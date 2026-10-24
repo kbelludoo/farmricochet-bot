@@ -19,12 +19,6 @@
       "kills": 735,
       "level": 35,
       "logs": [
-        "[20:08:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[20:08:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[20:08:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[20:09:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[20:09:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[20:10:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[20:10:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[20:10:51] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-autumn-4 nextId=da63d261-39f7-49ad-86aa-37c08408730b auth=330/3160 gold=186",
         "[20:10:51] ✅ Fase 36 Concluída! +186 Gold",
@@ -33,7 +27,13 @@
         "[20:11:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[20:11:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[20:11:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[20:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[20:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:12:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[20:12:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:13:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[20:13:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:14:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[20:14:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.087921142578125,
+  "ramAllocMB": 1.8931961059570312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "14h21m39s"
+  "uptime": "14h23m37s"
 }
