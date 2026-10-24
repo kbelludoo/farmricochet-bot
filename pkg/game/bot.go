@@ -499,14 +499,21 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 			// Se a fase atingiu a duração necessária, conclui
 			if progressRatio >= 1.0 {
 				delta := targetGoal - lastProgress
-				var batch []StructureEvent
 				if delta > 0 {
+					var batch []StructureEvent
 					batch, structureSeq = b.generateStructureBatch(boot, runResp, structureSeq, delta, elapsed)
 					for _, ev := range batch {
 						lastProgress += ev.Amount
 					}
+					// Envia heartbeat final com as estruturas para o servidor computar o authoritativeProgress
+					hbEnv := b.buildEnvelope(b.holderId, "", targetGoal, elapsed, targetGoal, runResp, batch)
+					hbResp, hbErr := b.client.HeartbeatRun(runId, hbEnv)
+					if hbErr == nil && hbResp != nil && hbResp.AuthoritativeProgress > 0 {
+						lastProgress = hbResp.AuthoritativeProgress
+					}
 				}
-				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, batch)
+
+				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, nil)
 				completeResp, compErr := b.client.CompleteRun(runId, completeEnv)
 				if compErr != nil {
 					return fmt.Errorf("conclusão da run recusada: %w", compErr)
@@ -530,6 +537,21 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 					b.addLog(fmt.Sprintf("⏳ Sincronizando com relógio do servidor (%d/%d)... aguardando %dms",
 						completeResp.AuthoritativeProgress, completeResp.ObjectiveAmount, waitMs))
 					time.Sleep(time.Duration(waitMs) * time.Millisecond)
+
+					// Durante a espera, envia heartbeat para avançar authoritativeProgress com os recursos restantes
+					missing := targetGoal - lastProgress
+					if missing > 0 {
+						var syncBatch []StructureEvent
+						syncBatch, structureSeq = b.generateStructureBatch(boot, runResp, structureSeq, missing, time.Since(runStart))
+						for _, ev := range syncBatch {
+							lastProgress += ev.Amount
+						}
+						syncHbEnv := b.buildEnvelope(b.holderId, "", targetGoal, time.Since(runStart), targetGoal, runResp, syncBatch)
+						hbResp, _ := b.client.HeartbeatRun(runId, syncHbEnv)
+						if hbResp != nil && hbResp.AuthoritativeProgress > 0 {
+							lastProgress = hbResp.AuthoritativeProgress
+						}
+					}
 					continue
 				}
 
