@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 450,
+        "onlinePlayers": 451,
         "stone": 6319,
         "wheat": 14656,
         "wood": 19622
@@ -19,33 +19,33 @@
       "kills": 110,
       "level": 26,
       "logs": [
-        "[07:39:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:40:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:41:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:41:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:42:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:43:04] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2624/2650 gold=0",
-        "[07:43:04] ⏳ Sincronizando com relógio do servidor (2624/2650)... aguardando 5000ms",
-        "[07:43:13] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-boss nextId=213e8bce-5801-4c0a-afa8-c420b84518cb auth=2650/2650 gold=332",
-        "[07:43:13] ✅ Fase 25 Concluída! +332 Gold",
-        "[07:43:13] 🚀 Próxima fase desbloqueada: act-1-boss (Nv. 26)! Avançando...",
-        "[07:43:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:43:16] ▶ Fase 26 iniciada (Meta: 2690 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 208s)",
         "[07:44:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[07:44:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:45:30] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[07:45:30] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:46:15] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:46:56] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=156/2690 gold=0",
+        "[07:46:56] ⏳ Sincronizando com relógio do servidor (156/2690)... aguardando 5000ms",
+        "[07:47:00] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:47:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=156/2690 gold=0",
+        "[07:47:12] ⏳ Sincronizando com relógio do servidor (156/2690)... aguardando 5000ms",
+        "[07:47:29] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=156/2690 gold=0",
+        "[07:47:29] ⏳ Sincronizando com relógio do servidor (156/2690)... aguardando 5000ms",
+        "[07:47:45] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:47:46] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=156/2690 gold=0",
+        "[07:47:46] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[07:47:47] ▶ Fase 26 iniciada (Meta: 2690 wood | Base: 2.31/s -\u003e Real: 12.93/s [5.60x] | Est: 208s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 26",
-      "updatedAt": 1792827796117,
+      "updatedAt": 1792828067879,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5634918212890625,
+  "ramAllocMB": 2.0275497436523438,
   "ramSysMB": 13.349861145019531,
-  "uptime": "1h55m36s"
+  "uptime": "1h57m36s"
 }
