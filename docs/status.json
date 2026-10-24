@@ -19,12 +19,6 @@
       "kills": 880,
       "level": 40,
       "logs": [
-        "[22:36:38] ✅ Fase 40 Concluída! +559 Gold",
-        "[22:36:38] 🚀 Próxima fase desbloqueada: act-2-snow-5 (Nv. 41)! Avançando...",
-        "[22:36:40] ▶ Fase 41 iniciada (Meta: 3430 wheat | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 170s)",
-        "[22:37:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[22:37:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[22:38:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[22:38:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[22:38:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[22:38:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[22:39:43] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-snow-4 nextId=de07a8d4-cbf2-4343-b813-26385dc10bde auth=486/3430 gold=508",
         "[22:39:43] ✅ Fase 41 Concluída! +508 Gold",
         "[22:39:43] 🚀 Próxima fase desbloqueada: act-2-snow-4 (Nv. 40)! Avançando...",
-        "[22:39:45] ▶ Fase 40 iniciada (Meta: 3380 wheat | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 168s)"
+        "[22:39:45] ▶ Fase 40 iniciada (Meta: 3380 wheat | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 168s)",
+        "[22:40:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:40:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[22:41:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:41:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[22:41:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[22:41:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7260360717773438,
+  "ramAllocMB": 1.7213211059570312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "16h49m39s"
+  "uptime": "16h51m37s"
 }
