@@ -1,30 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 9: Ato 1 — Invasão · Outono 4/5",
-      "durationSec": 1276,
-      "expPerHour": 8460.038005497841,
+      "currentArea": "Fase 10: Ato 1 — Invasão · Outono 5/5",
+      "durationSec": 1463,
+      "expPerHour": 8856.1516092535,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 454,
-        "stone": 3895,
-        "wheat": 77446,
-        "wood": 87933
+        "onlinePlayers": 452,
+        "stone": 5125,
+        "wheat": 77981,
+        "wood": 88960
       },
-      "gold": 45129,
+      "gold": 45210,
       "hp": 466,
       "id": "acc-1",
-      "kills": 25,
-      "level": 9,
+      "kills": 30,
+      "level": 10,
       "logs": [
-        "[06:03:27] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=74/1950 gold=0",
-        "[06:03:27] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[06:03:29] ▶ Fase 6 iniciada (Meta: 1950 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 157s)",
-        "[06:06:08] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-2 nextId=8a2dd2b9-acec-44aa-bed8-29d5214b286a auth=1950/1950 gold=81",
-        "[06:06:08] ✅ Fase 6 Concluída! +81 Gold",
-        "[06:06:08] 🚀 Próxima fase desbloqueada: act-1-autumn-2 (Nv. 7)! Avançando...",
         "[06:06:11] ▶ Fase 7 iniciada (Meta: 1980 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 159s)",
         "[06:09:00] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-3 nextId=6fcc8b4e-c7e0-4f81-8155-25402d6732f0 auth=1980/1980 gold=81",
         "[06:09:00] ✅ Fase 7 Concluída! +81 Gold",
@@ -33,19 +27,25 @@
         "[06:11:55] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-4 nextId=d46ea9b2-ef72-46c1-84a9-87644e5ccd0c auth=2020/2020 gold=81",
         "[06:11:55] ✅ Fase 8 Concluída! +81 Gold",
         "[06:11:55] 🚀 Próxima fase desbloqueada: act-1-autumn-4 (Nv. 9)! Avançando...",
-        "[06:11:58] ▶ Fase 9 iniciada (Meta: 2050 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 165s)"
+        "[06:11:58] ▶ Fase 9 iniciada (Meta: 2050 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 165s)",
+        "[06:14:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2034/2050 gold=0",
+        "[06:14:55] ⏳ Sincronizando com relógio do servidor (2034/2050)... aguardando 5000ms",
+        "[06:15:02] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-autumn-5 nextId=94bf8489-3b25-45ae-b35f-61b111ce67c3 auth=2050/2050 gold=81",
+        "[06:15:02] ✅ Fase 9 Concluída! +81 Gold",
+        "[06:15:02] 🚀 Próxima fase desbloqueada: act-1-autumn-5 (Nv. 10)! Avançando...",
+        "[06:15:04] ▶ Fase 10 iniciada (Meta: 2080 wood | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 167s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 9",
-      "updatedAt": 1792822318221,
+      "status": "Jogando Fase 10",
+      "updatedAt": 1792822504051,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8604965209960938,
+  "ramAllocMB": 1.4502487182617188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "23m37s"
+  "uptime": "25m36s"
 }
