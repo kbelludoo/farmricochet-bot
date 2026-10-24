@@ -8,7 +8,7 @@
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 452,
+        "onlinePlayers": 449,
         "stone": 2092,
         "wheat": 68775,
         "wood": 52556
@@ -19,33 +19,33 @@
       "kills": 55,
       "level": 15,
       "logs": [
-        "[06:41:16] ⏳ Sincronizando com relógio do servidor (2241/2260)... aguardando 5000ms",
-        "[06:41:33] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2241/2260 gold=0",
-        "[06:41:33] ⏳ Sincronizando com relógio do servidor (2241/2260)... aguardando 5000ms",
-        "[06:41:50] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=2241/2260 gold=0",
-        "[06:41:50] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[06:41:53] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)",
-        "[06:44:56] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2260 gold=0",
-        "[06:44:56] ⏳ Sincronizando com relógio do servidor (0/2260)... aguardando 5000ms",
-        "[06:45:13] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2260 gold=0",
         "[06:45:13] ⏳ Sincronizando com relógio do servidor (0/2260)... aguardando 5000ms",
         "[06:45:30] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2260 gold=0",
         "[06:45:30] ⏳ Sincronizando com relógio do servidor (0/2260)... aguardando 5000ms",
         "[06:45:46] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/2260 gold=0",
         "[06:45:46] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[06:45:48] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)"
+        "[06:45:48] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)",
+        "[06:48:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=237/2260 gold=0",
+        "[06:48:52] ⏳ Sincronizando com relógio do servidor (237/2260)... aguardando 5000ms",
+        "[06:49:08] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=237/2260 gold=0",
+        "[06:49:08] ⏳ Sincronizando com relógio do servidor (237/2260)... aguardando 5000ms",
+        "[06:49:25] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=237/2260 gold=0",
+        "[06:49:25] ⏳ Sincronizando com relógio do servidor (237/2260)... aguardando 5000ms",
+        "[06:49:42] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=237/2260 gold=0",
+        "[06:49:42] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[06:49:44] ▶ Fase 15 iniciada (Meta: 2260 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 171s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 15",
-      "updatedAt": 1792824348429,
+      "updatedAt": 1792824584223,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7304306030273438,
+  "ramAllocMB": 1.9353408813476562,
   "ramSysMB": 13.349861145019531,
-  "uptime": "57m36s"
+  "uptime": "59m36s"
 }
