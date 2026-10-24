@@ -8,7 +8,7 @@
         "essence": 26,
         "forgeFragments": 0,
         "gems": 55,
-        "onlinePlayers": 465,
+        "onlinePlayers": 468,
         "stone": 0,
         "wheat": 14996,
         "wood": 2465
@@ -19,12 +19,6 @@
       "kills": 5,
       "level": 3,
       "logs": [
-        "[01:36:07] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[01:36:08] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[01:36:08] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[01:36:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[01:36:09] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
-        "[01:36:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
         "[01:36:10] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
         "[01:36:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
         "[01:36:12] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
@@ -33,19 +27,25 @@
         "[01:36:14] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
         "[01:36:14] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
         "[01:36:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
-        "[01:36:15] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms"
+        "[01:36:15] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
+        "[01:36:16] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
+        "[01:36:16] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
+        "[01:36:17] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=1848/1860 gold=0",
+        "[01:36:17] ⏳ Sincronizando com relógio do servidor (1848/1860)... aguardando 1000ms",
+        "[01:36:18] Aviso: conclusão da run recusada: rate_limit: pausa solicitada pelo servidor (HTTP 429). Aguardando 5s...",
+        "[01:36:23] ▶ Fase 3 iniciada (Meta: 1860 wheat | Base: 2.26/s -\u003e Real: 14.31/s [6.32x] | Est: 130s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 3",
-      "updatedAt": 1792805616263,
+      "updatedAt": 1792805783350,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7209625244140625,
+  "ramAllocMB": 1.5843658447265625,
   "ramSysMB": 17.34986114501953,
-  "uptime": "1h14m24s"
+  "uptime": "1h16m23s"
 }
