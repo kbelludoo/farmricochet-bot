@@ -1,29 +1,24 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 13: Ato 1 — Invasão · Neve 3/5",
-      "durationSec": 2465,
-      "expPerHour": 7884.864904279119,
+      "currentArea": "Fase 14: Ato 1 — Invasão · Neve 4/5",
+      "durationSec": 2644,
+      "expPerHour": 8168.645696755069,
       "extra": {
         "essence": 33,
         "forgeFragments": 0,
         "gems": 58,
-        "onlinePlayers": 455,
-        "stone": 9580,
-        "wheat": 67054,
+        "onlinePlayers": 458,
+        "stone": 542,
+        "wheat": 68049,
         "wood": 51158
       },
-      "gold": 45745,
+      "gold": 45940,
       "hp": 466,
       "id": "acc-1",
-      "kills": 45,
-      "level": 13,
+      "kills": 50,
+      "level": 14,
       "logs": [
-        "[06:25:54] 🚀 Próxima fase desbloqueada: act-1-snow-1 (Nv. 11)! Avançando...",
-        "[06:25:57] ▶ Fase 11 iniciada (Meta: 2110 stone | Base: 2.22/s -\u003e Real: 12.43/s [5.60x] | Est: 170s)",
-        "[06:26:00] 🌱 Talento evoluído: Colheita de Trigo -\u003e Nv. 3",
-        "[06:26:01] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 1",
-        "[06:26:02] 🌱 Talento evoluído: Mineração -\u003e Nv. 1",
         "[06:26:45] 🌱 Talento evoluído: Mineração -\u003e Nv. 2",
         "[06:27:30] 🌱 Talento evoluído: Mineração -\u003e Nv. 3",
         "[06:28:49] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-2 nextId=514bb814-fffd-465f-9b49-275cb7df8cf7 auth=2110/2110 gold=146",
@@ -33,19 +28,24 @@
         "[06:31:44] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-3 nextId=a1e9db5c-e485-48d5-98fc-04957e73056b auth=2150/2150 gold=146",
         "[06:31:44] ✅ Fase 12 Concluída! +146 Gold",
         "[06:31:44] 🚀 Próxima fase desbloqueada: act-1-snow-3 (Nv. 13)! Avançando...",
-        "[06:31:47] ▶ Fase 13 iniciada (Meta: 2180 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 165s)"
+        "[06:31:47] ▶ Fase 13 iniciada (Meta: 2180 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 165s)",
+        "[06:34:15] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 2",
+        "[06:34:43] 🔍 Complete: accepted=true outcome=completed nextCode=act-1-snow-4 nextId=13910052-aa84-4c46-b8ce-4582f8ef5ea6 auth=2180/2180 gold=195",
+        "[06:34:43] ✅ Fase 13 Concluída! +195 Gold",
+        "[06:34:43] 🚀 Próxima fase desbloqueada: act-1-snow-4 (Nv. 14)! Avançando...",
+        "[06:34:46] ▶ Fase 14 iniciada (Meta: 2220 stone | Base: 2.35/s -\u003e Real: 13.18/s [5.60x] | Est: 168s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 13",
-      "updatedAt": 1792823507235,
+      "status": "Jogando Fase 14",
+      "updatedAt": 1792823686053,
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.6582183837890625,
+  "goroutines": 11,
+  "ramAllocMB": 1.6618728637695312,
   "ramSysMB": 13.349861145019531,
-  "uptime": "43m37s"
+  "uptime": "45m36s"
 }
