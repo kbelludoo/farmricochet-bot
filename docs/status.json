@@ -19,13 +19,6 @@
       "kills": 375,
       "level": 35,
       "logs": [
-        "[13:49:35] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=246/3110 gold=0",
-        "[13:49:35] ⏳ Sincronizando com relógio do servidor (246/3110)... aguardando 5000ms",
-        "[13:49:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=246/3110 gold=0",
-        "[13:49:52] ⏳ Sincronizando com relógio do servidor (246/3110)... aguardando 5000ms",
-        "[13:50:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:50:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[13:50:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=246/3110 gold=0",
         "[13:50:09] ⏳ Sincronizando com relógio do servidor (246/3110)... aguardando 5000ms",
         "[13:50:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=246/3110 gold=0",
         "[13:50:26] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
@@ -33,7 +26,14 @@
         "[13:50:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:50:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[13:51:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:51:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[13:51:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[13:52:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:52:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[13:53:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:53:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[13:53:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:53:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[13:53:49] 🌱 Talento evoluído: Fortuna -\u003e Nv. 3"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.5660781860351562,
+  "ramAllocMB": 1.9919586181640625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "8h1m37s"
+  "uptime": "8h3m35s"
 }
