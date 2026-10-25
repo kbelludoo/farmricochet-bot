@@ -19,21 +19,21 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[03:41:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[03:42:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[03:42:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[03:43:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[03:43:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[03:44:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[03:44:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[03:44:33] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=3684/3720 gold=336",
-        "[03:44:33] ✅ Fase 46 Concluída! +336 Gold",
-        "[03:44:33] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
         "[03:44:35] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
         "[03:44:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[03:44:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[03:45:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[03:45:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[03:45:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[03:46:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[03:46:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[03:47:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[03:47:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[03:47:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[03:47:49] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
+        "[03:47:49] ⏳ Sincronizando com relógio do servidor (486/3660)... aguardando 5000ms",
+        "[03:47:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[03:48:06] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
+        "[03:48:06] ⏳ Sincronizando com relógio do servidor (486/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.601531982421875,
+  "ramAllocMB": 2.0089111328125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "21h55m36s"
+  "uptime": "21h57m37s"
 }
