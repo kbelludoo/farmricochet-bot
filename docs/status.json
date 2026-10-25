@@ -19,21 +19,21 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[05:09:58] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
-        "[05:09:58] ⏳ Sincronizando com relógio do servidor (486/3660)... aguardando 5000ms",
-        "[05:10:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
-        "[05:10:15] ⏳ Sincronizando com relógio do servidor (486/3660)... aguardando 5000ms",
-        "[05:10:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:10:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[05:10:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
-        "[05:10:32] ⏳ Sincronizando com relógio do servidor (486/3660)... aguardando 5000ms",
         "[05:10:49] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
         "[05:10:49] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[05:10:50] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
         "[05:11:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[05:11:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[05:11:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[05:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:12:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:12:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:13:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:13:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:14:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:14:04] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
+        "[05:14:04] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
+        "[05:14:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.81884765625,
+  "ramAllocMB": 1.752471923828125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "23h21m36s"
+  "uptime": "23h23m36s"
 }
