@@ -19,9 +19,6 @@
       "kills": 1000,
       "level": 42,
       "logs": [
-        "[00:14:24] ▶ Fase 41 iniciada (Meta: 3430 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 167s)",
-        "[00:14:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[00:15:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:16:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:17:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:17:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3396/3430 gold=0",
@@ -33,7 +30,10 @@
         "[00:17:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:18:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:19:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[00:20:03] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[00:20:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:20:41] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=365/3490 gold=0",
+        "[00:20:41] ⏳ Sincronizando com relógio do servidor (365/3490)... aguardando 5000ms",
+        "[00:20:48] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8792800903320312,
+  "ramAllocMB": 1.6435470581054688,
   "ramSysMB": 13.349861145019531,
-  "uptime": "18h29m38s"
+  "uptime": "18h30m20s"
 }
