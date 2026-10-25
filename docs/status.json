@@ -19,12 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[12:20:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:20:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[12:20:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:20:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[12:20:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[12:20:52] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[12:21:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
         "[12:21:09] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[12:21:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
@@ -33,7 +27,13 @@
         "[12:21:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[12:21:42] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
         "[12:21:42] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[12:21:44] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)"
+        "[12:21:44] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[12:22:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:22:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[12:23:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:23:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[12:23:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:23:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.7874603271484375,
+  "goroutines": 10,
+  "ramAllocMB": 2.0454330444335938,
   "ramSysMB": 13.349861145019531,
-  "uptime": "30h31m38s"
+  "uptime": "30h33m36s"
 }
