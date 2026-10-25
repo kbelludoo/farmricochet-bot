@@ -19,12 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[13:10:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[13:10:09] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[13:10:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:10:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[13:10:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[13:10:26] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[13:10:43] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
         "[13:10:43] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[13:10:59] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
@@ -33,7 +27,13 @@
         "[13:11:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[13:11:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[13:11:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[13:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[13:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[13:12:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:12:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[13:13:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:13:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[13:14:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[13:14:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.656829833984375,
+  "ramAllocMB": 1.9009323120117188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "31h21m36s"
+  "uptime": "31h23m35s"
 }
