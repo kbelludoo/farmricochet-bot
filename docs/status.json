@@ -19,12 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[11:10:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[11:10:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:11:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[11:11:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:11:05] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
-        "[11:11:05] ⏳ Sincronizando com relógio do servidor (240/3660)... aguardando 5000ms",
         "[11:11:22] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
         "[11:11:22] ⏳ Sincronizando com relógio do servidor (240/3660)... aguardando 5000ms",
         "[11:11:39] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
@@ -33,7 +27,13 @@
         "[11:11:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[11:11:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
         "[11:11:55] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[11:11:57] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)"
+        "[11:11:57] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[11:12:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[11:12:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:13:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[11:13:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:14:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[11:14:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.2923431396484375,
+  "ramAllocMB": 1.9600143432617188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "29h21m36s"
+  "uptime": "29h23m36s"
 }
