@@ -19,11 +19,6 @@
       "kills": 1015,
       "level": 45,
       "logs": [
-        "[01:28:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[01:28:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[01:28:26] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[01:28:28] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
-        "[01:29:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:29:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:30:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:31:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,19 +28,24 @@
         "[01:31:59] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[01:32:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:32:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[01:32:15] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms"
+        "[01:32:15] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
+        "[01:32:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[01:32:32] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[01:32:34] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[01:32:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:33:33] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 45",
-      "updatedAt": 1792891708295,
+      "updatedAt": 1792891953973,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.895751953125,
+  "ramAllocMB": 1.750335693359375,
   "ramSysMB": 13.349861145019531,
-  "uptime": "19h41m38s"
+  "uptime": "19h43m37s"
 }
