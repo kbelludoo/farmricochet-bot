@@ -19,10 +19,6 @@
       "kills": 1070,
       "level": 46,
       "logs": [
-        "[14:59:49] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[14:59:50] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:00:34] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[15:00:36] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[15:01:00] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
         "[15:01:00] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
         "[15:01:09] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-swamp-5 nextId=067c9f54-84ed-47c6-b086-df77c24afc2b auth=3660/3660 gold=622",
@@ -33,7 +29,11 @@
         "[15:01:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[15:01:20] 🔨 2 itens comuns desmontados em fragmentos de forja.",
         "[15:02:04] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[15:02:05] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[15:02:05] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:02:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[15:02:50] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:03:34] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[15:03:35] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.61895751953125,
+  "ramAllocMB": 1.7823867797851562,
   "ramSysMB": 13.349861145019531,
-  "uptime": "33h11m36s"
+  "uptime": "33h13m36s"
 }
