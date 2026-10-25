@@ -19,8 +19,6 @@
       "kills": 1015,
       "level": 45,
       "logs": [
-        "[01:04:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[01:05:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:05:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:06:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:07:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
@@ -33,7 +31,9 @@
         "[01:07:54] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
         "[01:07:54] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[01:07:56] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
-        "[01:08:03] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[01:08:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:08:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:09:36] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 2.0646133422851562,
+  "goroutines": 10,
+  "ramAllocMB": 1.7513656616210938,
   "ramSysMB": 13.349861145019531,
-  "uptime": "19h17m36s"
+  "uptime": "19h19m37s"
 }
