@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 520,
+        "onlinePlayers": 518,
         "stone": 46010,
         "wheat": 58891,
         "wood": 39557
@@ -19,10 +19,6 @@
       "kills": 105,
       "level": 46,
       "logs": [
-        "[18:45:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:45:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[18:45:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[18:46:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[18:46:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:47:14] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3624/3660 gold=0",
         "[18:47:14] ⏳ Sincronizando com relógio do servidor (3624/3660)... aguardando 5000ms",
@@ -33,7 +29,11 @@
         "[18:47:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[18:47:25] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.66/s -\u003e Real: 20.75/s [5.67x] | Est: 179s)",
         "[18:48:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[18:48:09] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[18:48:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:48:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[18:48:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[18:49:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[18:49:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.9488067626953125,
+  "ramAllocMB": 2.106170654296875,
   "ramSysMB": 17.34986114501953,
-  "uptime": "2h42m23s"
+  "uptime": "2h44m20s"
 }
