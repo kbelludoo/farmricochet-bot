@@ -19,11 +19,6 @@
       "kills": 60,
       "level": 45,
       "logs": [
-        "[17:04:20] ⏳ Sincronizando com relógio do servidor (3584/3660)... aguardando 5000ms",
-        "[17:04:36] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3584/3660 gold=0",
-        "[17:04:36] ⏳ Sincronizando com relógio do servidor (3584/3660)... aguardando 5000ms",
-        "[17:04:38] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[17:04:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[17:04:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3584/3660 gold=0",
         "[17:04:53] ⏳ Sincronizando com relógio do servidor (3584/3660)... aguardando 5000ms",
         "[17:05:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3584/3660 gold=0",
@@ -33,7 +28,12 @@
         "[17:05:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[17:06:09] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[17:06:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[17:06:10] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 7"
+        "[17:06:10] 🌱 Talento evoluído: Extração de Madeira -\u003e Nv. 7",
+        "[17:06:53] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[17:06:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[17:06:54] 🌱 Talento evoluído: Mineração -\u003e Nv. 7",
+        "[17:07:38] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[17:07:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5217056274414062,
+  "ramAllocMB": 1.8070602416992188,
   "ramSysMB": 17.09986114501953,
-  "uptime": "1h0m28s"
+  "uptime": "1h2m27s"
 }
