@@ -19,21 +19,21 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[14:19:54] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[14:19:54] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[14:20:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[14:20:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[14:20:11] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[14:20:11] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[14:20:28] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[14:20:28] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[14:20:44] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
         "[14:20:44] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[14:20:47] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
         "[14:20:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[14:20:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[14:21:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[14:21:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[14:21:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[14:22:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[14:22:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[14:23:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[14:23:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[14:23:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[14:23:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[14:24:01] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[14:24:01] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8509063720703125,
+  "ramAllocMB": 1.8425674438476562,
   "ramSysMB": 13.349861145019531,
-  "uptime": "32h31m35s"
+  "uptime": "32h33m36s"
 }
