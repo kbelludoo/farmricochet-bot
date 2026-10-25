@@ -19,21 +19,21 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[05:05:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[05:05:52] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
-        "[05:06:09] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[05:06:09] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
-        "[05:06:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[05:06:26] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
-        "[05:06:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:06:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[05:06:43] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
         "[05:06:43] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[05:06:45] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
         "[05:07:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[05:07:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[05:08:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:08:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[05:08:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:08:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:08:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:09:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:09:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:09:58] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
+        "[05:09:58] ⏳ Sincronizando com relógio do servidor (486/3660)... aguardando 5000ms",
+        "[05:10:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=486/3660 gold=0",
+        "[05:10:15] ⏳ Sincronizando com relógio do servidor (486/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.844940185546875,
+  "ramAllocMB": 2.0749740600585938,
   "ramSysMB": 13.349861145019531,
-  "uptime": "23h17m36s"
+  "uptime": "23h19m37s"
 }
