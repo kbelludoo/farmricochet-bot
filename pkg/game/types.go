@@ -37,33 +37,37 @@ type FarmBotSettings struct {
 	AutoPrestige     bool   `json:"autoPrestige"`     // Rastreamento e coleta de marcos de Prestígio
 	AutoInfinite     bool   `json:"autoInfinite"`     // Execução da Torre de Desafio Infinito
 	AutoPvP          bool   `json:"autoPvP"`          // Resgate de missões diárias/semanais da Arena PvP
-	AutoTuneSpeed    bool   `json:"autoTuneSpeed"`    // Auto-tuner adaptativo para encontrar o teto máximo de velocidade
-	SpeedMultiplier  float64 `json:"speedMultiplier"` // Fator de ajuste de tempo da fase (padrão: 1.0)
+	AutoTuneSpeed      bool    `json:"autoTuneSpeed"`      // Auto-tuner adaptativo para encontrar o teto máximo de velocidade
+	SpeedMultiplier    float64 `json:"speedMultiplier"`    // Fator de ajuste de tempo da fase (padrão: 1.0)
+	MaxCampaignLevel   int     `json:"maxCampaignLevel"`   // Limite máximo rígido de fase (0 = calcula automático)
+	SafetyMarginPhases int     `json:"safetyMarginPhases"` // Fases antes do fim do jogo para travar avanço (padrão: 6)
 }
 
 // DefaultSettings retorna configurações padrão recomendadas
 func DefaultSettings() FarmBotSettings {
 	return FarmBotSettings{
-		AutoHunt:         true,
-		AutoAdvancePhase: true,
-		AutoChests:       true,
-		AutoMissions:     true,
-		AutoBattlePass:   true,
-		AutoTalents:      true,
-		AutoAscension:    true,
-		AutoTransmute:    false, // Altar opcional para evitar queima acidental
-		AutoDismantle:    true,
-		AutoFuseCrystals: true,
-		AutoLootGoblin:   true,
-		AutoEquip:        true,
-		AutoForge:        true,
-		AutoMythicWell:   true,
-		AutoClan:         true,
-		AutoPrestige:     true,
-		AutoInfinite:     true,
-		AutoPvP:          true,
-		AutoTuneSpeed:    true,
-		SpeedMultiplier:  1.0,
+		AutoHunt:           true,
+		AutoAdvancePhase:   true,
+		AutoChests:         true,
+		AutoMissions:       true,
+		AutoBattlePass:     true,
+		AutoTalents:        true,
+		AutoAscension:      true,
+		AutoTransmute:      false, // Altar opcional para evitar queima acidental
+		AutoDismantle:      true,
+		AutoFuseCrystals:   true,
+		AutoLootGoblin:     true,
+		AutoEquip:          true,
+		AutoForge:          true,
+		AutoMythicWell:     true,
+		AutoClan:           true,
+		AutoPrestige:       true,
+		AutoInfinite:       true,
+		AutoPvP:            true,
+		AutoTuneSpeed:      true,
+		SpeedMultiplier:    1.0,
+		MaxCampaignLevel:   514, // Trava de segurança (6 fases antes da 520)
+		SafetyMarginPhases: 6,
 	}
 }
 

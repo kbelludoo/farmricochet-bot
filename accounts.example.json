@@ -20,6 +20,8 @@
       "autoDismantle": true,
       "autoFuseCrystals": true,
       "autoLootGoblin": true,
+      "maxCampaignLevel": 514,
+      "safetyMarginPhases": 6,
       "speedMultiplier": 1.0
     }
   }

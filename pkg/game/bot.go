@@ -386,6 +386,17 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 		return fmt.Errorf("nenhuma fase ativa encontrada")
 	}
 
+	maxAllowed := b.getSafetyMaxLevel(boot)
+	if activeLvl.Number > maxAllowed {
+		for _, l := range boot.Levels {
+			if l.Number == maxAllowed {
+				b.addLog(fmt.Sprintf("🛡️ Fase atual (%d) acima do teto de segurança (%d). Recuando para farm seguro em %s...", activeLvl.Number, maxAllowed, l.Code))
+				_ = b.client.SetActiveLevel(l.Code)
+				break
+			}
+		}
+	}
+
 	b.updateStatus(func(s *engine.AccountStatus) {
 		s.CurrentArea = fmt.Sprintf("Fase %d: %s", activeLvl.Number, activeLvl.Name)
 		s.Level = activeLvl.Number
@@ -595,14 +606,35 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 				// Se desbloqueou próxima fase e AutoAdvancePhase estiver ativo, avança
 				if b.config.Settings.AutoAdvancePhase {
+					maxAllowed := b.getSafetyMaxLevel(boot)
+					nextNum := completeResp.NextLevelNumber
+					if nextNum <= 0 && completeResp.NextLevelCode != "" {
+						for _, l := range boot.Levels {
+							if l.Code == completeResp.NextLevelCode {
+								nextNum = l.Number
+								break
+							}
+						}
+					}
+
+					// Trava de segurança ativa: se atingir o teto de segurança, não avança mais
+					if (nextNum > 0 && nextNum > maxAllowed) || activeLvl.Number >= maxAllowed {
+						b.addLog(fmt.Sprintf("🛑 Trava de Segurança Ativa: Fase %d atingida (limite de segurança: %d, %d fases antes do fim). Permanecendo em farm seguro contínuo!", activeLvl.Number, maxAllowed, b.config.Settings.SafetyMarginPhases))
+						return nil
+					}
+
 					if completeResp.NextLevelCode != "" {
 						b.addLog(fmt.Sprintf("🚀 Próxima fase desbloqueada: %s (Nv. %d)! Avançando...", completeResp.NextLevelCode, completeResp.NextLevelNumber))
 						_ = b.client.SetActiveLevel(completeResp.NextLevelCode)
 					} else {
 						if newBoot, bootErr := b.client.GetBootstrap(); bootErr == nil && newBoot != nil && newBoot.Progress != nil {
-							if newBoot.Progress.HighestUnlockedLevel > activeLvl.Number {
+							unlocked := newBoot.Progress.HighestUnlockedLevel
+							if unlocked > maxAllowed {
+								unlocked = maxAllowed
+							}
+							if unlocked > activeLvl.Number {
 								for _, lvl := range newBoot.Levels {
-									if lvl.Number == newBoot.Progress.HighestUnlockedLevel {
+									if lvl.Number == unlocked {
 										b.addLog(fmt.Sprintf("🚀 Avançando para nível desbloqueado: %s (Nv. %d)!", lvl.Code, lvl.Number))
 										_ = b.client.SetActiveLevel(lvl.Code)
 										break
@@ -619,6 +651,32 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 			time.Sleep(1000 * time.Millisecond)
 		}
 	}
+}
+
+// getSafetyMaxLevel calcula a fase máxima permitida respeitando a margem de segurança contra atenção/ban
+func (b *Bot) getSafetyMaxLevel(boot *BootstrapResponse) int {
+	margin := b.config.Settings.SafetyMarginPhases
+	if margin <= 0 {
+		margin = 6
+	}
+
+	maxLevel := b.config.Settings.MaxCampaignLevel
+	if maxLevel <= 0 {
+		maxGameLevel := 520
+		if boot != nil && len(boot.Levels) > 0 {
+			for _, l := range boot.Levels {
+				if l.Number > maxGameLevel {
+					maxGameLevel = l.Number
+				}
+			}
+		}
+		maxLevel = maxGameLevel - margin
+	}
+
+	if maxLevel < 1 {
+		maxLevel = 1
+	}
+	return maxLevel
 }
 
 // generateStructureBatch gera eventos de produção dinâmicos baseados no progresso do período
