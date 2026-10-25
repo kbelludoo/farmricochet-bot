@@ -19,12 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[05:50:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:50:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[05:50:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:50:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[05:51:00] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[05:51:00] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
         "[05:51:17] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
         "[05:51:17] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
         "[05:51:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
@@ -33,7 +27,13 @@
         "[05:51:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[05:51:50] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
         "[05:51:50] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[05:51:53] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)"
+        "[05:51:53] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[05:52:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:52:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:53:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:53:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:53:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:53:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 2.404937744140625,
+  "goroutines": 10,
+  "ramAllocMB": 2.11700439453125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "24h1m35s"
+  "uptime": "24h3m37s"
 }
