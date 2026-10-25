@@ -19,12 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[07:04:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:04:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:05:02] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
-        "[07:05:02] ⏳ Sincronizando com relógio do servidor (240/3660)... aguardando 5000ms",
-        "[07:05:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[07:05:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[07:05:19] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
         "[07:05:19] ⏳ Sincronizando com relógio do servidor (240/3660)... aguardando 5000ms",
         "[07:05:36] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
@@ -33,7 +27,13 @@
         "[07:05:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[07:05:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
         "[07:05:53] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[07:05:55] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)"
+        "[07:05:55] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[07:06:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:06:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[07:07:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:07:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[07:08:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[07:08:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.3564300537109375,
+  "ramAllocMB": 1.9038009643554688,
   "ramSysMB": 13.349861145019531,
-  "uptime": "25h15m36s"
+  "uptime": "25h17m37s"
 }
