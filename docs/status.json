@@ -19,12 +19,6 @@
       "kills": 1095,
       "level": 45,
       "logs": [
-        "[15:14:41] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 185s)",
-        "[15:14:49] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[15:14:50] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:15:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[15:15:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:16:19] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[15:16:20] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[15:17:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[15:17:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[15:17:58] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=3684/3720 gold=449",
         "[15:17:58] ✅ Fase 46 Concluída! +449 Gold",
         "[15:17:58] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
-        "[15:18:01] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)"
+        "[15:18:01] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[15:18:34] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[15:18:36] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:19:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[15:19:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:20:04] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[15:20:05] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.1593704223632812,
+  "ramAllocMB": 1.5509490966796875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "33h27m43s"
+  "uptime": "33h29m38s"
 }
