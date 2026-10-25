@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 513,
+        "onlinePlayers": 515,
         "stone": 58227,
         "wheat": 64562,
         "wood": 50357
@@ -19,12 +19,6 @@
       "kills": 120,
       "level": 45,
       "logs": [
-        "[19:10:06] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.66/s -\u003e Real: 20.75/s [5.67x] | Est: 179s)",
-        "[19:10:39] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[19:10:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[19:11:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[19:11:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[19:12:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[19:12:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[19:12:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[19:12:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[19:13:18] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
         "[19:13:20] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.66/s -\u003e Real: 20.75/s [5.67x] | Est: 176s)",
         "[19:13:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[19:13:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[19:13:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[19:14:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[19:14:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[19:15:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[19:15:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[19:15:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[19:15:54] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.594940185546875,
+  "ramAllocMB": 2.1424942016601562,
   "ramSysMB": 17.34986114501953,
-  "uptime": "3h8m19s"
+  "uptime": "3h10m21s"
 }
