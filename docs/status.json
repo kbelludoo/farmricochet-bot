@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 522,
+        "onlinePlayers": 520,
         "stone": 95109,
         "wheat": 81699,
         "wood": 82973
@@ -19,12 +19,6 @@
       "kills": 150,
       "level": 45,
       "logs": [
-        "[20:56:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[20:56:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[20:56:47] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=375/3660 gold=0",
-        "[20:56:47] ⏳ Sincronizando com relógio do servidor (375/3660)... aguardando 5000ms",
-        "[20:57:04] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=375/3660 gold=0",
-        "[20:57:04] ⏳ Sincronizando com relógio do servidor (375/3660)... aguardando 5000ms",
         "[20:57:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[20:57:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[20:57:21] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=375/3660 gold=0",
@@ -33,7 +27,13 @@
         "[20:57:38] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[20:57:40] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.66/s -\u003e Real: 20.75/s [5.67x] | Est: 176s)",
         "[20:57:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[20:57:54] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[20:57:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:58:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[20:58:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[20:59:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[20:59:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[21:00:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[21:00:10] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 2.1598052978515625,
+  "ramAllocMB": 1.5287399291992188,
   "ramSysMB": 17.34986114501953,
-  "uptime": "4h52m19s"
+  "uptime": "4h54m23s"
 }
