@@ -19,12 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[10:30:05] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[10:30:05] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
-        "[10:30:21] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[10:30:21] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
-        "[10:30:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[10:30:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[10:30:38] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
         "[10:30:38] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
         "[10:30:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
@@ -33,7 +27,13 @@
         "[10:31:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[10:31:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[10:32:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[10:32:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[10:32:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:32:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[10:32:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:33:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[10:33:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:34:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=240/3660 gold=0",
+        "[10:34:10] ⏳ Sincronizando com relógio do servidor (240/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 10,
-  "ramAllocMB": 1.98455810546875,
+  "goroutines": 11,
+  "ramAllocMB": 1.9284591674804688,
   "ramSysMB": 13.349861145019531,
-  "uptime": "28h41m37s"
+  "uptime": "28h43m36s"
 }
