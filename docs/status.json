@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 486,
+        "onlinePlayers": 488,
         "stone": 172372,
         "wheat": 28198,
         "wood": 151174
@@ -19,10 +19,6 @@
       "kills": 210,
       "level": 45,
       "logs": [
-        "[23:14:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[23:15:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[23:15:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[23:15:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[23:15:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[23:16:39] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[23:16:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +29,11 @@
         "[23:17:34] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
         "[23:17:37] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.66/s -\u003e Real: 20.75/s [5.67x] | Est: 176s)",
         "[23:18:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[23:18:09] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[23:18:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:18:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[23:18:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[23:19:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[23:19:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.9433135986328125,
+  "ramAllocMB": 1.6394424438476562,
   "ramSysMB": 17.34986114501953,
-  "uptime": "7h12m24s"
+  "uptime": "7h14m22s"
 }
