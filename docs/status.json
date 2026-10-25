@@ -19,13 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[12:39:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[12:40:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:40:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[12:41:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[12:41:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[12:41:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3628/3660 gold=0",
-        "[12:41:24] ⏳ Sincronizando com relógio do servidor (3628/3660)... aguardando 5000ms",
         "[12:41:41] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3628/3660 gold=0",
         "[12:41:41] ⏳ Sincronizando com relógio do servidor (3628/3660)... aguardando 5000ms",
         "[12:41:48] 🎟️ 2 missões do Passe de Batalha resgatadas!",
@@ -33,19 +26,26 @@
         "[12:41:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3628/3660 gold=0",
         "[12:41:57] ⏳ Sincronizando com relógio do servidor (3628/3660)... aguardando 5000ms",
         "[12:42:14] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3628/3660 gold=0",
-        "[12:42:14] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa..."
+        "[12:42:14] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[12:42:17] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[12:42:33] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:42:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[12:43:18] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:43:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[12:44:03] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[12:44:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 45",
-      "updatedAt": 1792931890032,
+      "updatedAt": 1792932137218,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.4869766235351562,
+  "ramAllocMB": 1.949737548828125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "30h51m36s"
+  "uptime": "30h53m36s"
 }
