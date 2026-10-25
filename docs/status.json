@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 526,
+        "onlinePlayers": 524,
         "stone": 109388,
         "wheat": 25088,
         "wood": 111606
@@ -19,12 +19,6 @@
       "kills": 40,
       "level": 45,
       "logs": [
-        "[16:42:07] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:42:08] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:42:50] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3584/3660 gold=0",
-        "[16:42:50] ⏳ Sincronizando com relógio do servidor (3584/3660)... aguardando 5000ms",
-        "[16:42:51] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:42:52] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:43:07] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3584/3660 gold=0",
         "[16:43:07] ⏳ Sincronizando com relógio do servidor (3584/3660)... aguardando 5000ms",
         "[16:43:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3584/3660 gold=0",
@@ -33,7 +27,13 @@
         "[16:43:38] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:43:40] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3584/3660 gold=0",
         "[16:43:40] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[16:43:43] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.38/s [5.67x] | Est: 180s)"
+        "[16:43:43] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.38/s [5.67x] | Est: 180s)",
+        "[16:44:22] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:44:23] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:45:07] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:45:08] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:45:54] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:45:55] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.4747161865234375,
+  "ramAllocMB": 1.70745849609375,
   "ramSysMB": 17.09986114501953,
-  "uptime": "38m20s"
+  "uptime": "40m32s"
 }
