@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 535,
+        "onlinePlayers": 542,
         "stone": 98327,
         "wheat": 20050,
         "wood": 101902
@@ -19,12 +19,6 @@
       "kills": 25,
       "level": 46,
       "logs": [
-        "[16:27:07] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:27:51] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:27:52] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:28:36] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:28:37] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:29:21] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[16:29:22] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:29:30] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3626/3660 gold=0",
         "[16:29:30] ⏳ Sincronizando com relógio do servidor (3626/3660)... aguardando 5000ms",
@@ -33,7 +27,13 @@
         "[16:29:38] 🚀 Próxima fase desbloqueada: act-2-swamp-5 (Nv. 46)! Avançando...",
         "[16:29:40] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.60/s -\u003e Real: 20.38/s [5.67x] | Est: 182s)",
         "[16:30:07] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:30:08] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[16:30:08] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:30:52] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:30:53] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:31:36] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:31:37] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:32:22] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:32:23] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6257858276367188,
+  "ramAllocMB": 1.7598114013671875,
   "ramSysMB": 17.09986114501953,
-  "uptime": "24m23s"
+  "uptime": "26m32s"
 }
