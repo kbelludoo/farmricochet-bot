@@ -19,12 +19,6 @@
       "kills": 1060,
       "level": 46,
       "logs": [
-        "[03:38:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[03:39:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[03:39:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[03:40:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[03:40:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[03:41:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[03:41:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[03:41:06] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3624/3660 gold=0",
         "[03:41:06] ⏳ Sincronizando com relógio do servidor (3624/3660)... aguardando 5000ms",
@@ -33,7 +27,13 @@
         "[03:41:15] 🚀 Próxima fase desbloqueada: act-2-swamp-5 (Nv. 46)! Avançando...",
         "[03:41:17] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 185s)",
         "[03:41:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[03:41:49] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[03:41:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[03:42:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[03:42:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[03:43:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[03:43:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[03:44:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[03:44:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.8874282836914062,
+  "ramAllocMB": 1.9858856201171875,
   "ramSysMB": 13.349861145019531,
-  "uptime": "21h51m36s"
+  "uptime": "21h53m36s"
 }
