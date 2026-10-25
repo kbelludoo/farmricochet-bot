@@ -19,21 +19,21 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[10:25:58] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[10:25:58] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
-        "[10:26:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[10:26:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[10:26:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[10:26:15] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
-        "[10:26:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
-        "[10:26:32] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms",
         "[10:26:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[10:26:48] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
         "[10:26:48] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[10:26:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[10:26:51] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
         "[10:27:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[10:27:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[10:27:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:28:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[10:28:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:29:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[10:29:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:29:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[10:29:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:30:05] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=363/3660 gold=0",
+        "[10:30:05] ⏳ Sincronizando com relógio do servidor (363/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.6668624877929688,
+  "goroutines": 10,
+  "ramAllocMB": 1.8704605102539062,
   "ramSysMB": 13.349861145019531,
-  "uptime": "28h37m36s"
+  "uptime": "28h39m38s"
 }
