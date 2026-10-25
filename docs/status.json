@@ -19,8 +19,6 @@
       "kills": 985,
       "level": 41,
       "logs": [
-        "[00:05:02] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-snow-4 nextId=de07a8d4-cbf2-4343-b813-26385dc10bde auth=3396/3430 gold=508",
-        "[00:05:02] ✅ Fase 41 Concluída! +508 Gold",
         "[00:05:02] 🚀 Próxima fase desbloqueada: act-2-snow-4 (Nv. 40)! Avançando...",
         "[00:05:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:05:05] ▶ Fase 40 iniciada (Meta: 3380 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 165s)",
@@ -33,7 +31,9 @@
         "[00:08:11] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-snow-5 nextId=5326a708-ab43-4400-9de7-c2a18742515f auth=3380/3380 gold=559",
         "[00:08:11] ✅ Fase 40 Concluída! +559 Gold",
         "[00:08:11] 🚀 Próxima fase desbloqueada: act-2-snow-5 (Nv. 41)! Avançando...",
-        "[00:08:14] ▶ Fase 41 iniciada (Meta: 3430 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 167s)"
+        "[00:08:14] ▶ Fase 41 iniciada (Meta: 3430 wheat | Base: 3.66/s -\u003e Real: 20.49/s [5.60x] | Est: 167s)",
+        "[00:08:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:09:33] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9769439697265625,
+  "ramAllocMB": 1.8499069213867188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "18h17m39s"
+  "uptime": "18h19m39s"
 }
