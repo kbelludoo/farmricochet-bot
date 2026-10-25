@@ -19,12 +19,6 @@
       "kills": 1065,
       "level": 45,
       "logs": [
-        "[09:52:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[09:52:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[09:53:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[09:53:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[09:53:10] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=366/3660 gold=0",
-        "[09:53:10] ⏳ Sincronizando com relógio do servidor (366/3660)... aguardando 5000ms",
         "[09:53:26] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=366/3660 gold=0",
         "[09:53:26] ⏳ Sincronizando com relógio do servidor (366/3660)... aguardando 5000ms",
         "[09:53:43] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=366/3660 gold=0",
@@ -33,7 +27,13 @@
         "[09:53:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[09:54:00] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=366/3660 gold=0",
         "[09:54:00] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[09:54:02] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)"
+        "[09:54:02] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
+        "[09:54:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[09:54:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:55:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[09:55:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:56:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[09:56:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.6825637817382812,
+  "ramAllocMB": 1.8682327270507812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "28h3m36s"
+  "uptime": "28h5m35s"
 }
