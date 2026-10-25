@@ -19,13 +19,6 @@
       "kills": 1015,
       "level": 45,
       "logs": [
-        "[02:47:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[02:48:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[02:49:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[02:49:38] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[02:49:38] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[02:49:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[02:49:55] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[02:50:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[02:50:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
         "[02:50:12] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
@@ -33,7 +26,14 @@
         "[02:50:28] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[02:50:30] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
         "[02:50:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[02:51:33] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[02:51:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[02:52:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[02:53:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[02:53:44] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[02:53:44] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
+        "[02:53:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[02:54:01] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[02:54:01] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 466,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.1045074462890625,
+  "ramAllocMB": 2.7186431884765625,
   "ramSysMB": 13.349861145019531,
-  "uptime": "21h1m35s"
+  "uptime": "21h3m36s"
 }
