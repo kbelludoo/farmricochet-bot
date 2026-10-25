@@ -19,33 +19,33 @@
       "kills": 1015,
       "level": 45,
       "logs": [
-        "[00:58:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[00:58:50] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[00:58:50] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[00:59:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[00:59:07] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[00:59:07] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[00:59:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[00:59:24] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[00:59:41] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[00:59:41] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[00:59:43] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)",
         "[00:59:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:00:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:01:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[01:02:03] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[01:02:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:02:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:02:57] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[01:02:57] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
+        "[01:03:14] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[01:03:14] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
+        "[01:03:31] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[01:03:31] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
+        "[01:03:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:03:47] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[01:03:47] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[01:03:49] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.13/s [5.60x] | Est: 182s)"
       ],
       "mana": 100,
       "maxHp": 466,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 45",
-      "updatedAt": 1792889983601,
+      "updatedAt": 1792890229760,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.904541015625,
+  "ramAllocMB": 1.7486038208007812,
   "ramSysMB": 13.349861145019531,
-  "uptime": "19h11m38s"
+  "uptime": "19h13m38s"
 }
