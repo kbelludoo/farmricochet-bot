@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 525,
+        "onlinePlayers": 523,
         "stone": 109388,
         "wheat": 25088,
         "wood": 111606
@@ -19,12 +19,6 @@
       "kills": 40,
       "level": 45,
       "logs": [
-        "[16:36:21] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.60/s -\u003e Real: 20.38/s [5.67x] | Est: 182s)",
-        "[16:36:53] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:36:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:37:37] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:37:38] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[16:38:22] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[16:38:23] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[16:39:07] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[16:39:08] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[16:39:36] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
         "[16:39:38] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.60/s -\u003e Real: 20.38/s [5.67x] | Est: 180s)",
         "[16:39:52] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[16:39:53] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[16:39:53] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:40:37] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:40:38] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:41:22] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:41:23] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:42:07] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[16:42:08] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8812942504882812,
+  "ramAllocMB": 1.9048080444335938,
   "ramSysMB": 17.09986114501953,
-  "uptime": "34m22s"
+  "uptime": "36m20s"
 }
