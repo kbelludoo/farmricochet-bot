@@ -8,7 +8,7 @@
         "essence": 285,
         "forgeFragments": 0,
         "gems": 26,
-        "onlinePlayers": 505,
+        "onlinePlayers": 503,
         "stone": 143162,
         "wheat": 82943,
         "wood": 62385
@@ -19,12 +19,6 @@
       "kills": 10,
       "level": 45,
       "logs": [
-        "[15:54:23] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:54:51] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=3720/3720 gold=457",
-        "[15:54:51] ✅ Fase 46 Concluída! +457 Gold",
-        "[15:54:51] ⚠️ Partida não concluída com sucesso (resultado: defeated). Mantendo fase atual sem recuar.",
-        "[15:54:53] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 8.19/s [2.20x] | Est: 447s)",
-        "[15:55:03] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[15:55:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[15:55:48] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[15:55:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[15:57:18] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[15:57:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[15:58:03] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:58:04] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[15:58:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:58:49] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:58:50] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:59:34] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:59:35] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[16:00:19] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[16:00:20] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 568,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8240814208984375,
+  "ramAllocMB": 1.7459259033203125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "19m17s"
+  "uptime": "21m23s"
 }
