@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 443,
+        "onlinePlayers": 442,
         "stone": 94071,
         "wheat": 64154,
         "wood": 29799
@@ -19,21 +19,21 @@
       "kills": 630,
       "level": 45,
       "logs": [
-        "[10:51:54] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 176s)",
-        "[10:52:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[10:52:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[10:53:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[10:53:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[10:54:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[10:54:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[10:54:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[10:54:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[10:55:03] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=255/3720 gold=343",
         "[10:55:03] ✅ Fase 46 Concluída! +343 Gold",
         "[10:55:03] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
         "[10:55:05] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
         "[10:55:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[10:55:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[10:55:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:56:24] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[10:56:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:57:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[10:57:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:57:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[10:57:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:58:11] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=126/3660 gold=0",
+        "[10:58:11] ⏳ Sincronizando com relógio do servidor (126/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.70416259765625,
+  "goroutines": 12,
+  "ramAllocMB": 2.3548965454101562,
   "ramSysMB": 17.34986114501953,
-  "uptime": "18h50m24s"
+  "uptime": "18h52m20s"
 }
