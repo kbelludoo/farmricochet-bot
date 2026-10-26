@@ -1,51 +1,51 @@
 {
   "accounts": [
     {
-      "currentArea": "Fase 46: Ato 2 — Resistência · Pântano 5/5",
-      "durationSec": 45182,
-      "expPerHour": 3872.3113091363584,
+      "currentArea": "Fase 45: Ato 2 — Resistência · Pântano 4/5",
+      "durationSec": 45373,
+      "expPerHour": 3903.5810750692817,
       "extra": {
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
         "onlinePlayers": 440,
-        "stone": 92284,
-        "wheat": 70421,
-        "wood": 50151
+        "stone": 92616,
+        "wheat": 70569,
+        "wood": 50441
       },
-      "gold": 20163,
+      "gold": 20724,
       "hp": 541,
       "id": "acc-1",
-      "kills": 405,
-      "level": 46,
+      "kills": 410,
+      "level": 45,
       "logs": [
-        "[04:37:41] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[04:38:25] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[04:38:26] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[04:38:49] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3626/3660 gold=0",
-        "[04:38:49] ⏳ Sincronizando com relógio do servidor (3626/3660)... aguardando 5000ms",
-        "[04:38:58] 🔍 Complete: accepted=true outcome=completed nextCode=act-2-swamp-5 nextId=067c9f54-84ed-47c6-b086-df77c24afc2b auth=3660/3660 gold=622",
-        "[04:38:58] ✅ Fase 45 Concluída! +622 Gold",
-        "[04:38:58] 🚀 Próxima fase desbloqueada: act-2-swamp-5 (Nv. 46)! Avançando...",
         "[04:39:01] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 176s)",
         "[04:39:10] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[04:39:11] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[04:39:54] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[04:39:55] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[04:40:40] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[04:40:41] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[04:40:41] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[04:41:24] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[04:41:26] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[04:42:10] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[04:42:10] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=255/3720 gold=561",
+        "[04:42:10] ✅ Fase 46 Concluída! +561 Gold",
+        "[04:42:10] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
+        "[04:42:11] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[04:42:12] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)"
       ],
       "mana": 100,
       "maxHp": 541,
       "maxMana": 100,
       "name": "Fazendeiro #1",
-      "status": "Jogando Fase 46",
-      "updatedAt": 1792989540990,
+      "status": "Jogando Fase 45",
+      "updatedAt": 1792989732195,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 2.0290145874023438,
+  "ramAllocMB": 1.9603271484375,
   "ramSysMB": 17.34986114501953,
-  "uptime": "12h35m0s"
+  "uptime": "12h36m45s"
 }
