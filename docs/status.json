@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 444,
+        "onlinePlayers": 445,
         "stone": 81181,
         "wheat": 65291,
         "wood": 40344
@@ -19,12 +19,6 @@
       "kills": 400,
       "level": 45,
       "logs": [
-        "[04:16:37] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 176s)",
-        "[04:16:39] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[04:16:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[04:17:24] 🎟️ 2 missões do Passe de Batalha resgatadas!",
-        "[04:17:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[04:18:09] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[04:18:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[04:18:53] 🎟️ 2 missões do Passe de Batalha resgatadas!",
         "[04:18:55] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[04:19:46] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=0/3720 gold=561",
         "[04:19:46] ✅ Fase 46 Concluída! +561 Gold",
         "[04:19:46] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
-        "[04:19:48] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)"
+        "[04:19:48] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
+        "[04:20:23] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[04:20:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[04:21:08] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[04:21:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[04:21:53] 🎟️ 2 missões do Passe de Batalha resgatadas!",
+        "[04:21:54] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7438583374023438,
+  "ramAllocMB": 1.9422683715820312,
   "ramSysMB": 17.34986114501953,
-  "uptime": "12h14m24s"
+  "uptime": "12h16m31s"
 }
