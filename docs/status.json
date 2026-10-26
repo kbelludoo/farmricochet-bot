@@ -19,21 +19,21 @@
       "kills": 240,
       "level": 45,
       "logs": [
-        "[00:24:01] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=381/3660 gold=0",
-        "[00:24:01] ⏳ Sincronizando com relógio do servidor (381/3660)... aguardando 5000ms",
-        "[00:24:09] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[00:24:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[00:24:18] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=381/3660 gold=0",
-        "[00:24:18] ⏳ Sincronizando com relógio do servidor (381/3660)... aguardando 5000ms",
-        "[00:24:35] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=381/3660 gold=0",
-        "[00:24:35] ⏳ Sincronizando com relógio do servidor (381/3660)... aguardando 5000ms",
         "[00:24:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=381/3660 gold=0",
         "[00:24:52] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[00:24:53] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[00:24:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:24:54] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
         "[00:25:38] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[00:25:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[00:25:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:26:23] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[00:26:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:27:08] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[00:27:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:27:53] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[00:27:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:28:00] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=510/3660 gold=0",
+        "[00:28:00] ⏳ Sincronizando com relógio do servidor (510/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.798614501953125,
+  "ramAllocMB": 2.2049560546875,
   "ramSysMB": 17.34986114501953,
-  "uptime": "8h20m25s"
+  "uptime": "8h22m20s"
 }
