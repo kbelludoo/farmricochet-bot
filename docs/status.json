@@ -19,33 +19,33 @@
       "kills": 775,
       "level": 46,
       "logs": [
-        "[15:24:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:25:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:25:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:26:24] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:26:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:27:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:27:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:27:39] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3720 gold=0",
-        "[15:27:39] ⏳ Sincronizando com relógio do servidor (0/3720)... aguardando 5000ms",
         "[15:27:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[15:27:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[15:27:56] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3720 gold=0",
         "[15:27:56] ⏳ Sincronizando com relógio do servidor (0/3720)... aguardando 5000ms",
         "[15:28:13] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3720 gold=0",
-        "[15:28:13] ⏳ Sincronizando com relógio do servidor (0/3720)... aguardando 5000ms"
+        "[15:28:13] ⏳ Sincronizando com relógio do servidor (0/3720)... aguardando 5000ms",
+        "[15:28:30] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3720 gold=0",
+        "[15:28:30] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[15:28:33] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 176s)",
+        "[15:28:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:28:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:29:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:29:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:30:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:30:10] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 46",
-      "updatedAt": 1793028271691,
+      "updatedAt": 1793028513199,
       "vocation": "knight"
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.9708938598632812,
+  "ramAllocMB": 2.0608291625976562,
   "ramSysMB": 17.34986114501953,
-  "uptime": "23h22m25s"
+  "uptime": "23h24m23s"
 }
