@@ -19,12 +19,6 @@
       "kills": 310,
       "level": 45,
       "logs": [
-        "[01:56:23] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[01:56:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[01:57:04] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
-        "[01:57:04] ⏳ Sincronizando com relógio do servidor (513/3660)... aguardando 5000ms",
-        "[01:57:08] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[01:57:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:57:21] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
         "[01:57:21] ⏳ Sincronizando com relógio do servidor (513/3660)... aguardando 5000ms",
         "[01:57:38] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
@@ -33,7 +27,13 @@
         "[01:57:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:57:55] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
         "[01:57:55] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[01:57:56] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)"
+        "[01:57:56] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
+        "[01:58:38] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[01:58:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:59:23] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[01:59:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[02:00:09] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[02:00:10] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.586700439453125,
+  "ramAllocMB": 1.5521163940429688,
   "ramSysMB": 17.34986114501953,
-  "uptime": "9h52m19s"
+  "uptime": "9h54m21s"
 }
