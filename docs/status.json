@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 431,
+        "onlinePlayers": 435,
         "stone": 109285,
         "wheat": 81308,
         "wood": 74526
@@ -19,10 +19,6 @@
       "kills": 340,
       "level": 45,
       "logs": [
-        "[02:52:17] ⏳ Sincronizando com relógio do servidor (513/3660)... aguardando 5000ms",
-        "[02:52:34] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
-        "[02:52:34] ⏳ Sincronizando com relógio do servidor (513/3660)... aguardando 5000ms",
-        "[02:52:38] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[02:52:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[02:52:51] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
         "[02:52:51] ⏳ Sincronizando com relógio do servidor (513/3660)... aguardando 5000ms",
@@ -33,7 +29,11 @@
         "[02:53:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[02:53:25] 🌱 Talento evoluído: Poder dos Heróis -\u003e Nv. 4",
         "[02:54:08] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[02:54:09] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[02:54:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[02:54:53] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[02:54:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[02:55:38] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[02:55:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.8632049560546875,
+  "ramAllocMB": 1.6991348266601562,
   "ramSysMB": 17.34986114501953,
-  "uptime": "10h48m21s"
+  "uptime": "10h50m19s"
 }
