@@ -19,13 +19,6 @@
       "kills": 570,
       "level": 45,
       "logs": [
-        "[09:09:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[09:09:54] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[09:09:55] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[09:10:39] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[09:10:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[09:11:24] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[09:11:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[09:11:41] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3626/3660 gold=0",
         "[09:11:41] ⏳ Sincronizando com relógio do servidor (3626/3660)... aguardando 5000ms",
         "[09:11:58] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3638/3660 gold=0",
@@ -33,19 +26,26 @@
         "[09:12:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[09:12:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[09:12:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3638/3660 gold=0",
-        "[09:12:15] ⏳ Sincronizando com relógio do servidor (3638/3660)... aguardando 5000ms"
+        "[09:12:15] ⏳ Sincronizando com relógio do servidor (3638/3660)... aguardando 5000ms",
+        "[09:12:32] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3638/3660 gold=0",
+        "[09:12:32] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
+        "[09:12:34] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
+        "[09:12:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[09:12:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:13:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[09:13:39] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 45",
-      "updatedAt": 1793005716007,
+      "updatedAt": 1793005954796,
       "vocation": "knight"
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 2.0311355590820312,
+  "ramAllocMB": 1.757781982421875,
   "ramSysMB": 17.34986114501953,
-  "uptime": "17h6m28s"
+  "uptime": "17h8m18s"
 }
