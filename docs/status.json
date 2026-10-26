@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 438,
+        "onlinePlayers": 435,
         "stone": 105534,
         "wheat": 73006,
         "wood": 50893
@@ -19,12 +19,6 @@
       "kills": 530,
       "level": 45,
       "logs": [
-        "[08:10:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[08:10:03] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[08:10:20] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[08:10:20] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
-        "[08:10:37] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
-        "[08:10:37] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms",
         "[08:10:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[08:10:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[08:10:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
@@ -33,7 +27,13 @@
         "[08:11:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[08:11:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[08:12:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[08:12:09] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[08:12:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[08:12:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[08:12:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[08:13:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[08:13:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[08:14:01] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=381/3660 gold=0",
+        "[08:14:01] ⏳ Sincronizando com relógio do servidor (381/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.9661636352539062,
+  "ramAllocMB": 2.4912796020507812,
   "ramSysMB": 17.34986114501953,
-  "uptime": "16h6m19s"
+  "uptime": "16h8m20s"
 }
