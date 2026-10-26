@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 449,
+        "onlinePlayers": 451,
         "stone": 119617,
         "wheat": 75951,
         "wood": 52359
@@ -19,12 +19,6 @@
       "kills": 660,
       "level": 45,
       "logs": [
-        "[11:56:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[11:56:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:57:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[11:57:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:57:24] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=255/3660 gold=0",
-        "[11:57:24] ⏳ Sincronizando com relógio do servidor (255/3660)... aguardando 5000ms",
         "[11:57:41] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=255/3660 gold=0",
         "[11:57:41] ⏳ Sincronizando com relógio do servidor (255/3660)... aguardando 5000ms",
         "[11:57:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
@@ -33,7 +27,13 @@
         "[11:57:58] ⏳ Sincronizando com relógio do servidor (255/3660)... aguardando 5000ms",
         "[11:58:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=255/3660 gold=0",
         "[11:58:15] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[11:58:16] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)"
+        "[11:58:16] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
+        "[11:58:39] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[11:58:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:59:24] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[11:59:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[12:00:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[12:00:11] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.8646011352539062,
+  "goroutines": 12,
+  "ramAllocMB": 1.9780807495117188,
   "ramSysMB": 17.34986114501953,
-  "uptime": "19h52m24s"
+  "uptime": "19h54m22s"
 }
