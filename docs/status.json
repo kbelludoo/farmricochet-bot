@@ -19,12 +19,6 @@
       "kills": 300,
       "level": 45,
       "logs": [
-        "[01:24:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[01:25:38] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[01:25:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[01:26:24] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[01:26:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[01:27:10] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[01:27:11] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:27:33] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=381/3720 gold=449",
         "[01:27:33] ✅ Fase 46 Concluída! +449 Gold",
@@ -33,7 +27,13 @@
         "[01:27:55] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[01:27:56] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[01:28:40] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[01:28:41] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[01:28:41] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:29:25] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[01:29:26] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:30:10] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[01:30:12] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[01:30:42] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3626/3660 gold=0",
+        "[01:30:42] ⏳ Sincronizando com relógio do servidor (3626/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.963165283203125,
+  "goroutines": 12,
+  "ramAllocMB": 1.4976882934570312,
   "ramSysMB": 17.34986114501953,
-  "uptime": "9h22m49s"
+  "uptime": "9h24m51s"
 }
