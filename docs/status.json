@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 438,
+        "onlinePlayers": 436,
         "stone": 63905,
         "wheat": 53751,
         "wood": 14109
@@ -19,21 +19,21 @@
       "kills": 480,
       "level": 45,
       "logs": [
-        "[06:36:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[06:36:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[06:36:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[06:37:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[06:37:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[06:38:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[06:38:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[06:39:07] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=0/3720 gold=572",
         "[06:39:07] ✅ Fase 46 Concluída! +572 Gold",
         "[06:39:07] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
         "[06:39:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[06:39:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[06:39:09] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
         "[06:39:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[06:39:54] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[06:39:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[06:40:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[06:40:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[06:41:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[06:41:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[06:42:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[06:42:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[06:42:15] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
+        "[06:42:15] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.6879043579101562,
+  "ramAllocMB": 1.9901123046875,
   "ramSysMB": 17.34986114501953,
-  "uptime": "14h34m21s"
+  "uptime": "14h36m22s"
 }
