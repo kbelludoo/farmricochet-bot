@@ -448,8 +448,8 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 
 	// Calcula a duração total exigida pela taxa canônica do servidor
 	speedMult := b.config.Settings.SpeedMultiplier
-	if speedMult <= 0.2 || speedMult > 10.0 {
-		speedMult = 1.0
+	if speedMult <= 0.2 || speedMult > 2.5 {
+		speedMult = 2.2 // Teto seguro e canônico: máximo de 2.2x a taxa base do servidor
 	}
 
 	durationSec := float64(targetGoal) / (rate * speedMult)
@@ -512,11 +512,10 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 				nextHeartbeat = time.Now().Add(heartbeatInterval)
 			}
 
-			// Se a fase atingiu a duração necessária, conclui
-			if progressRatio >= 1.0 {
-				syncRetries := 0
-				for authProgress < targetGoal && syncRetries < 5 {
-					syncRetries++
+			// Se a fase atingiu a duração estimada ou a meta já foi atingida no servidor
+			if progressRatio >= 1.0 || authProgress >= targetGoal {
+				// Garante que o progresso no servidor atingiu 100% da meta antes do settle
+				for authProgress < targetGoal {
 					delta := targetGoal - authProgress
 					var batch []StructureEvent
 					batch, structureSeq = b.generateStructureBatch(boot, runResp, structureSeq, delta, elapsed)
@@ -530,6 +529,13 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 					}
 					time.Sleep(2 * time.Second)
 				}
+
+				// NUNCA tenta settle antes da confirmação canônica do servidor
+				if authProgress < targetGoal {
+					time.Sleep(2 * time.Second)
+					continue
+				}
+
 				time.Sleep(1500 * time.Millisecond)
 
 				completeEnv := b.buildEnvelope(b.holderId, "settle", targetGoal, elapsed, targetGoal, runResp, nil)
@@ -594,8 +600,11 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 						b.config.Settings.SpeedMultiplier = optSpeed
 						b.config.Settings.AutoTuneSpeed = false
 						b.addLog(fmt.Sprintf("🎯 LIMITE DESCOBERTO! Servidor exigiu %.0fs reais -> Teto cravado em %.2fx (%.2f/s)!", actualElapsedSec, optSpeed, rate*optSpeed))
-					} else if b.config.Settings.SpeedMultiplier < 10.0 {
-						nextSpeed := math.Round((b.config.Settings.SpeedMultiplier+0.15)*100) / 100
+					} else if b.config.Settings.SpeedMultiplier < 2.75 {
+						nextSpeed := math.Round((b.config.Settings.SpeedMultiplier+0.10)*100) / 100
+						if nextSpeed > 2.75 {
+							nextSpeed = 2.75
+						}
 						b.config.Settings.SpeedMultiplier = nextSpeed
 						b.addLog(fmt.Sprintf("📈 Auto-Tuner: Partida aceita sem espera! Subindo para %.2fx na próxima run...", nextSpeed))
 					}
@@ -623,9 +632,11 @@ func (b *Bot) performRunCycle(ctx context.Context) error {
 						return nil
 					}
 
-					if completeResp.NextLevelCode != "" {
+					if completeResp.Outcome == "completed" && completeResp.NextLevelCode != "" && completeResp.NextLevelNumber > activeLvl.Number {
 						b.addLog(fmt.Sprintf("🚀 Próxima fase desbloqueada: %s (Nv. %d)! Avançando...", completeResp.NextLevelCode, completeResp.NextLevelNumber))
 						_ = b.client.SetActiveLevel(completeResp.NextLevelCode)
+					} else if completeResp.Outcome != "completed" {
+						b.addLog(fmt.Sprintf("⚠️ Partida não concluída com sucesso (resultado: %s). Mantendo fase atual sem recuar.", completeResp.Outcome))
 					} else {
 						if newBoot, bootErr := b.client.GetBootstrap(); bootErr == nil && newBoot != nil && newBoot.Progress != nil {
 							unlocked := newBoot.Progress.HighestUnlockedLevel
