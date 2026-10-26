@@ -8,7 +8,7 @@
         "essence": 285,
         "forgeFragments": 0,
         "gems": 26,
-        "onlinePlayers": 515,
+        "onlinePlayers": 513,
         "stone": 132133,
         "wheat": 77918,
         "wood": 51715
@@ -23,7 +23,13 @@
         "[15:39:05] Automação total iniciada. Loop de farm e campanha em execução.",
         "[15:39:05] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 8.19/s [2.20x] | Est: 447s)",
         "[15:40:04] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:40:05] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[15:40:05] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:40:49] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:40:50] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:41:33] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:41:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[15:42:18] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:42:19] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 568,
@@ -34,8 +40,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.2868423461914062,
+  "goroutines": 12,
+  "ramAllocMB": 1.6205291748046875,
   "ramSysMB": 13.099861145019531,
-  "uptime": "1m37s"
+  "uptime": "3m15s"
 }
