@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 439,
+        "onlinePlayers": 440,
         "stone": 105534,
         "wheat": 73006,
         "wood": 50893
@@ -19,21 +19,21 @@
       "kills": 530,
       "level": 45,
       "logs": [
-        "[07:56:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:57:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[07:57:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:57:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[07:57:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:58:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[07:58:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:58:58] 🔍 Complete: accepted=true outcome=defeated nextCode=act-2-swamp-4 nextId=9a5262cb-31c5-4cb6-b1c3-14631cea05c7 auth=0/3720 gold=572",
-        "[07:58:58] ✅ Fase 46 Concluída! +572 Gold",
-        "[07:58:58] 🚀 Próxima fase desbloqueada: act-2-swamp-4 (Nv. 45)! Avançando...",
         "[07:58:59] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
         "[07:59:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[07:59:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[08:00:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[08:00:09] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[08:00:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[08:00:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[08:00:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[08:01:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[08:01:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[08:02:05] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
+        "[08:02:05] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
+        "[08:02:23] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
+        "[08:02:23] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
+        "[08:02:24] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[08:02:25] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 2.06610107421875,
+  "ramAllocMB": 1.9698944091796875,
   "ramSysMB": 17.34986114501953,
-  "uptime": "15h54m21s"
+  "uptime": "15h56m33s"
 }
