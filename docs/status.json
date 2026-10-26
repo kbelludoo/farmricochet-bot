@@ -19,12 +19,6 @@
       "kills": 240,
       "level": 45,
       "logs": [
-        "[00:16:06] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
-        "[00:16:06] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
-        "[00:16:22] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
-        "[00:16:22] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
-        "[00:16:38] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[00:16:39] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
         "[00:16:39] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
         "[00:16:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:16:56] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
@@ -33,7 +27,13 @@
         "[00:17:23] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[00:17:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[00:18:08] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[00:18:09] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[00:18:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:18:53] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[00:18:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:19:38] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[00:19:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[00:20:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=0/3660 gold=0",
+        "[00:20:03] ⏳ Sincronizando com relógio do servidor (0/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.3833694458007812,
+  "goroutines": 13,
+  "ramAllocMB": 1.7011032104492188,
   "ramSysMB": 17.34986114501953,
-  "uptime": "8h12m19s"
+  "uptime": "8h14m21s"
 }
