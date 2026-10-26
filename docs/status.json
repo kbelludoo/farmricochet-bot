@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 442,
+        "onlinePlayers": 444,
         "stone": 151237,
         "wheat": 94141,
         "wood": 91274
@@ -19,12 +19,6 @@
       "kills": 580,
       "level": 45,
       "logs": [
-        "[09:34:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=126/3660 gold=0",
-        "[09:34:03] ⏳ Sincronizando com relógio do servidor (126/3660)... aguardando 5000ms",
-        "[09:34:20] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=126/3660 gold=0",
-        "[09:34:20] ⏳ Sincronizando com relógio do servidor (126/3660)... aguardando 5000ms",
-        "[09:34:37] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=126/3660 gold=0",
-        "[09:34:37] ⏳ Sincronizando com relógio do servidor (126/3660)... aguardando 5000ms",
         "[09:34:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[09:34:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[09:34:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=126/3660 gold=0",
@@ -33,7 +27,13 @@
         "[09:35:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[09:35:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[09:36:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[09:36:09] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[09:36:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:36:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[09:36:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:37:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[09:37:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:38:02] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=252/3660 gold=0",
+        "[09:38:02] ⏳ Sincronizando com relógio do servidor (252/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.4839935302734375,
+  "goroutines": 12,
+  "ramAllocMB": 2.1608963012695312,
   "ramSysMB": 17.34986114501953,
-  "uptime": "17h30m22s"
+  "uptime": "17h32m22s"
 }
