@@ -2,50 +2,40 @@
   "accounts": [
     {
       "currentArea": "Fase 45: Ato 2 — Resistência · Pântano 4/5",
-      "durationSec": 84344,
-      "expPerHour": 3995.0288764121246,
+      "durationSec": 0,
+      "expPerHour": 0,
       "extra": {
-        "essence": 181,
+        "essence": 285,
         "forgeFragments": 0,
-        "gems": 96,
-        "onlinePlayers": 472,
-        "stone": 127028,
-        "wheat": 75558,
-        "wood": 47206
+        "gems": 26,
+        "onlinePlayers": 515,
+        "stone": 132133,
+        "wheat": 77918,
+        "wood": 51715
       },
-      "gold": 15473,
-      "hp": 541,
+      "gold": 16106,
+      "hp": 568,
       "id": "acc-1",
-      "kills": 780,
+      "kills": 0,
       "level": 45,
       "logs": [
-        "[15:35:22] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3626/3660 gold=0",
-        "[15:35:22] ⏳ Sincronizando com relógio do servidor (3626/3660)... aguardando 5000ms",
-        "[15:35:24] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:35:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:35:39] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3626/3660 gold=0",
-        "[15:35:39] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[15:35:41] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
-        "[15:36:10] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:36:11] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:36:55] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:36:56] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:37:39] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:37:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[15:38:25] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[15:38:26] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[15:39:05] Fazenda conectada! Fase ativa: Fase 45 (Ato 2 — Resistência · Pântano 4/5) | Ouro: 16106",
+        "[15:39:05] Automação total iniciada. Loop de farm e campanha em execução.",
+        "[15:39:05] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 8.19/s [2.20x] | Est: 447s)",
+        "[15:40:04] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[15:40:05] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
-      "maxHp": 541,
+      "maxHp": 568,
       "maxMana": 100,
       "name": "Fazendeiro #1",
       "status": "Jogando Fase 45",
-      "updatedAt": 1793028941310,
+      "updatedAt": 1793029145188,
       "vocation": "knight"
     }
   ],
-  "goroutines": 10,
-  "ramAllocMB": 1.4686813354492188,
-  "ramSysMB": 17.34986114501953,
-  "uptime": "23h32m33s"
+  "goroutines": 11,
+  "ramAllocMB": 1.2868423461914062,
+  "ramSysMB": 13.099861145019531,
+  "uptime": "1m37s"
 }
