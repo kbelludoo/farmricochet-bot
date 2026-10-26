@@ -8,7 +8,7 @@
         "essence": 181,
         "forgeFragments": 0,
         "gems": 96,
-        "onlinePlayers": 447,
+        "onlinePlayers": 446,
         "stone": 99806,
         "wheat": 70362,
         "wood": 45835
@@ -19,12 +19,6 @@
       "kills": 515,
       "level": 46,
       "logs": [
-        "[07:46:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:47:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[07:47:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:48:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[07:48:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[07:48:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[07:48:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[07:49:12] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
         "[07:49:12] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
@@ -33,7 +27,13 @@
         "[07:49:21] 🚀 Próxima fase desbloqueada: act-2-swamp-5 (Nv. 46)! Avançando...",
         "[07:49:22] ▶ Fase 46 iniciada (Meta: 3720 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 176s)",
         "[07:49:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[07:49:40] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[07:49:40] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[07:50:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[07:50:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[07:51:08] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[07:51:09] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[07:51:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[07:51:54] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 12,
-  "ramAllocMB": 1.7975006103515625,
+  "goroutines": 11,
+  "ramAllocMB": 2.0988388061523438,
   "ramSysMB": 17.34986114501953,
-  "uptime": "15h44m21s"
+  "uptime": "15h46m21s"
 }
