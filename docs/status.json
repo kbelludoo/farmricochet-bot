@@ -19,21 +19,21 @@
       "kills": 580,
       "level": 45,
       "logs": [
-        "[09:38:02] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=252/3660 gold=0",
-        "[09:38:02] ⏳ Sincronizando com relógio do servidor (252/3660)... aguardando 5000ms",
-        "[09:38:18] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=252/3660 gold=0",
-        "[09:38:18] ⏳ Sincronizando com relógio do servidor (252/3660)... aguardando 5000ms",
-        "[09:38:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[09:38:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[09:38:35] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=252/3660 gold=0",
-        "[09:38:35] ⏳ Sincronizando com relógio do servidor (252/3660)... aguardando 5000ms",
-        "[09:38:52] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=252/3660 gold=0",
-        "[09:38:52] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
         "[09:38:55] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
         "[09:39:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
         "[09:39:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[09:39:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[09:39:54] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[09:39:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:40:38] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[09:40:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:41:23] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[09:41:24] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:42:00] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
+        "[09:42:00] ⏳ Sincronizando com relógio do servidor (513/3660)... aguardando 5000ms",
+        "[09:42:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[09:42:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[09:42:18] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=513/3660 gold=0",
+        "[09:42:18] ⏳ Sincronizando com relógio do servidor (513/3660)... aguardando 5000ms"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.7606964111328125,
+  "ramAllocMB": 2.04327392578125,
   "ramSysMB": 17.34986114501953,
-  "uptime": "17h34m23s"
+  "uptime": "17h36m38s"
 }
