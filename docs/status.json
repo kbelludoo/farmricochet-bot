@@ -19,12 +19,6 @@
       "kills": 650,
       "level": 45,
       "logs": [
-        "[11:30:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[11:30:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:30:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
-        "[11:30:54] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:31:03] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3625/3660 gold=0",
-        "[11:31:03] ⏳ Sincronizando com relógio do servidor (3625/3660)... aguardando 5000ms",
         "[11:31:19] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3637/3660 gold=0",
         "[11:31:19] ⏳ Sincronizando com relógio do servidor (3637/3660)... aguardando 5000ms",
         "[11:31:36] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3637/3660 gold=0",
@@ -33,7 +27,13 @@
         "[11:31:39] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[11:31:53] 🔍 Complete: accepted=false outcome=playing nextCode= nextId= auth=3637/3660 gold=0",
         "[11:31:53] ⚠️ Lease de simulação expirada após tentativa de settle. Reiniciando run limpa...",
-        "[11:31:54] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)"
+        "[11:31:54] ▶ Fase 45 iniciada (Meta: 3660 wood | Base: 3.72/s -\u003e Real: 21.11/s [5.67x] | Est: 173s)",
+        "[11:32:24] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[11:32:25] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:33:09] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[11:33:10] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:33:53] 🎟️ 3 missões do Passe de Batalha resgatadas!",
+        "[11:33:54] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 541,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 11,
-  "ramAllocMB": 1.5651321411132812,
+  "ramAllocMB": 1.79217529296875,
   "ramSysMB": 17.34986114501953,
-  "uptime": "19h26m19s"
+  "uptime": "19h28m20s"
 }
