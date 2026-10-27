@@ -19,12 +19,6 @@
       "kills": 10,
       "level": 45,
       "logs": [
-        "[19:33:20] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[19:34:04] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[19:34:05] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[19:34:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[19:34:50] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[19:35:32] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[19:35:34] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[19:36:19] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[19:36:20] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[19:37:02] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[19:37:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[19:37:47] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[19:37:48] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[19:37:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[19:38:32] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[19:38:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[19:39:17] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[19:39:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[19:40:02] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[19:40:03] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 568,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 11,
-  "ramAllocMB": 1.6614227294921875,
+  "goroutines": 10,
+  "ramAllocMB": 2.2698287963867188,
   "ramSysMB": 13.349861145019531,
-  "uptime": "27h59m13s"
+  "uptime": "28h1m13s"
 }
