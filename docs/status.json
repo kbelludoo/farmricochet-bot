@@ -19,11 +19,6 @@
       "kills": 10,
       "level": 45,
       "logs": [
-        "[11:01:13] ⚠️ Conflito de sessão detectado (409). Tentando recuperar controle do lease...",
-        "[11:01:13] ✅ Controle da sessão retomado com sucesso!",
-        "[11:01:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[11:01:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:02:34] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[11:02:35] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[11:03:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[11:03:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +28,12 @@
         "[11:04:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[11:05:32] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[11:05:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[11:06:17] 🎟️ 1 missões do Passe de Batalha resgatadas!"
+        "[11:06:17] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[11:06:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:07:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[11:07:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:07:47] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[11:07:48] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 568,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 1.7767715454101562,
+  "ramAllocMB": 1.6631927490234375,
   "ramSysMB": 13.349861145019531,
-  "uptime": "19h27m13s"
+  "uptime": "19h29m14s"
 }
