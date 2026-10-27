@@ -19,21 +19,21 @@
       "kills": 10,
       "level": 45,
       "logs": [
-        "[05:13:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[05:13:47] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:13:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[05:14:32] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:14:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[05:14:41] ⚠️ Conflito de sessão detectado (409). Tentando recuperar controle do lease...",
-        "[05:14:41] ✅ Controle da sessão retomado com sucesso!",
-        "[05:15:17] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[05:15:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[05:16:02] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[05:16:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[05:16:47] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[05:16:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[05:17:32] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[05:17:33] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[05:17:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:18:17] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:18:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:19:02] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:19:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:19:47] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:19:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[05:20:33] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[05:20:34] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 568,
@@ -44,8 +44,8 @@
       "vocation": "knight"
     }
   ],
-  "goroutines": 10,
-  "ramAllocMB": 2.445220947265625,
+  "goroutines": 11,
+  "ramAllocMB": 1.8382492065429688,
   "ramSysMB": 13.349861145019531,
-  "uptime": "13h39m11s"
+  "uptime": "13h41m31s"
 }
