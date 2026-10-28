@@ -19,12 +19,6 @@
       "kills": 10,
       "level": 45,
       "logs": [
-        "[10:52:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[10:53:34] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[10:53:35] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[10:54:19] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[10:54:20] 🎖️ 22 níveis do Passe de Batalha resgatados!",
-        "[10:55:03] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[10:55:04] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[10:55:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[10:55:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
@@ -33,7 +27,13 @@
         "[10:57:18] 🎟️ 1 missões do Passe de Batalha resgatadas!",
         "[10:57:19] 🎖️ 22 níveis do Passe de Batalha resgatados!",
         "[10:58:04] 🎟️ 1 missões do Passe de Batalha resgatadas!",
-        "[10:58:05] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+        "[10:58:05] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:58:48] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[10:58:49] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[10:59:34] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[10:59:36] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+        "[11:00:20] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+        "[11:00:21] 🎖️ 22 níveis do Passe de Batalha resgatados!"
       ],
       "mana": 100,
       "maxHp": 568,
@@ -45,7 +45,7 @@
     }
   ],
   "goroutines": 10,
-  "ramAllocMB": 2.2663040161132812,
+  "ramAllocMB": 2.2270050048828125,
   "ramSysMB": 13.349861145019531,
-  "uptime": "43h19m32s"
+  "uptime": "43h21m27s"
 }
